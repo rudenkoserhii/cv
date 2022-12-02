@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkcv=self.webpackChunkcv||[]).push([[424],{333:function(n,e,u){u.r(e),u.d(e,{default:function(){return s}});var c,t=u(168),r=u(444).ZP.p(c||(c=(0,t.Z)(["\n"]))),f=u(184),s=function(){return(0,f.jsx)(r,{children:"Text"})}}}]);
+//# sourceMappingURL=424.7f020031.chunk.js.map
