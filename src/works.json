@@ -1,0 +1,44 @@
+[
+{
+"companyName": "Kominmet",
+"dateStart": "may 2003",
+"dateEnd": "december 2003",
+"position": "Dispatcher",
+"responsibilities": ["Ensure compliance with all railroad rules, procedures, and regulations for safety and operations.",
+"Direct and coordinate railroad traffic, issue permits and authorities, monitor all rail movements and maintain computerized records of all activities.",
+"Know assigned territory and keep informed of changes in the physical characteristics.",
+"Maintain familiarity with scheduled trains, destinations, times of arrivals and departures.",
+"Communicate with personnel on weather or any environmental conditions affecting train movement.",
+"Coordinate movement of trains according to operating plan and customer needs.",
+"Monitor train and track movements.",
+"Remotely control track switches and traffic signals and apply and remove blocking devices.",
+"Report alleged violations of operating rules and any irregularity relating to the movement of trains.",
+"Plan in advance for smooth and effective movement of priority trains, trains containing hazardous material or restricted shipments, and meets/passes to avoid unnecessary delays.",
+"Coordinate track usage with Engineering Department personnel."],
+"country": "Ukraine",
+"city": "Dnipro",
+"logo": "{kominmet}"
+},
+{
+"companyName": "UkrAuto",
+"dateStart": "january 2004",
+"dateEnd": "september 2004",
+"position": "Ingeneer",
+"responsibilities": ["Making plans using detailed drawings.",
+"Preparing estimates and budgets.",
+"Creating accurate project specifications.",
+"Designing engineering experiments.",
+"Creating technical reports for customers.",
+"Completing regulatory documents concerning safety issues.",
+"Finishing projects on time and within budget.",
+"Communicating with clients and coworkers about analysis results."],
+"country": "Ukraine",
+"city": "Dnipro",
+"logo": "{ukrauto}"
+},
+
+
+
+
+
+]

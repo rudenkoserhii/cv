@@ -1,31 +1,34 @@
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
-// import { HomePage } from './HomePage/HomePage';
 import { lazy } from 'react';
-// import { MovieDetails } from './MovieDetails/MovieDetails';
-// import { Cast } from './MovieDetails/Cast';
-// import { Reviews } from './MovieDetails/Reviews';
-// import { Movies } from './Movies/Movies';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
-const Movies = lazy(() => import('../pages/Movies/Movies'));
-const MovieDetails = lazy(() => import('../pages/MovieDetails/MovieDetails'));
-const Cast = lazy(() => import('../pages/MovieDetails/Cast'));
-const Reviews = lazy(() => import('../pages/MovieDetails/Reviews'));
+const About = lazy(() => import('../pages/About/About'));
+const Portfolio = lazy(() => import('../pages/Portfolio/Portfolio'));
+const Education = lazy(() => import('../pages/Education/Education'));
+const Skills = lazy(() => import('../pages/Skills/Skills'));
+const TechSkills = lazy(() => import('../pages/TechSkills/TechSkills'));
+const SoftSkills = lazy(() => import('../pages/SoftSkills/SoftSkills'));
+const Experience = lazy(() => import('../pages/Experience/Experience'));
+const ExperienceItem = lazy(() => import('../components/ExperienceItem/ExperienceItem'));
 
 export const App = () => {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route path="/" element={<Layout />} >
           <Route index element={<HomePage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<HomePage />} />
-          <Route path="movies" element={<Movies />} />
-          <Route path="movies/:movieId" element={<MovieDetails />} >
-            <Route path="cast" element={<Cast />} />
-            <Route path="reviews" element={<Reviews />} />
+          <Route path="about" element={<About />} />
+          <Route path="education" element={<Education />} />
+          <Route path="experience" element={<Experience />} >
+            <Route path=":item" element={<ExperienceItem />} />
           </Route>
+          <Route path="portfolio" element={<Portfolio />} />
+          <Route path="skills" element={<Skills />} />
+          <Route path="tech" element={<TechSkills />} />
+          <Route path="soft" element={<SoftSkills />} />
         </Route>
       </Routes>
     </>
