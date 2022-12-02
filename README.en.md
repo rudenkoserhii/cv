@@ -53,8 +53,7 @@ and in the drop-down window, follow the link `Details`.
 
 ### Live page
 After some time, usually a couple of minutes, the live page can be viewed at the address 
-specified in the edited `homepage` property. For example, here is a link to a live version for this repository
-[https://goitacademy.github.io/react-homework-template](https://goitacademy.github.io/react-homework-template).
+specified in the edited `homepage` property.
 
 If a blank page opens, make sure there are no errors in the `Console` tab related 
 to incorrect paths to the CSS and JS files of the project (**404**). You most likely 
