@@ -27,9 +27,9 @@ export const App = () => {
           </Route>
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="skills" element={<Skills />} />
-          <Route path="tech" element={<TechSkills />} />
-          <Route path="soft" element={<SoftSkills />} />
-        </Route>
+          <Route path="skills/tech" element={<TechSkills />} />
+          <Route path="skills/soft" element={<SoftSkills />} />
+          </Route>
       </Routes>
     </>
   );

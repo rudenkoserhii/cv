@@ -1,15 +1,16 @@
-import { Outlet } from 'react-router-dom';
 import { AppBar } from '../AppBar/AppBar';
-import { LayoutStyled } from './Layout.styled';
-import { Suspense } from 'react';
+import { Header } from './Layout.styled';
+import { Main } from '../Main/Main';
+import { Footer } from 'components/Footer/Footer';
 
 export const Layout = () => {
   return (
-    <LayoutStyled>
-      <AppBar />
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
-    </LayoutStyled>
+    <>
+        <Header>
+          <AppBar />
+        </Header>
+        <Main />
+        <Footer/>
+    </>
   );
 };

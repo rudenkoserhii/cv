@@ -2,7 +2,9 @@ import { Text } from "./About.styled"
 
 const About = () => {
     return (
-        <Text>Text</Text>
+            // <Section>
+                <Text>Text</Text>
+            // </Section>
 )};
 
 export default About;
