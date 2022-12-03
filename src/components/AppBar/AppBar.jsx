@@ -1,10 +1,10 @@
 import { Wrap, NavLinkStyled } from './AppBar.styled';
-import home from '../../img/home.svg';
-import about from '../../img/about.svg';
-import portfolio from '../../img/portfolio.svg';
-import skills from '../../img/skills.svg';
-import experience from '../../img/experience.svg';
-import education from '../../img/education.svg';
+import home from '../../img/nav_icons/home.svg';
+import about from '../../img/nav_icons/about.svg';
+import portfolio from '../../img/nav_icons/portfolio.svg';
+import skills from '../../img/nav_icons/skills.svg';
+import experience from '../../img/nav_icons/experience.svg';
+import education from '../../img/nav_icons/education.svg';
 
 
 export const AppBar = () => {
