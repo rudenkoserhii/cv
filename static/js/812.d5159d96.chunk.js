@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkcv=self.webpackChunkcv||[]).push([[812],{812:function(n,e,r){r.r(e),r.d(e,{default:function(){return Z}});var c,u,i,h=r(168),s=r(444),t=s.ZP.h1(c||(c=(0,h.Z)(["\n"]))),l=s.ZP.h2(u||(u=(0,h.Z)(["\n"]))),d=s.ZP.main(i||(i=(0,h.Z)(["\n"]))),f=r(184),Z=function(){return(0,f.jsxs)(d,{children:[(0,f.jsx)(t,{children:"Rudenko Serhii"}),(0,f.jsx)(l,{children:"Developer"})]})}}}]);
-//# sourceMappingURL=812.d5159d96.chunk.js.map
