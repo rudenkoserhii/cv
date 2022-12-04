@@ -18,7 +18,7 @@ export const Footer = () => {
       <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>Toggle theme</Button>
       <Link onClick={toggleModal}>Contacts</Link>
       <Socials/>
-      <p>footer</p>
+      <p>Made with React.js</p>
     </FooterStyled>
     {(showModal) && <Modal onClose={toggleModal}/>}</>
   );

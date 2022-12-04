@@ -9,24 +9,11 @@ import { ThrowContext } from '../../components/Context/Context';
 
 const HomePage = () => {
 
-    // const [peoples, setPeoples] = useState([]);
-
-    // useEffect(() => {
-    //     async function getPeoplesOnLoad () {
-    //         await getPeoples().then(setPeoples);
-    //     }
-    //     getPeoplesOnLoad();
-    // }, [])
-
-    const { peoples } = useContext(ThrowContext);
-
-    function getRandom(min, max) {
-        return Math.floor(Math.random() * (max - min + 1)) + min}
-
-    const selected = peoples[getRandom(0, peoples.length)];
+    const { selected } = useContext(ThrowContext);
 
     return (
-        (peoples.length > 0) && <><Img src={selected.urlJpg} alt="Man"/><Name>{selected.name}</Name><Profi>{selected.job}</Profi></>
+        (selected) && 
+<><Img src={selected.urlJpg} alt="Man"/><Name>{selected.name}</Name><Profi>{selected.job}</Profi></>
     )
 }
 

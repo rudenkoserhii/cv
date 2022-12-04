@@ -6,5 +6,5 @@ export const Text = styled.p`
 export const Paragraph = styled.span`
 `;
 
-export const Bold = styled.b`
+export const Title = styled.h2`
 `;

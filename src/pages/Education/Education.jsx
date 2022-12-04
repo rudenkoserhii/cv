@@ -1,13 +1,28 @@
-import { Text, Bold, Paragraph } from './Education.styled';
+import { Text, Paragraph, Title } from './Education.styled';
+import { useContext } from "react";
+import { ThrowContext } from '../../components/Context/Context';
+
 
 const Education = () => {
+    const { selected } = useContext(ThrowContext);
+
+    const { name, dateStart, dateEnd, speciality, country, city } = selected.education;
+
 
     return (
-        <Text>
-            <Bold>1</Bold>
-            <Paragraph>2</Paragraph>
-            <Paragraph>3</Paragraph>
-        </Text>
+        <>
+            <Title>Education</Title>
+            <Text>{name}</Text>
+
+            <Text>{speciality}</Text>
+            <Text>
+                <Paragraph>{dateStart} - </Paragraph>
+                <Paragraph>{dateEnd} | </Paragraph>
+                <Paragraph>{country}, </Paragraph>
+                <Paragraph>{city}</Paragraph>
+
+            </Text>
+        </>
 )};
 
 export default Education;

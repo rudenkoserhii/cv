@@ -9,3 +9,12 @@ export const ListStyled = styled.ul`
 
 export const LinkStyled = styled(Link)`
 `;
+
+export const Text = styled.p`
+`;
+
+export const Img = styled.img`
+`;
+
+export const Title = styled.h2`
+`;

@@ -1,13 +1,17 @@
-import { ListStyled, LinkStyled } from './Skills.styled';
-
-
+import { ListStyled, NavLinkStyled, Title } from './Skills.styled';
+import { useLocation } from 'react-router-dom';
 
 const Skills = () => {
+  const location = useLocation();
+
   return (
-    <ListStyled>
-      <LinkStyled to="soft">Soft Skiils</LinkStyled>
-      <LinkStyled to="tech">Tech Skills</LinkStyled>
-    </ListStyled>
+    <>
+      <Title>Work experience</Title>
+      <ListStyled>
+        <NavLinkStyled to="soft" state={{ from: location }}>Soft Skiils</NavLinkStyled>
+        <NavLinkStyled to="tech">Tech Skills</NavLinkStyled>
+      </ListStyled>
+    </>
   );
 };
 

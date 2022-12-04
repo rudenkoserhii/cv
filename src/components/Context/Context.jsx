@@ -15,9 +15,13 @@ export const Context = ({children}) => {
         getPeoplesOnLoad();
     }, [])
 
+    function getRandom(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min}
+
+    const selected = peoples[getRandom(0, peoples.length)];
 
   return (
-    <ThrowContext.Provider value={{theme, peoples, setTheme}}>
+    <ThrowContext.Provider value={{ theme, setTheme, selected }}>
         {children}
     </ThrowContext.Provider>
   );

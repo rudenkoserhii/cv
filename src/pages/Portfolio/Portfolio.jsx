@@ -1,13 +1,20 @@
-import { LinkStyled, ListStyled, ListItem } from './Portfolio.styled';
+import { LinkStyled, ListStyled, ListItem, Title, Text } from './Portfolio.styled';
+import { useContext } from "react";
+import { ThrowContext } from '../../components/Context/Context';
+import { nanoid } from 'nanoid';
+
 
 const Portfolio = () => {
+    const { selected } = useContext(ThrowContext);
+
 
     return (
-        <ListStyled>
-            <ListItem><LinkStyled>Ice-Cream</LinkStyled></ListItem>
-            <ListItem><LinkStyled>Filmoteka</LinkStyled></ListItem>
-            <ListItem><LinkStyled>GitHub</LinkStyled></ListItem>
-        </ListStyled>
+        <>
+            <Title>Portfolio</Title>
+            <ListStyled>
+                {selected.portfolios.map(({ name, url, preview }) => <ListItem key={nanoid()}><Text>{name}</Text><LinkStyled href={url} target="_blank"><img src={preview} alt={`Site ${name} preview`} width="200px"/></LinkStyled></ListItem>)}
+            </ListStyled>
+        </>
 )};
 
 export default Portfolio;

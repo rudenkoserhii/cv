@@ -1,17 +1,25 @@
 import { Suspense } from 'react';
 import { Outlet } from "react-router-dom";
-import { ListStyled, LinkStyled } from './Experience.styled';
-// import works from '../../works.json'
-
+import { ListStyled, LinkStyled, Text, Img, ListItem, Title } from './Experience.styled';
+import { useContext } from "react";
+import { ThrowContext } from '../../components/Context/Context';
+import { nanoid } from 'nanoid';
 
 const Experience = () => {
-
-  // const { companyName, dateStart, dateEnd, position, responsibilities, country, city, logo } = JSON.parse(works);
+  const { selected } = useContext(ThrowContext);
 
   return (
     <>
+    <Title>Work experience</Title>
     <ListStyled>
-    <LinkStyled to=''>Go back</LinkStyled>
+      {selected.jobs.map(({ companyName, logo }) => 
+        <ListItem key={nanoid()}>
+          <LinkStyled to={companyName}>
+            <Text>{companyName}</Text>
+            <Img src={logo} alt={`Logo ${companyName}`} width="200px" height="100px"/>
+          </LinkStyled>
+        </ListItem>
+      )}
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
