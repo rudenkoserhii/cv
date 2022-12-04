@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import { space, flexbox } from 'styled-system';
 
-const Box = styled.div`
-`;
+const Box = styled('div')(
+    space,
+    flexbox,
+);
 
-const Flex = styled.div`
-`;
 
-export default (Box, Flex) ;
+export default Box ;
