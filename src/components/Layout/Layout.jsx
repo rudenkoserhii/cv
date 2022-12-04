@@ -8,7 +8,7 @@ export const Layout = () => {
 
   return (
     <>
-        <Box>
+        <Box display="flex">
           <Header>
             <AppBar />
           </Header>

@@ -2,14 +2,14 @@ export const theme = {
   colors: {
     black: '#000',
     white: '#fff',
-    gray: 'gray',
+    grey: 'grey',
     lightblue: 'aquamarine',
     red: 'red',
     lightred: 'rgba(100, 0, 0, 0.1)',
     green: 'green',
     lightgray: 'lightgray',
   },
-  space: [0, 2, 4, 8, 16, 32, 64, 128, 256],
+  space: [0, 2, 4, 8, 16, 32, 64, 128, 256, 512],
   fonts: {
     body: 'system-ui, sans-serif',
     heading: 'system-ui, sans-serif',

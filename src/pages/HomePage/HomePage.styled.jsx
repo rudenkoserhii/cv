@@ -7,4 +7,6 @@ export const Profi = styled.h2`
 `;
 
 export const Img = styled.img`
+
+
 `;

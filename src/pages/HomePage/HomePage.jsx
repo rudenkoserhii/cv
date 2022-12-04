@@ -12,7 +12,7 @@ const HomePage = () => {
     return (
         (selected) && 
         <>
-            <Img src={selected.urlJpg} alt="Man"/>
+            <Img src={selected.urlJpg} alt="Man" width="800px"/>
             <Name>{selected.name}</Name>
             <Profi>{selected.job}</Profi>
         </>
