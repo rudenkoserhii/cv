@@ -1,6 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { lazy } from 'react';
+import { Context } from './Context/Context';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const About = lazy(() => import('../pages/About/About'));
@@ -14,7 +15,7 @@ const ExperienceItem = lazy(() => import('../components/ExperienceItem/Experienc
 
 export const App = () => {
   return (
-    <>
+    <Context>
       <Routes>
         <Route path="/" element={<Layout />} >
           <Route index element={<HomePage />} />
@@ -31,7 +32,7 @@ export const App = () => {
           <Route path="skills/soft" element={<SoftSkills />} />
           </Route>
       </Routes>
-    </>
+    </Context>
   );
 };
 
