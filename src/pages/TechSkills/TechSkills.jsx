@@ -6,15 +6,17 @@ import { nanoid } from 'nanoid';
 
 const TechSkills = () => {
   const location = useLocation();
-  const backLinkHref = location.state?.from ?? "/";
+  const backLinkHref = location.state?.from ?? "/skills";
 
   const { selected } = useContext(ThrowContext);
+
+  const arrayTechSkills = selected.skills.find(skill => skill.tech)['tech'];
 
   return (
     <>
     <LinkStyled to={backLinkHref}>Back</LinkStyled>
     <ListStyled>
-      {selected.skills[1].tech.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`} width="50px"/><Text>{name}</Text></ListItem>)}
+      {arrayTechSkills.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`} width="50px"/><Text>{name}</Text></ListItem>)}
     </ListStyled>
     </>
   )

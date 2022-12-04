@@ -41,6 +41,12 @@ import preview_filmoteka from './img/portfolios/preview_filmoteka.jpg';
 import preview_github from './img/portfolios/preview_github.jpg';
 import preview_resume from './img/portfolios/preview_resume.jpg';
 
+import instagram from './img/socials_icons/instagram.svg';
+import twitter from './img/socials_icons/twitter.svg';
+import facebook from './img/socials_icons/facebook.svg';
+import linkedin from './img/socials_icons/linkedin.svg';
+
+
 const db = {
   peoples: [
     {
@@ -50,10 +56,28 @@ const db = {
       urlJpg: photo_01_jpg,
       urlWebp: photo_01_webp,
       date_created: '2022-08-28T14:00:00.000Z',
-      instagram: 'https://www.instagram.com/rudenko.sergey.v/',
-      facebook: 'https://www.facebook.com/profile.php?id=100005434448335',
-      linkedin: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
-      twitter: 'https://twitter.com/SerhiiRudenkoV',
+      socials: [
+        {
+          name: 'instagram',
+          url: 'https://www.instagram.com/rudenko.sergey.v/',
+          icon: instagram,
+        },
+        {
+          name: 'facebook',
+          url: 'https://www.facebook.com/profile.php?id=100005434448335',
+          icon: facebook,
+        },
+        {
+          name: 'linkedin',
+          url: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
+          icon: linkedin,
+        },
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/SerhiiRudenkoV/',
+          icon: twitter,
+        },
+      ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
@@ -257,10 +281,28 @@ const db = {
       urlJpg: photo_02_jpg,
       urlWebp: photo_02_webp,
       date_created: '2022-08-28T15:00:00.000Z',
-      instagram: 'https://www.instagram.com/rudenko.sergey.v/',
-      facebook: 'https://www.facebook.com/profile.php?id=100005434448335',
-      linkedin: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
-      twitter: 'https://twitter.com/SerhiiRudenkoV',
+      socials: [
+        {
+          name: 'instagram',
+          url: 'https://www.instagram.com/rudenko.sergey.v/',
+          icon: instagram,
+        },
+        {
+          name: 'facebook',
+          url: 'https://www.facebook.com/profile.php?id=100005434448335',
+          icon: facebook,
+        },
+        {
+          name: 'linkedin',
+          url: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
+          icon: linkedin,
+        },
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/SerhiiRudenkoV/',
+          icon: twitter,
+        },
+      ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
@@ -464,10 +506,28 @@ const db = {
       urlJpg: photo_03_jpg,
       urlWebp: photo_03_webp,
       date_created: '2022-08-28T16:00:00.000Z',
-      instagram: 'https://www.instagram.com/rudenko.sergey.v/',
-      facebook: 'https://www.facebook.com/profile.php?id=100005434448335',
-      linkedin: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
-      twitter: 'https://twitter.com/SerhiiRudenkoV',
+      socials: [
+        {
+          name: 'instagram',
+          url: 'https://www.instagram.com/rudenko.sergey.v/',
+          icon: instagram,
+        },
+        {
+          name: 'facebook',
+          url: 'https://www.facebook.com/profile.php?id=100005434448335',
+          icon: facebook,
+        },
+        {
+          name: 'linkedin',
+          url: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
+          icon: linkedin,
+        },
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/SerhiiRudenkoV/',
+          icon: twitter,
+        },
+      ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
@@ -671,10 +731,28 @@ const db = {
       urlJpg: photo_04_jpg,
       urlWebp: photo_04_webp,
       date_created: '2022-08-28T17:00:00.000Z',
-      instagram: 'https://www.instagram.com/rudenko.sergey.v/',
-      facebook: 'https://www.facebook.com/profile.php?id=100005434448335',
-      linkedin: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
-      twitter: 'https://twitter.com/SerhiiRudenkoV',
+      socials: [
+        {
+          name: 'instagram',
+          url: 'https://www.instagram.com/rudenko.sergey.v/',
+          icon: instagram,
+        },
+        {
+          name: 'facebook',
+          url: 'https://www.facebook.com/profile.php?id=100005434448335',
+          icon: facebook,
+        },
+        {
+          name: 'linkedin',
+          url: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
+          icon: linkedin,
+        },
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/SerhiiRudenkoV/',
+          icon: twitter,
+        },
+      ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
@@ -878,10 +956,28 @@ const db = {
       urlJpg: photo_05_jpg,
       urlWebp: photo_05_webp,
       date_created: '2022-08-28T18:00:00.000Z',
-      instagram: 'https://www.instagram.com/rudenko.sergey.v/',
-      facebook: 'https://www.facebook.com/profile.php?id=100005434448335',
-      linkedin: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
-      twitter: 'https://twitter.com/SerhiiRudenkoV',
+      socials: [
+        {
+          name: 'instagram',
+          url: 'https://www.instagram.com/rudenko.sergey.v/',
+          icon: instagram,
+        },
+        {
+          name: 'facebook',
+          url: 'https://www.facebook.com/profile.php?id=100005434448335',
+          icon: facebook,
+        },
+        {
+          name: 'linkedin',
+          url: 'https://www.linkedin.com/in/serhii-rudenko-559a0215b/',
+          icon: linkedin,
+        },
+        {
+          name: 'twitter',
+          url: 'https://twitter.com/SerhiiRudenkoV/',
+          icon: twitter,
+        },
+      ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',

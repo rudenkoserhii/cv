@@ -4,6 +4,7 @@ import { Main } from '../Main/Main';
 import { Footer } from 'components/Footer/Footer';
 
 export const Layout = () => {
+
   return (
     <>
         <Header>

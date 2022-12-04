@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation } from "react-router-dom";
 import { ListStyled, LinkStyled, Text, Img, ListItem, Title } from './Experience.styled';
 import { useContext } from "react";
 import { ThrowContext } from '../../components/Context/Context';
@@ -7,6 +7,7 @@ import { nanoid } from 'nanoid';
 
 const Experience = () => {
   const { selected } = useContext(ThrowContext);
+  const location = useLocation();
 
   return (
     <>
@@ -14,7 +15,7 @@ const Experience = () => {
     <ListStyled>
       {selected.jobs.map(({ companyName, logo }) => 
         <ListItem key={nanoid()}>
-          <LinkStyled to={companyName}>
+          <LinkStyled to={companyName}  state={{ from: location }}>
             <Text>{companyName}</Text>
             <Img src={logo} alt={`Logo ${companyName}`} width="200px" height="100px"/>
           </LinkStyled>

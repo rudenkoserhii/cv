@@ -6,15 +6,17 @@ import { nanoid } from 'nanoid';
 
 const SoftSkills = () => {
   const location = useLocation();
-  const backLinkHref = location.state?.from ?? "/";
+  const backLinkHref = location.state?.from ?? "/skills";
 
   const { selected } = useContext(ThrowContext);
+
+  const arraySoftSkills = selected.skills.find(skill => skill.soft)['soft'];
 
   return (
     <>
     <LinkStyled to={backLinkHref}>Back</LinkStyled>
     <ListStyled>
-      {selected.skills[0].soft.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`} width="50px"/><Text>{name}</Text></ListItem>)}
+      {arraySoftSkills.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`} width="50px"/><Text>{name}</Text></ListItem>)}
     </ListStyled>
     </>
   )

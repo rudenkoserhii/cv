@@ -6,10 +6,10 @@ const Skills = () => {
 
   return (
     <>
-      <Title>Work experience</Title>
+      <Title>Skiils</Title>
       <ListStyled>
         <NavLinkStyled to="soft" state={{ from: location }}>Soft Skiils</NavLinkStyled>
-        <NavLinkStyled to="tech">Tech Skills</NavLinkStyled>
+        <NavLinkStyled to="tech" state={{ from: location }}>Tech Skills</NavLinkStyled>
       </ListStyled>
     </>
   );
