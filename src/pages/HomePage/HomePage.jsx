@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 
 const HomePage = () => {
 
-    const [peoples, setPeoples] = useState(null);
+    const [peoples, setPeoples] = useState([]);
 
     useEffect(() => {
         async function getPeoplesOnLoad () {
@@ -16,15 +16,15 @@ const HomePage = () => {
         getPeoplesOnLoad();
     }, [])
 
-function getRandomPhoto() {
-  return `#${Math.floor(Math.random() * 16777215).toString()}`}
+function getRandom(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min}
+
+const selected = peoples[getRandom(0, peoples.length)];
 
     return (
-        <>
-        <img src={peoples[0].url} alt="Man"/>
-        <Name>Rudenko Serhii</Name>
-        <Profi>Developer</Profi>
-        </>
+        (peoples.length > 0) && <><img src={selected.urlJpg} alt="Man"/><Name>{selected.name}</Name><Profi>{selected.job}</Profi></>
+        
+        
     )
 }
 
