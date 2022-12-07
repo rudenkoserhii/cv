@@ -8,8 +8,8 @@ const About = () => {
 
     return (
         <>
-            <Title>About me</Title>
-            <Text>{selected.about}</Text>
+            <Title className="first">About me</Title>
+            <Text className="second">{selected.about}</Text>
         </>
     )
 };

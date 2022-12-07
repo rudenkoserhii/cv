@@ -1,11 +1,11 @@
-import { FooterStyled, Link, Button } from './Footer.styled';
+import { FooterStyled, Link, Text } from './Footer.styled';
 import { useState, useContext } from 'react';
 import { Modal } from '../Modal/Modal';
 import { Socials } from '../Socials/Socials';
 import { ThrowContext } from '../Context/Context';
 
 export const Footer = () => {
-  const { theme, setTheme, selected } = useContext(ThrowContext);
+  const { selected } = useContext(ThrowContext);
   const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
@@ -19,10 +19,10 @@ export const Footer = () => {
   return (
 <>
     <FooterStyled>
-      <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button>
+      {/* <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button> */}
       <Link onClick={toggleModal}>Contacts</Link>
       <Socials/>
-      <p>Made with React.js</p>
+      <Text>Made with React.js</Text>
     </FooterStyled>
     {(showModal) && <Modal onClose={toggleModal}/>}
 </>

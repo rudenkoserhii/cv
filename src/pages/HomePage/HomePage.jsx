@@ -1,4 +1,4 @@
-import { Name, Profi, Img } from "./HomePage.styled";
+import { Img } from "./HomePage.styled";
 import { useContext } from "react";
 import { ThrowContext } from '../../components/Context/Context';
 
@@ -12,9 +12,7 @@ const HomePage = () => {
     return (
         (selected) && 
         <>
-            <Img src={selected.urlJpg} alt="Man" width="800px"/>
-            <Name>{selected.name}</Name>
-            <Profi>{selected.job}</Profi>
+            <Img src={selected.urlJpg} alt="Man" width="800px" className="first"/>
         </>
     )
 }

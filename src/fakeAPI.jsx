@@ -52,7 +52,7 @@ const db = {
     {
       id: nanoid(),
       name: 'Serhii Rudenko',
-      job: 'Developer',
+      job: 'developer',
       urlJpg: photo_01_jpg,
       urlWebp: photo_01_webp,
       date_created: '2022-08-28T14:00:00.000Z',
@@ -277,7 +277,7 @@ const db = {
     {
       id: nanoid(),
       name: 'Serhii Rudenko',
-      job: 'Developer',
+      job: 'developer',
       urlJpg: photo_02_jpg,
       urlWebp: photo_02_webp,
       date_created: '2022-08-28T15:00:00.000Z',
@@ -502,7 +502,7 @@ const db = {
     {
       id: nanoid(),
       name: 'Serhii Rudenko',
-      job: 'Developer',
+      job: 'developer',
       urlJpg: photo_03_jpg,
       urlWebp: photo_03_webp,
       date_created: '2022-08-28T16:00:00.000Z',
@@ -727,7 +727,7 @@ const db = {
     {
       id: nanoid(),
       name: 'Serhii Rudenko',
-      job: 'Developer',
+      job: 'developer',
       urlJpg: photo_04_jpg,
       urlWebp: photo_04_webp,
       date_created: '2022-08-28T17:00:00.000Z',
@@ -952,7 +952,7 @@ const db = {
     {
       id: nanoid(),
       name: 'Serhii Rudenko',
-      job: 'Developer',
+      job: 'developer',
       urlJpg: photo_05_jpg,
       urlWebp: photo_05_webp,
       date_created: '2022-08-28T18:00:00.000Z',

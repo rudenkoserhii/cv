@@ -3,6 +3,7 @@ import { useContext } from "react";
 import { ThrowContext } from '../../components/Context/Context';
 import { useLocation, useParams } from 'react-router-dom';
 import { nanoid } from "nanoid";
+import Box from "components/Box/Box";
 
 const ExperienceItem = () => {
     const location = useLocation();
@@ -17,10 +18,10 @@ const selectedCompany = selected.jobs.find(({companyName}) => companyName === co
 const { dateStart, dateEnd, position, responsibilities, country, city } = selectedCompany;
 
     return (
-        <>
-        <LinkBack to={backLinkHref}>Back</LinkBack>
-        <><Text>{position}</Text><Text><Span>{dateStart} - </Span><Span>{dateEnd} | </Span><Span>{city}, </Span><Span>{country}</Span></Text><List>{responsibilities.map(item => <Item key={nanoid()}>- {item}</Item>)}</List></>
-        </>
+        <Box>
+        <LinkBack to={backLinkHref} className="third">Back</LinkBack>
+        <Box className="third"><Text>{position}</Text><Text><Span>{dateStart} - </Span><Span>{dateEnd} | </Span><Span>{city}, </Span><Span>{country}</Span></Text><List>{responsibilities.map(item => <Item key={nanoid()}>- {item}</Item>)}</List></Box>
+        </Box>
     )
 };
 

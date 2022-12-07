@@ -1,12 +1,8 @@
 import styled from 'styled-components';
 
-export const Name = styled.h1`
-`;
-
-export const Profi = styled.h2`
-`;
 
 export const Img = styled.img`
-
-
+text-align: right;
+box-shadow: ${p => p.theme.shadows.first};
+border-radius: ${p => p.theme.radii.normal};
 `;

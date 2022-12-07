@@ -11,20 +11,21 @@ const Experience = () => {
 
   return (
     <>
-    <Title>Work experience</Title>
-    <ListStyled>
+    <Title className="first">Work experience</Title>
+    <ListStyled className="second">
       {selected.jobs.map(({ companyName, logo }) => 
         <ListItem key={nanoid()}>
           <LinkStyled to={companyName}  state={{ from: location }}>
-            <Text>{companyName}</Text>
-            <Img src={logo} alt={`Logo ${companyName}`} width="200px" height="100px"/>
+            <Text className='companyName'>{companyName}</Text>
+            <Img src={logo} alt={`Logo ${companyName}`} width="160px" height="160px"/>
           </LinkStyled>
         </ListItem>
       )}
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
-    </ListStyled></>);
+    </ListStyled>
+    <Suspense fallback={null}>
+      <Outlet />
+    </Suspense>
+    </>);
 };
 
 export default Experience;
