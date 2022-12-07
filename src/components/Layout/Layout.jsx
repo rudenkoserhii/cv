@@ -14,7 +14,7 @@ export const Layout = () => {
 
   return (
     (selected) && 
-    <Box width="1200px" display="flex" justifyContent="center" flexDirection="column" p={64}>
+    <Box width="1200px" display="flex" justifyContent="center" ml={'auto'} mr={'auto'} flexDirection="column" p={64}>
         <Box display="flex" mb={64} minHeight={600} style={{position: "relative"}}>
           <Name className="second">{selected.name} /</Name>
           <Profi className="third">{selected.job}</Profi>
