@@ -11,7 +11,10 @@ export const ListStyled = styled.ul`
 `;
 
 export const ListItem = styled.li`
-width: calc((672 - 16 * 4) / 4);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 `;
 
 export const Text = styled.p`
@@ -20,11 +23,14 @@ export const Text = styled.p`
 
     font-weight: ${p => p.theme.fontWeights.bold};
     margin-bottom: ${p => p.theme.space[3]}px;
+    text-transform: capitalize;
+
+margin-top: auto;
 
 `;
 export const Img = styled.img`
-width: 152px;
-
+    width: 152px;
+padding: 20px;
 `;
 
 export const NavLinkStyled = styled(NavLink)`
@@ -46,6 +52,7 @@ export const Title = styled.h2`
     margin-bottom: ${p => p.theme.space[3]}px;
     padding: ${p => p.theme.space[3]}px;
 
+    display: block;
 `;
 
 export const LinkStyled = styled(Link)`
@@ -62,4 +69,5 @@ export const LinkStyled = styled(Link)`
         color: ${p => p.theme.colors.seablue};
         text-shadow: ${p => p.theme.shadows.text};}
 
+    display: block;
 `;

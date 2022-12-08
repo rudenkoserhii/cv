@@ -12,11 +12,12 @@ const SoftSkills = () => {
 
   const arraySoftSkills = selected.skills.find(skill => skill.soft)['soft'];
 
+
   return (
     <>
     <LinkStyled to={backLinkHref} className="first">Back</LinkStyled>
     <ListStyled className="second">
-      {arraySoftSkills.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`} width="50px"/><Text>{name}</Text></ListItem>)}
+      {arraySoftSkills.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`}/><Text>{name}</Text></ListItem>)}
     </ListStyled>
     </>
   )

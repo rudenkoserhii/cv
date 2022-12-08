@@ -16,7 +16,7 @@ const TechSkills = () => {
     <>
     <LinkStyled to={backLinkHref} className="first">Back</LinkStyled>
     <ListStyled className="second">
-      {arrayTechSkills.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`} width="50px"/><Text>{name}</Text></ListItem>)}
+      {arrayTechSkills.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`} width="50px" height="50px"/><Text>{name}</Text></ListItem>)}
     </ListStyled>
     </>
   )

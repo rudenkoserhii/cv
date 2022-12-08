@@ -2,8 +2,20 @@ import styled from 'styled-components';
 
 export const ModalStyled = styled.div`
 
-    max-width: calc(100vw - 48px);
-    max-height: calc(100vh - 24px);
+    width: ${p => p.theme.space[8]}px;
+    height: ${p => p.theme.space[8]}px;
+
+    background-color: ${p => p.theme.colors.deepseablue};
+    box-shadow: ${p => p.theme.shadows.first};
+    border-radius: ${p => p.theme.radii.normal};
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: ${p => p.theme.space[5]}px;
+
+
 `;
 
 export const Overlay = styled.div`

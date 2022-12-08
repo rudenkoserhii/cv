@@ -28,6 +28,7 @@ export const Title = styled.h2`
     margin-bottom: ${p => p.theme.space[3]}px;
     padding: ${p => p.theme.space[3]}px;
 
+    display: block;
 `;
 
 export const Text = styled.p`
