@@ -9,7 +9,9 @@ const About = () => {
     return (
         <>
             <Title className="first">About me</Title>
-            <Text className="second">{selected.about}</Text>
+            <Text className="second">{selected.about.split('<br>')[0]}</Text>
+            <Text className="second">{selected.about.split('<br>')[1]}</Text>
+
         </>
     )
 };
