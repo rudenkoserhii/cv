@@ -11,9 +11,11 @@ const HomePage = () => {
 
     return (
         (selected) && 
-        <>
-            <Img src={selected.urlJpg} alt="Man" width="800px" className="first"/>
-        </>
+        <picture key={selected.name}>
+            <source srcSet={selected.urlWebp} type="image/webp" />
+            <source srcSet={selected.urlPng} type="image/png" />
+            <Img src={selected.urlPng} alt="Man" width="800px" className="first"/>
+        </picture>
     )
 }
 

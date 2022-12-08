@@ -15,12 +15,12 @@ const ExperienceItem = () => {
 
 const selectedCompany = selected.jobs.find(({companyName}) => companyName === company);
 
-const { dateStart, dateEnd, position, responsibilities, country, city } = selectedCompany;
+const { dateStart, dateEnd, position, responsibilities, country, city, companyName } = selectedCompany;
 
     return (
-        <Box>
-        <LinkBack to={backLinkHref} className="third">Back</LinkBack>
-        <Box className="third"><Text>{position}</Text><Text><Span>{dateStart} - </Span><Span>{dateEnd} | </Span><Span>{city}, </Span><Span>{country}</Span></Text><List>{responsibilities.map(item => <Item key={nanoid()}>- {item}</Item>)}</List></Box>
+        <Box className="first" key={companyName}>
+        <LinkBack to={backLinkHref}>Back</LinkBack>
+        <Box><Text>{position}</Text><Text><Span>{dateStart} - </Span><Span>{dateEnd} | </Span><Span>{city}, </Span><Span>{country}</Span></Text><List>{responsibilities.map(item => <Item key={nanoid()}>{item}</Item>)}</List></Box>
         </Box>
     )
 };

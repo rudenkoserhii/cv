@@ -5,8 +5,6 @@ display: flex;
 justify-content: space-around;
 align-items: center;
 
-padding: ${p => p.theme.space[6]}px;
-
 border-top: 1px ${p => p.theme.colors.deepsea};
 `;
 

@@ -15,22 +15,10 @@ export const Name = styled.h1`
 
     position: absolute;
     top: 0;
-    right: 350px;
+    left: 320px;
 
     font-size: 50px;
 
 `;
 
-export const Profi = styled.h2`
-    color: ${p => p.theme.colors.deepsea};
-    text-shadow: ${p => p.theme.shadows.first};
-
-    position: absolute;
-    top: 0;
-    right: 100px;
-
-    font-size: 50px;
-
-
-`;
 
