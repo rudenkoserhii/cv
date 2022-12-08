@@ -29,3 +29,15 @@ export const Title = styled.h2`
 
     display: block;
 `;
+
+export const ListStyled = styled.ul`
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: ${p => p.theme.space[3]}px;
+`;
+
+export const ListItem = styled.li`
+    width: calc((800px - ${p => p.theme.space[6]}px *2 - ${p => p.theme.space[3]}px) / 3);
+`;
+

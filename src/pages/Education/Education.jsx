@@ -1,28 +1,32 @@
-import { Text, Paragraph, Title } from './Education.styled';
+import { Text, Paragraph, Title, ListItem, ListStyled } from './Education.styled';
 import { useContext } from "react";
 import { ThrowContext } from '../../components/Context/Context';
 import Box from 'components/Box/Box';
+import { nanoid } from 'nanoid';
 
 
 const Education = () => {
     const { selected } = useContext(ThrowContext);
 
-    const { name, dateStart, dateEnd, speciality, country, city } = selected.education;
-
-
     return (
         <>
             <Title className="first">Education</Title>
-            <Text className="second"><b>{name}</b></Text>
-            <Box className="third">
-                <Text>{speciality}</Text>
-                <Text>
-                    <Paragraph>{dateStart} - </Paragraph>
-                    <Paragraph>{dateEnd} | </Paragraph>
-                    <Paragraph>{country}, </Paragraph>
-                    <Paragraph>{city}</Paragraph>
-                </Text>
-            </Box>
+            <ListStyled className="second">
+            {selected.education.map(({ name, dateStart, dateEnd, speciality, country, city }) => 
+                <ListItem key={nanoid()}>
+                    <Box className="third">
+                        <Text><b>{name}</b></Text>
+                        <Text>{speciality}</Text>
+                        <Text>
+                            <Paragraph>{dateStart} - </Paragraph>
+                            <Paragraph>{dateEnd}</Paragraph><br/>
+                            <Paragraph>{city}, </Paragraph>
+                            <Paragraph>{country}</Paragraph>
+                        </Text>
+                    </Box>
+                </ListItem>
+            )}
+            </ListStyled>
         </>
 )};
 

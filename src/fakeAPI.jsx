@@ -16,7 +16,7 @@ import kominmet from './img/company_logos/kominmet.png';
 import ukrauto from './img/company_logos/ukrauto.png';
 import karcher from './img/company_logos/karcher.png';
 import pegas from './img/company_logos/pegas.png';
-import goit from './img/company_logos/goit.png';
+// import goit from './img/company_logos/goit.png';
 
 import communication from './img/skills/soft/communication.svg';
 import leadership from './img/skills/soft/leadership.svg';
@@ -81,14 +81,32 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession!<br>Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
-      education: {
+      education: [
+        {
+        name: '138 Secondary School',
+        speciality: 'Secondary school',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'September 1988',
+        dateEnd: 'June 1998',
+        },
+        {
         name: 'National Railway University',
         speciality: 'Management in Railway',
         country: 'Ukraine',
         city: 'Dnipro',
-        dateStart: 'September 1997',
+        dateStart: 'September 1998',
         dateEnd: 'May 2003',
-      },
+        },
+        {
+        name: 'GoIt',
+        speciality: 'FullStack FrontEnd Developer',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'April 2022',
+        dateEnd: 'Up To Now',
+        },
+        ],
       jobs: [{
         companyName: "kominmet",
         dateStart: "May 2003",
@@ -123,8 +141,7 @@ const db = {
           "Designing engineering experiments.",
           "Creating technical reports for customers.",
           "Completing regulatory documents concerning safety issues.",
-          "Finishing projects on time and within budget.",
-          "Communicating with clients and coworkers about analysis results.",
+          "Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.",
         ],
         country: "Ukraine",
         city: "Dnipro",
@@ -151,7 +168,7 @@ const db = {
         companyName: "pegas",
         dateStart: "December 2006",
         dateEnd: "February 2022",
-        position: "Manager",
+        position: "Owner",
         responsibilities: [
           'Delegating responsibilities and supervising business operations', 
           'Hiring, training, motivating and coaching employees as they provide attentive, efficient service to customers, assessing employee performance and providing helpful feedback and training opportunities.', 
@@ -165,19 +182,19 @@ const db = {
         city: "Dnipro",
         logo: pegas,
         },
-        {
-        companyName: "goit",
-        dateStart: "April 2022",
-        dateEnd: "up to now",
-        position: "Trainee",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.', 
-          'Using web languages such as HTML, CSS, and JavaScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: goit,
-        },
+        // {
+        // companyName: "goit",
+        // dateStart: "April 2022",
+        // dateEnd: "up to now",
+        // position: "Trainee",
+        // responsibilities: [
+        //   'Building the front-end portion of websites and web applications.', 
+        //   'Using web languages such as HTML, CSS, and JavaScript.',
+        // ],
+        // country: "Ukraine",
+        // city: "Dnipro",
+        // logo: goit,
+        // },
       ],
       portfolios: [
         {
@@ -306,14 +323,32 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession!<br>Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
-      education: {
+      education: [
+        {
+        name: '138 Secondary School',
+        speciality: 'Secondary school',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'September 1988',
+        dateEnd: 'June 1998',
+        },
+        {
         name: 'National Railway University',
         speciality: 'Management in Railway',
         country: 'Ukraine',
         city: 'Dnipro',
-        dateStart: 'September 1997',
+        dateStart: 'September 1998',
         dateEnd: 'May 2003',
-      },
+        },
+        {
+        name: 'GoIt',
+        speciality: 'FullStack FrontEnd Developer',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'April 2022',
+        dateEnd: 'Up To Now',
+        },
+        ],
       jobs: [{
         companyName: "kominmet",
         dateStart: "May 2003",
@@ -348,8 +383,7 @@ const db = {
           "Designing engineering experiments.",
           "Creating technical reports for customers.",
           "Completing regulatory documents concerning safety issues.",
-          "Finishing projects on time and within budget.",
-          "Communicating with clients and coworkers about analysis results.",
+          "Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.",
         ],
         country: "Ukraine",
         city: "Dnipro",
@@ -376,7 +410,7 @@ const db = {
         companyName: "pegas",
         dateStart: "December 2006",
         dateEnd: "February 2022",
-        position: "Manager",
+        position: "Owner",
         responsibilities: [
           'Delegating responsibilities and supervising business operations', 
           'Hiring, training, motivating and coaching employees as they provide attentive, efficient service to customers, assessing employee performance and providing helpful feedback and training opportunities.', 
@@ -390,19 +424,19 @@ const db = {
         city: "Dnipro",
         logo: pegas,
         },
-        {
-        companyName: "goit",
-        dateStart: "April 2022",
-        dateEnd: "up to now",
-        position: "Trainee",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.', 
-          'Using web languages such as HTML, CSS, and JavaScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: goit,
-        },
+        // {
+        // companyName: "goit",
+        // dateStart: "April 2022",
+        // dateEnd: "up to now",
+        // position: "Trainee",
+        // responsibilities: [
+        //   'Building the front-end portion of websites and web applications.', 
+        //   'Using web languages such as HTML, CSS, and JavaScript.',
+        // ],
+        // country: "Ukraine",
+        // city: "Dnipro",
+        // logo: goit,
+        // },
       ],
       portfolios: [
         {
@@ -531,14 +565,32 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession!<br>Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
-      education: {
+      education: [
+        {
+        name: '138 Secondary School',
+        speciality: 'Secondary school',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'September 1988',
+        dateEnd: 'June 1998',
+        },
+        {
         name: 'National Railway University',
         speciality: 'Management in Railway',
         country: 'Ukraine',
         city: 'Dnipro',
-        dateStart: 'September 1997',
+        dateStart: 'September 1998',
         dateEnd: 'May 2003',
-      },
+        },
+        {
+        name: 'GoIt',
+        speciality: 'FullStack FrontEnd Developer',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'April 2022',
+        dateEnd: 'Up To Now',
+        },
+        ],
       jobs: [{
         companyName: "kominmet",
         dateStart: "May 2003",
@@ -573,8 +625,7 @@ const db = {
           "Designing engineering experiments.",
           "Creating technical reports for customers.",
           "Completing regulatory documents concerning safety issues.",
-          "Finishing projects on time and within budget.",
-          "Communicating with clients and coworkers about analysis results.",
+          "Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.",
         ],
         country: "Ukraine",
         city: "Dnipro",
@@ -601,7 +652,7 @@ const db = {
         companyName: "pegas",
         dateStart: "December 2006",
         dateEnd: "February 2022",
-        position: "Manager",
+        position: "Owner",
         responsibilities: [
           'Delegating responsibilities and supervising business operations', 
           'Hiring, training, motivating and coaching employees as they provide attentive, efficient service to customers, assessing employee performance and providing helpful feedback and training opportunities.', 
@@ -615,19 +666,19 @@ const db = {
         city: "Dnipro",
         logo: pegas,
         },
-        {
-        companyName: "goit",
-        dateStart: "April 2022",
-        dateEnd: "up to now",
-        position: "Trainee",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.', 
-          'Using web languages such as HTML, CSS, and JavaScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: goit,
-        },
+        // {
+        // companyName: "goit",
+        // dateStart: "April 2022",
+        // dateEnd: "up to now",
+        // position: "Trainee",
+        // responsibilities: [
+        //   'Building the front-end portion of websites and web applications.', 
+        //   'Using web languages such as HTML, CSS, and JavaScript.',
+        // ],
+        // country: "Ukraine",
+        // city: "Dnipro",
+        // logo: goit,
+        // },
       ],
       portfolios: [
         {
@@ -756,14 +807,32 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession!<br>Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
-      education: {
+      education: [
+        {
+        name: '138 Secondary School',
+        speciality: 'Secondary school',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'September 1988',
+        dateEnd: 'June 1998',
+        },
+        {
         name: 'National Railway University',
         speciality: 'Management in Railway',
         country: 'Ukraine',
         city: 'Dnipro',
-        dateStart: 'September 1997',
+        dateStart: 'September 1998',
         dateEnd: 'May 2003',
-      },
+        },
+        {
+        name: 'GoIt',
+        speciality: 'FullStack FrontEnd Developer',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'April 2022',
+        dateEnd: 'Up To Now',
+        },
+        ],
       jobs: [{
         companyName: "kominmet",
         dateStart: "May 2003",
@@ -798,8 +867,7 @@ const db = {
           "Designing engineering experiments.",
           "Creating technical reports for customers.",
           "Completing regulatory documents concerning safety issues.",
-          "Finishing projects on time and within budget.",
-          "Communicating with clients and coworkers about analysis results.",
+          "Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.",
         ],
         country: "Ukraine",
         city: "Dnipro",
@@ -826,7 +894,7 @@ const db = {
         companyName: "pegas",
         dateStart: "December 2006",
         dateEnd: "February 2022",
-        position: "Manager",
+        position: "Owner",
         responsibilities: [
           'Delegating responsibilities and supervising business operations', 
           'Hiring, training, motivating and coaching employees as they provide attentive, efficient service to customers, assessing employee performance and providing helpful feedback and training opportunities.', 
@@ -840,19 +908,19 @@ const db = {
         city: "Dnipro",
         logo: pegas,
         },
-        {
-        companyName: "goit",
-        dateStart: "April 2022",
-        dateEnd: "up to now",
-        position: "Trainee",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.', 
-          'Using web languages such as HTML, CSS, and JavaScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: goit,
-        },
+        // {
+        // companyName: "goit",
+        // dateStart: "April 2022",
+        // dateEnd: "up to now",
+        // position: "Trainee",
+        // responsibilities: [
+        //   'Building the front-end portion of websites and web applications.', 
+        //   'Using web languages such as HTML, CSS, and JavaScript.',
+        // ],
+        // country: "Ukraine",
+        // city: "Dnipro",
+        // logo: goit,
+        // },
       ],
       portfolios: [
         {
@@ -981,14 +1049,32 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession!<br>Understanding the technology that drives a website. Having needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
-      education: {
+      education: [
+        {
+        name: '138 Secondary School',
+        speciality: 'Secondary school',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'September 1988',
+        dateEnd: 'June 1998',
+        },
+        {
         name: 'National Railway University',
         speciality: 'Management in Railway',
         country: 'Ukraine',
         city: 'Dnipro',
-        dateStart: 'September 1997',
+        dateStart: 'September 1998',
         dateEnd: 'May 2003',
-      },
+        },
+        {
+        name: 'GoIt',
+        speciality: 'FullStack FrontEnd Developer',
+        country: 'Ukraine',
+        city: 'Dnipro',
+        dateStart: 'April 2022',
+        dateEnd: 'Up To Now',
+        },
+        ],
       jobs: [{
         companyName: "kominmet",
         dateStart: "May 2003",
@@ -1023,8 +1109,7 @@ const db = {
           "Designing engineering experiments.",
           "Creating technical reports for customers.",
           "Completing regulatory documents concerning safety issues.",
-          "Finishing projects on time and within budget.",
-          "Communicating with clients and coworkers about analysis results.",
+          "Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.",
         ],
         country: "Ukraine",
         city: "Dnipro",
@@ -1051,7 +1136,7 @@ const db = {
         companyName: "pegas",
         dateStart: "December 2006",
         dateEnd: "February 2022",
-        position: "Manager",
+        position: "Owner",
         responsibilities: [
           'Delegating responsibilities and supervising business operations', 
           'Hiring, training, motivating and coaching employees as they provide attentive, efficient service to customers, assessing employee performance and providing helpful feedback and training opportunities.', 
@@ -1065,19 +1150,19 @@ const db = {
         city: "Dnipro",
         logo: pegas,
         },
-        {
-        companyName: "goit",
-        dateStart: "April 2022",
-        dateEnd: "up to now",
-        position: "Trainee",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.', 
-          'Using web languages such as HTML, CSS, and JavaScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: goit,
-        },
+        // {
+        // companyName: "goit",
+        // dateStart: "April 2022",
+        // dateEnd: "up to now",
+        // position: "Trainee",
+        // responsibilities: [
+        //   'Building the front-end portion of websites and web applications.', 
+        //   'Using web languages such as HTML, CSS, and JavaScript.',
+        // ],
+        // country: "Ukraine",
+        // city: "Dnipro",
+        // logo: goit,
+        // },
       ],
       portfolios: [
         {
