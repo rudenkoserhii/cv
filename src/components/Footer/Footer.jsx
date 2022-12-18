@@ -1,15 +1,21 @@
-import { FooterStyled, Link, Text } from './Footer.styled';
+import { FooterStyled, LinkStyled } from './Footer.styled';
 import { useState, useContext } from 'react';
-import { Modal } from '../Modal/Modal';
+import { ModalContacts } from '../Modal/ModalContacts';
+import { ModalPrint } from '../Modal/ModalPrint';
 import { Socials } from '../Socials/Socials';
 import { ThrowContext } from '../Context/Context';
 
 export const Footer = () => {
   const { selected } = useContext(ThrowContext);
-  const [showModal, setShowModal] = useState(false);
+  const [showModalContacts, setShowModalContacts] = useState(false);
+  const [showModalPrint, setShowModalPrint] = useState(false);
 
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const toggleModalContacts = () => {
+    setShowModalContacts(!showModalContacts);
+  };
+
+  const toggleModalPrint = () => {
+    setShowModalPrint(!showModalPrint);
   };
   
   if (!selected) {
@@ -20,11 +26,13 @@ export const Footer = () => {
 <>
     <FooterStyled>
       {/* <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button> */}
-      <Link onClick={toggleModal}>Contacts</Link>
+      <LinkStyled onClick={toggleModalContacts}>Contacts</LinkStyled>
       <Socials/>
-      <Text>Made with React.js</Text>
+      <LinkStyled onClick={toggleModalPrint}>Print Summary</LinkStyled>
     </FooterStyled>
-    {(showModal) && <Modal onClose={toggleModal}/>}
+    {(showModalContacts) && <ModalContacts onClose={toggleModalContacts}/>}
+    {(showModalPrint) && <ModalPrint onClose={toggleModalPrint}/>}
+
 </>
   );
 };

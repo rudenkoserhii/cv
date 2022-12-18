@@ -1,11 +1,11 @@
 import { useEffect } from "react";
 import { createPortal } from "react-dom";
-import { ModalStyled, Overlay } from './Modal.styled';
+import { ModalContactsStyled, Overlay } from './Modal.styled';
 import { Contacts} from '../Contacts/Contacts';
 
-const modalRoot = document.querySelector('#modal-root');
+const modalContactsRoot = document.querySelector('#modalContacts-root');
 
-export const Modal = ({ onClose }) => {
+export const ModalContacts = ({ onClose }) => {
 
     useEffect(() => {
     if (window){
@@ -29,10 +29,10 @@ export const Modal = ({ onClose }) => {
 
     return createPortal(
         <Overlay onClick={onClickBackdrop}>
-        <ModalStyled>
+        <ModalContactsStyled>
                 <Contacts/>
-        </ModalStyled>
-        </Overlay>, modalRoot,
+        </ModalContactsStyled>
+        </Overlay>, modalContactsRoot,
 
 )}
 
