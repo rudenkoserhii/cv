@@ -80,7 +80,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -322,7 +322,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -564,7 +564,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -806,7 +806,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -1048,7 +1048,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
