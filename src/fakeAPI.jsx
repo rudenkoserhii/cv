@@ -80,7 +80,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession! Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -104,7 +104,7 @@ const db = {
         country: 'Ukraine',
         city: 'Dnipro',
         dateStart: 'April 2022',
-        dateEnd: 'Up To Now',
+        dateEnd: 'March 2023',
         },
         ],
       jobs: [{
@@ -185,7 +185,7 @@ const db = {
         // {
         // companyName: "goit",
         // dateStart: "April 2022",
-        // dateEnd: "up to now",
+        // dateEnd: "March 2023",
         // position: "Trainee",
         // responsibilities: [
         //   'Building the front-end portion of websites and web applications.', 
@@ -322,7 +322,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession! Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -346,7 +346,7 @@ const db = {
         country: 'Ukraine',
         city: 'Dnipro',
         dateStart: 'April 2022',
-        dateEnd: 'Up To Now',
+        dateEnd: 'March 2023',
         },
         ],
       jobs: [{
@@ -427,7 +427,7 @@ const db = {
         // {
         // companyName: "goit",
         // dateStart: "April 2022",
-        // dateEnd: "up to now",
+        // dateEnd: "March 2023",
         // position: "Trainee",
         // responsibilities: [
         //   'Building the front-end portion of websites and web applications.', 
@@ -564,7 +564,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession! Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -588,7 +588,7 @@ const db = {
         country: 'Ukraine',
         city: 'Dnipro',
         dateStart: 'April 2022',
-        dateEnd: 'Up To Now',
+        dateEnd: 'March 2023',
         },
         ],
       jobs: [{
@@ -669,7 +669,7 @@ const db = {
         // {
         // companyName: "goit",
         // dateStart: "April 2022",
-        // dateEnd: "up to now",
+        // dateEnd: "March 2023",
         // position: "Trainee",
         // responsibilities: [
         //   'Building the front-end portion of websites and web applications.', 
@@ -806,7 +806,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession! Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -830,7 +830,7 @@ const db = {
         country: 'Ukraine',
         city: 'Dnipro',
         dateStart: 'April 2022',
-        dateEnd: 'Up To Now',
+        dateEnd: 'March 2023',
         },
         ],
       jobs: [{
@@ -911,7 +911,7 @@ const db = {
         // {
         // companyName: "goit",
         // dateStart: "April 2022",
-        // dateEnd: "up to now",
+        // dateEnd: "March 2023",
         // position: "Trainee",
         // responsibilities: [
         //   'Building the front-end portion of websites and web applications.', 
@@ -1048,7 +1048,7 @@ const db = {
       ],
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
-      about: 'I am Ukrainian and live in Ukraine in Dnipro city. I was born 1981-01-15. Have lovely family - wife and two daughters. Before russian agression against my country I had work. But now, thanks to GoIT company, I have knoledge for my future profession! Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
+      about: 'I am Ukrainian and live in Ukraine in Dnipro city. Understanding the technology that drives a website. I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as: Creativity, Problem-solving, Communication, Teamwork.',
       education: [
         {
         name: '138 Secondary School',
@@ -1072,7 +1072,7 @@ const db = {
         country: 'Ukraine',
         city: 'Dnipro',
         dateStart: 'April 2022',
-        dateEnd: 'Up To Now',
+        dateEnd: 'March 2023',
         },
         ],
       jobs: [{
@@ -1153,7 +1153,7 @@ const db = {
         // {
         // companyName: "goit",
         // dateStart: "April 2022",
-        // dateEnd: "up to now",
+        // dateEnd: "March 2023",
         // position: "Trainee",
         // responsibilities: [
         //   'Building the front-end portion of websites and web applications.', 
