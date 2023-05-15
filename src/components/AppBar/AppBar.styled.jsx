@@ -12,42 +12,42 @@ export const HomeStyled = styled(Home)`
   height: 60px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
-}`;
+`;
 
 export const AboutStyled = styled(About)`
   width: 50px;
   height: 60px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
-}`;
+`;
 
 export const PortfolioStyled = styled(Portfolio)`
   width: 50px;
   height: 60px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
-}`;
+`;
 
 export const SkillsStyled = styled(Skills)`
   width: 50px;
   height: 60px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
-}`;
+`;
 
 export const ExperienceStyled = styled(Experience)`
   width: 50px;
   height: 60px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
-}`;
+`;
 
 export const EducationStyled = styled(Education)`
   width: 50px;
   max-height: 60px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
-}`;
+`;
 
 
 
@@ -61,7 +61,7 @@ export const NavLinkStyled = styled(NavLink)`
     fill: ${p => p.theme.colors.seablue};}
   :hover:not(.active) .navIcon{
     fill: ${p => p.theme.colors.seablue};
-    text-shadow: ${p => p.theme.shadows.text};}
+    text-shadow: ${p => p.theme.shadows.text};
   }`;
 
 export const ListStyled = styled.ul`
@@ -75,5 +75,5 @@ export const ListStyled = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  }`;
+  `;
 
