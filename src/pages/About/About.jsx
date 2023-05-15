@@ -1,6 +1,7 @@
 import { Text, Title } from './About.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
+import { nanoid } from 'nanoid';
 
 const About = () => {
   const { selected } = useContext(ThrowContext);
@@ -9,7 +10,7 @@ const About = () => {
     <>
       <Title className="first">About me</Title>
       {selected.about.split('<br>').map(p => (
-        <Text className="second">{p}</Text>
+        <Text key={nanoid()} className="second">{p}</Text>
       ))}
     </>
   );

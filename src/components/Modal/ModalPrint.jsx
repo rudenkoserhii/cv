@@ -72,7 +72,9 @@ export const ModalPrint = ({ onClose }) => {
         <div>
             <h3 style={{marginBottom: '30px'}}>{job}</h3>
             <h1 style={{marginBottom: '50px', fontSize: '40px'}}>{name}</h1>
-            <p style={{marginBottom: '20px'}}>{about}</p>
+            <p style={{marginBottom: '20px'}}>{about.split('<br>').map(p => (
+        <span key={nanoid()} style={{display: 'inline-block'}}>{p}</span>
+      ))}</p>
         </div>
         <div>
             <ul>
