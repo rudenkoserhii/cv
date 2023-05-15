@@ -7,7 +7,7 @@ import {
 } from './Modal.styled';
 import { Contacts } from '../Contacts/Contacts';
 
-const modalContactsRoot = document.querySelector('#modalContacts-root');
+const modalRoot = document.querySelector('#modal-root');
 
 export const ModalContacts = ({ onClose }) => {
   useEffect(() => {
@@ -44,6 +44,6 @@ export const ModalContacts = ({ onClose }) => {
         <Contacts />
       </ModalContactsStyled>
     </Overlay>,
-    modalContactsRoot
+    modalRoot
   );
 };

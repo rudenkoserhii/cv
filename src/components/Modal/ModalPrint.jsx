@@ -12,7 +12,7 @@ import { ThrowContext } from '../../components/Context/Context';
 import photo from '../../img/photo.jpg';
 import { nanoid } from 'nanoid';
 
-const modalPrintRoot = document.querySelector('#modalPrint-root');
+const modalRoot = document.querySelector('#modal-root');
 
 export const ModalPrint = ({ onClose }) => {
   const { selected } = useContext(ThrowContext);
@@ -201,6 +201,6 @@ export const ModalPrint = ({ onClose }) => {
         </div>
       </ModalPrintStyled>
     </Overlay>,
-    modalPrintRoot
+    modalRoot
   );
 };
