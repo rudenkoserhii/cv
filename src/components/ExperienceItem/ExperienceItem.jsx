@@ -1,4 +1,5 @@
 import { LinkBack, Span, Text, List, Item } from './ExperienceItem.styled';
+import { SpanBack } from 'pages/Skills/Skills.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { useLocation, useParams } from 'react-router-dom';
@@ -29,7 +30,7 @@ const ExperienceItem = () => {
 
   return (
     <Box className="first" key={companyName} style={{ pointerEvents: 'none'}}>
-      <LinkBack to={backLinkHref}>Back</LinkBack>
+      <LinkBack to={backLinkHref}><SpanBack>Back</SpanBack></LinkBack>
       <Box>
         <Text>{position}</Text>
         <Text>

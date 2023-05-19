@@ -4,6 +4,7 @@ import {
   LinkStyled,
   Img,
   Text,
+  SpanBack,
 } from '../Skills/Skills.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
@@ -26,7 +27,7 @@ const Skill = () => {
   return (
     <>
       <LinkStyled to={backLinkHref} className="first">
-        <span>Back</span>
+        <SpanBack>Back</SpanBack>
       </LinkStyled>
       <ListStyled className="second">
         {array.map(({ name, icon }) => (

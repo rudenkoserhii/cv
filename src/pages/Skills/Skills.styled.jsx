@@ -93,8 +93,14 @@ export const LinkStyled = styled(Link)`
   margin-bottom: ${p => p.theme.space[3]}px;
   padding: ${p => p.theme.space[3]}px;
 
+  cursor: default;
+`;
+
+export const SpanBack = styled.span`
   transition: all 200ms ease;
   :hover {
+    cursor: pointer;
+
     color: ${p => p.theme.colors.seablue};
     text-shadow: ${p => p.theme.shadows.text};
 

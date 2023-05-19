@@ -13,15 +13,9 @@ export const LinkBack = styled(Link)`
 
   pointer-events: auto;
 
-  transition: all 200ms ease;
-  :hover {
-    color: ${p => p.theme.colors.seablue};
-    text-shadow: ${p => p.theme.shadows.text};
-  }
+  cursor: default;
 
   display: block;
-
-  transition: all 200ms ease;
 `;
 
 export const Span = styled.span`
