@@ -1,3 +1,4 @@
+import Language from 'components/Lamguage/Language';
 import {
   Wrap,
   NavLinkStyled,
@@ -67,6 +68,7 @@ export const AppBar = () => {
               className="navIcon"
             />
           </NavLinkStyled>
+<Language />
         </ListItem>
       </ListStyled>
     </Wrap>

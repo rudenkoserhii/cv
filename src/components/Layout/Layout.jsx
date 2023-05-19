@@ -5,9 +5,11 @@ import { Footer } from 'components/Footer/Footer';
 import Box from '../Box/Box';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
+import { useTranslation } from 'react-i18next';
 
 export const Layout = () => {
   const { selected } = useContext(ThrowContext);
+  const { t } = useTranslation();
 
   return (
     selected && (
@@ -27,8 +29,8 @@ export const Layout = () => {
           style={{ position: 'relative' }}
         >
           <Name className="fullName">
-            <span className="firstName">{selected.name}</span>
-            <span className="secondName">{selected.job}</span>
+            <span className="firstName">{t(selected.name)}</span>
+            <span className="secondName">{t(selected.job)}</span>
           </Name>
           <Header>
             <AppBar />
