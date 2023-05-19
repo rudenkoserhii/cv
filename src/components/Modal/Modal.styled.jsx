@@ -60,9 +60,12 @@ export const ButtonClose = styled(Close)`
 
   cursor: pointer;
 
+  transition: all 200ms ease;
   &:hover {
     fill: ${p => p.theme.colors.deepsea};
     text-shadow: ${p => p.theme.shadows.text};
+
+    transition: all 200ms ease;
   }
 `;
 
@@ -75,9 +78,12 @@ export const ButtonPrint = styled(Print)`
 
   cursor: pointer;
 
+  transition: all 200ms ease;
   &:hover {
     fill: ${p => p.theme.colors.deepsea};
     text-shadow: ${p => p.theme.shadows.text};
+
+    transition: all 200ms ease;
   }
 `;
 
@@ -107,8 +113,11 @@ export const ButtonCloseContacts = styled(Close)`
 
   cursor: pointer;
 
+  transition: all 200ms ease;
   &:hover {
     fill: ${p => p.theme.colors.seablue};
     text-shadow: ${p => p.theme.shadows.text};
+
+    transition: all 200ms ease;
   }
 `;

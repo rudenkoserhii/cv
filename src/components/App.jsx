@@ -11,50 +11,32 @@ const Skills = lazy(() => import('../pages/Skills/Skills'));
 const TechSkills = lazy(() => import('../pages/TechSkills/TechSkills'));
 const SoftSkills = lazy(() => import('../pages/SoftSkills/SoftSkills'));
 const Experience = lazy(() => import('../pages/Experience/Experience'));
-const ExperienceItem = lazy(() => import('../components/ExperienceItem/ExperienceItem'));
+const ExperienceItem = lazy(() =>
+  import('../components/ExperienceItem/ExperienceItem')
+);
 
 export const App = () => {
   return (
     <Context>
       <Routes>
-        <Route path="/" element={<Layout />} >
+        <Route path="/" element={<Layout />}>
           <Route index element={<HomePage />} />
           <Route path="/" element={<HomePage />} />
           <Route path="*" element={<HomePage />} />
           <Route path="about" element={<About />} />
           <Route path="education" element={<Education />} />
-          <Route path="experience" element={<Experience />} >
+          <Route path="experience" element={<Experience />}>
             <Route path=":company" element={<ExperienceItem />} />
           </Route>
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="skills" element={<Skills />} />
           <Route path="skills/tech" element={<TechSkills />} />
           <Route path="skills/soft" element={<SoftSkills />} />
-          </Route>
+        </Route>
       </Routes>
     </Context>
   );
 };
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // import { useState, useEffect } from 'react';
 // import { Searchbar } from './Searchbar/Searchbar'
@@ -72,7 +54,6 @@ export const App = () => {
 //     PENDING: 'pending',
 //     RESOLVED: 'resolved',
 //     REJECTED: 'rejected',}
-
 
 // export const App = () => {
 //   const [images, setImages] = useState([]);
@@ -106,7 +87,7 @@ export const App = () => {
 //           setError(error);
 //           setStatus(Status.REJECTED);
 //         });
-    
+
 //     window.scrollTo({
 //       top: document.documentElement.scrollHeight,
 //       behavior: 'smooth',})
@@ -114,9 +95,6 @@ export const App = () => {
 //     fetchImages ()
 //   }, [searchValue, page]);
 
-
-
-  
 //   const onSubmit = (value, page) => {
 //     setSearchValue(value);
 //     setPage(page);
@@ -146,4 +124,3 @@ export const App = () => {
 //       </BrowserRouter>
 //   )
 // }
-

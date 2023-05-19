@@ -8,8 +8,12 @@ const Skills = () => {
     <>
       <Title className="first">Skiils</Title>
       <ListStyled className="second">
-        <NavLinkStyled to="soft" state={{ from: location }}><Text className='skills'>Soft Skiils</Text></NavLinkStyled>
-        <NavLinkStyled to="tech" state={{ from: location }}><Text className='skills'>Tech Skills</Text></NavLinkStyled>
+        <NavLinkStyled to="soft" state={{ from: location }}>
+          <Text className="skills">Soft Skiils</Text>
+        </NavLinkStyled>
+        <NavLinkStyled to="tech" state={{ from: location }}>
+          <Text className="skills">Tech Skills</Text>
+        </NavLinkStyled>
       </ListStyled>
     </>
   );

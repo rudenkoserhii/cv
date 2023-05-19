@@ -4,12 +4,12 @@ import { Suspense } from 'react';
 
 export const Main = () => {
   return (
-<MainStyled>
-    <SectionStyled>
-      <Suspense fallback={null}>
-        <Outlet />
-      </Suspense>
-    </SectionStyled>
-</MainStyled>
+    <MainStyled>
+      <SectionStyled>
+        <Suspense fallback={null}>
+          <Outlet />
+        </Suspense>
+      </SectionStyled>
+    </MainStyled>
   );
 };

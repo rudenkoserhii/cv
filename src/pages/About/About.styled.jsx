@@ -1,24 +1,33 @@
 import styled from 'styled-components';
 
 export const Text = styled.p`
-    color: ${p => p.theme.colors.deepsea};
-    text-shadow: ${p => p.theme.shadows.first};
+  color: ${p => p.theme.colors.deepsea};
+  text-shadow: ${p => p.theme.shadows.first};
 
-    text-indent: ${p => p.theme.space[3]}px;
-    margin-bottom: ${p => p.theme.space[3]}px;
-
+  text-indent: ${p => p.theme.space[3]}px;
+  margin-bottom: ${p => p.theme.space[3]}px;
 `;
 
 export const Title = styled.h2`
-    color: ${p => p.theme.colors.deepsea};
-    text-shadow: ${p => p.theme.shadows.first};
+  color: ${p => p.theme.colors.deepsea};
+  text-shadow: ${p => p.theme.shadows.first};
+
+  width: 100%;
+
+  margin-bottom: ${p => p.theme.space[3]}px;
+  padding: ${p => p.theme.space[3]}px;
+
+  display: block;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
 
     width: 100%;
-    border-bottom: ${p => p.theme.borders.deepsea};
+    height: 1px;
 
-    margin-bottom: ${p => p.theme.space[3]}px;
-    padding: ${p => p.theme.space[3]}px;
-
-    display: block;
-
+    background-color: ${p => p.theme.colors.deepsea};
+  }
 `;

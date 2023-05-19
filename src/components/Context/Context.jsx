@@ -1,31 +1,28 @@
 import { createContext, useState, useEffect } from 'react';
-import { getPeoples } from "fakeAPI";
-
-
+import { getPeoples } from 'fakeAPI';
 
 export const ThrowContext = createContext('dark');
 
-export const Context = ({children}) => {
-    const [theme, setTheme] = useState('dark');
-    const [peoples, setPeoples] = useState([]);
+export const Context = ({ children }) => {
+  const [theme, setTheme] = useState('dark');
+  const [peoples, setPeoples] = useState([]);
 
-    useEffect(() => {
+  useEffect(() => {
+    async function getPeoplesOnLoad() {
+      await getPeoples().then(setPeoples);
+    }
+    getPeoplesOnLoad();
+  }, []);
 
-        async function getPeoplesOnLoad () {
-            await getPeoples().then(setPeoples);
-        }
-        getPeoplesOnLoad();
-    }, [])
+  function getRandom(min, max) {
+    return Math.floor(Math.random() * (max - min)) + min;
+  }
 
-
-    function getRandom(min, max) {
-        return Math.floor(Math.random() * (max - min)) + min}
-
-    const selected = peoples[getRandom(0, peoples.length)];
+  const selected = peoples[getRandom(0, peoples.length)];
 
   return (
     <ThrowContext.Provider value={{ theme, setTheme, selected }}>
-        {children}
+      {children}
     </ThrowContext.Provider>
   );
 };

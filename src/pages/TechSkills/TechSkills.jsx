@@ -1,12 +1,18 @@
-import { ListStyled, ListItem, LinkStyled, Img, Text } from "../Skills/Skills.styled";
-import { useContext } from "react";
+import {
+  ListStyled,
+  ListItem,
+  LinkStyled,
+  Img,
+  Text,
+} from '../Skills/Skills.styled';
+import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { useLocation } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 
 const TechSkills = () => {
   const location = useLocation();
-  const backLinkHref = location.state?.from ?? "/skills";
+  const backLinkHref = location.state?.from ?? '/skills';
 
   const { selected } = useContext(ThrowContext);
 
@@ -14,12 +20,19 @@ const TechSkills = () => {
 
   return (
     <>
-    <LinkStyled to={backLinkHref} className="first">Back</LinkStyled>
-    <ListStyled className="second">
-      {arrayTechSkills.map(({ name, icon }) => <ListItem key={nanoid()}><Img src={icon} alt={`Icon ${name}`} width="50px" height="50px"/><Text>{name}</Text></ListItem>)}
-    </ListStyled>
+      <LinkStyled to={backLinkHref} className="first">
+        Back
+      </LinkStyled>
+      <ListStyled className="second">
+        {arrayTechSkills.map(({ name, icon }) => (
+          <ListItem key={nanoid()}>
+            <Img src={icon} alt={`Icon ${name}`} width="50px" height="50px" />
+            <Text>{name}</Text>
+          </ListItem>
+        ))}
+      </ListStyled>
     </>
-  )
+  );
 };
 
 export default TechSkills;

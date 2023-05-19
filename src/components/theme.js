@@ -46,7 +46,8 @@ export const theme = {
     round: '50%',
   },
   shadows: {
-    first: '1px 2px 4px rgba(0, 0, 0, 0.12), 1px 2px 2px rgba(0, 0, 0, 0.14), 1px 3px 2px rgba(0, 0, 0, 0.2)',
+    first:
+      '1px 2px 4px rgba(0, 0, 0, 0.12), 1px 2px 2px rgba(0, 0, 0, 0.14), 1px 3px 2px rgba(0, 0, 0, 0.2)',
     svg: 'drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4))',
     second: '0px 0px 2px 7px rgba(194,223,255,1)',
     third: '0px 0px 4px 8px rgba(194,223,255,1)',

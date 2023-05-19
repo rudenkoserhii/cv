@@ -10,7 +10,9 @@ const About = () => {
     <>
       <Title className="first">About me</Title>
       {selected.about.split('<br>').map(p => (
-        <Text key={nanoid()} className="second">{p}</Text>
+        <Text key={nanoid()} className="second">
+          {p}
+        </Text>
       ))}
     </>
   );

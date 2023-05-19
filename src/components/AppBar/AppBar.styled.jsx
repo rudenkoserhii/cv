@@ -49,20 +49,24 @@ export const EducationStyled = styled(Education)`
   filter: ${p => p.theme.shadows.svg};
 `;
 
-
-
-export const Wrap = styled.nav`
-`;
+export const Wrap = styled.nav``;
 
 export const NavLinkStyled = styled(NavLink)`
   margin: auto;
 
-  &.active .navIcon{
-    fill: ${p => p.theme.colors.seablue};}
-  :hover:not(.active) .navIcon{
+  & > .navIcon {
+    transition: all 200ms ease;
+  }
+
+  &.active .navIcon {
+    fill: ${p => p.theme.colors.seablue};
+  }
+  :hover:not(.active) .navIcon {
     fill: ${p => p.theme.colors.seablue};
     text-shadow: ${p => p.theme.shadows.text};
-  }`;
+    transition: all 200ms ease;
+  }
+`;
 
 export const ListStyled = styled.ul`
   display: flex;
@@ -71,9 +75,6 @@ export const ListStyled = styled.ul`
   align-items: center;
 
   gap: ${p => p.theme.space[5]}px;
-
 `;
 
-export const ListItem = styled.li`
-  `;
-
+export const ListItem = styled.li``;

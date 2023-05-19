@@ -17,22 +17,21 @@ export const Footer = () => {
   const toggleModalPrint = () => {
     setShowModalPrint(!showModalPrint);
   };
-  
+
   if (!selected) {
     return null;
   }
 
   return (
-<>
-    <FooterStyled>
-      {/* <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button> */}
-      <LinkStyled onClick={toggleModalContacts}>Contacts</LinkStyled>
-      <Socials/>
-      <LinkStyled onClick={toggleModalPrint}>Print Summary</LinkStyled>
-    </FooterStyled>
-    {(showModalContacts) && <ModalContacts onClose={toggleModalContacts}/>}
-    {(showModalPrint) && <ModalPrint onClose={toggleModalPrint}/>}
-
-</>
+    <>
+      <FooterStyled>
+        {/* <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button> */}
+        <LinkStyled onClick={toggleModalContacts}>Contacts</LinkStyled>
+        <Socials />
+        <LinkStyled onClick={toggleModalPrint}>Print Summary</LinkStyled>
+      </FooterStyled>
+      {showModalContacts && <ModalContacts onClose={toggleModalContacts} />}
+      {showModalPrint && <ModalPrint onClose={toggleModalPrint} />}
+    </>
   );
 };
