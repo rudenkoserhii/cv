@@ -40,31 +40,6 @@ export const LinkStyled = styled.a`
   }
 `;
 
-export const Title = styled.h2`
-  position: relative;
-  color: ${p => p.theme.colors.deepsea};
-  text-shadow: ${p => p.theme.shadows.first};
-
-  width: 100%;
-
-  margin-bottom: ${p => p.theme.space[3]}px;
-  padding: ${p => p.theme.space[3]}px;
-
-  display: block;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-
-    width: 100%;
-    height: 1px;
-
-    background-color: ${p => p.theme.colors.deepsea};
-  }
-`;
-
 export const Text = styled.p`
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
@@ -72,6 +47,10 @@ export const Text = styled.p`
   font-weight: ${p => p.theme.fontWeights.bold};
 
   text-align: center;
+
+  &.portfolioProduction {
+    font-size: ${p => p.theme.fontSizes.s};
+  }
 `;
 
 export const ListTechStyled = styled.ul`

@@ -21,7 +21,7 @@ const TechSkills = () => {
   return (
     <>
       <LinkStyled to={backLinkHref} className="first">
-        Back
+        <span>Back</span>
       </LinkStyled>
       <ListStyled className="second">
         {arrayTechSkills.map(({ name, icon }) => (

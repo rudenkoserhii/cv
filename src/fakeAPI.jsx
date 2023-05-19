@@ -215,6 +215,7 @@ const db = {
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
           tech: ['HTML', 'SASS', 'JS', 'Parcel'],
+production: 'Team Project',
         },
         {
           name: 'Filmoteka',
@@ -230,6 +231,7 @@ const db = {
             'FireBase',
             'REST API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Resume',
@@ -245,6 +247,7 @@ const db = {
             'StyledComponents',
             'StyledSystem',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Animal Welfare',
@@ -271,18 +274,21 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'ByteGraphy',
           url: 'https://rudenkoserhii.github.io/Test_ByteCloud_Technologies/',
           preview: preview_bytegraphy,
           tech: ['HTML', 'CSS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Real Estate',
           url: 'https://rudenkoserhii.github.io/test-RemotEmployees/',
           preview: preview_real_estate,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Pet Shop',
@@ -308,6 +314,7 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Kanban GitHub',
@@ -325,6 +332,7 @@ const db = {
             'Bootstrap',
             'React-DnD',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Tweets',
@@ -338,12 +346,14 @@ const db = {
             'Axios',
             'StyledComponents',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Webstudio',
           url: 'https://rudenkoserhii.github.io/goit-markup-hw-08/',
           preview: preview_webstudio,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
       ],
       skills: [
@@ -581,6 +591,7 @@ const db = {
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
           tech: ['HTML', 'SASS', 'JS', 'Parcel'],
+production: 'Team Project',
         },
         {
           name: 'Filmoteka',
@@ -596,6 +607,7 @@ const db = {
             'FireBase',
             'REST API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Resume',
@@ -611,6 +623,7 @@ const db = {
             'StyledComponents',
             'StyledSystem',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Animal Welfare',
@@ -637,18 +650,21 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'ByteGraphy',
           url: 'https://rudenkoserhii.github.io/Test_ByteCloud_Technologies/',
           preview: preview_bytegraphy,
           tech: ['HTML', 'CSS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Real Estate',
           url: 'https://rudenkoserhii.github.io/test-RemotEmployees/',
           preview: preview_real_estate,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Pet Shop',
@@ -674,6 +690,7 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Kanban GitHub',
@@ -691,6 +708,7 @@ const db = {
             'Bootstrap',
             'React-DnD',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Tweets',
@@ -704,12 +722,14 @@ const db = {
             'Axios',
             'StyledComponents',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Webstudio',
           url: 'https://rudenkoserhii.github.io/goit-markup-hw-08/',
           preview: preview_webstudio,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
       ],
       skills: [
@@ -947,6 +967,7 @@ const db = {
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
           tech: ['HTML', 'SASS', 'JS', 'Parcel'],
+production: 'Team Project',
         },
         {
           name: 'Filmoteka',
@@ -962,6 +983,7 @@ const db = {
             'FireBase',
             'REST API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Resume',
@@ -977,6 +999,7 @@ const db = {
             'StyledComponents',
             'StyledSystem',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Animal Welfare',
@@ -1003,18 +1026,21 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'ByteGraphy',
           url: 'https://rudenkoserhii.github.io/Test_ByteCloud_Technologies/',
           preview: preview_bytegraphy,
           tech: ['HTML', 'CSS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Real Estate',
           url: 'https://rudenkoserhii.github.io/test-RemotEmployees/',
           preview: preview_real_estate,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Pet Shop',
@@ -1040,6 +1066,7 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Kanban GitHub',
@@ -1057,6 +1084,7 @@ const db = {
             'Bootstrap',
             'React-DnD',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Tweets',
@@ -1070,12 +1098,14 @@ const db = {
             'Axios',
             'StyledComponents',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Webstudio',
           url: 'https://rudenkoserhii.github.io/goit-markup-hw-08/',
           preview: preview_webstudio,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
       ],
       skills: [
@@ -1313,6 +1343,7 @@ const db = {
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
           tech: ['HTML', 'SASS', 'JS', 'Parcel'],
+production: 'Team Project',
         },
         {
           name: 'Filmoteka',
@@ -1328,6 +1359,7 @@ const db = {
             'FireBase',
             'REST API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Resume',
@@ -1343,6 +1375,7 @@ const db = {
             'StyledComponents',
             'StyledSystem',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Animal Welfare',
@@ -1369,18 +1402,21 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'ByteGraphy',
           url: 'https://rudenkoserhii.github.io/Test_ByteCloud_Technologies/',
           preview: preview_bytegraphy,
           tech: ['HTML', 'CSS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Real Estate',
           url: 'https://rudenkoserhii.github.io/test-RemotEmployees/',
           preview: preview_real_estate,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Pet Shop',
@@ -1406,6 +1442,7 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Kanban GitHub',
@@ -1423,6 +1460,7 @@ const db = {
             'Bootstrap',
             'React-DnD',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Tweets',
@@ -1436,12 +1474,14 @@ const db = {
             'Axios',
             'StyledComponents',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Webstudio',
           url: 'https://rudenkoserhii.github.io/goit-markup-hw-08/',
           preview: preview_webstudio,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
       ],
       skills: [
@@ -1679,6 +1719,7 @@ const db = {
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
           tech: ['HTML', 'SASS', 'JS', 'Parcel'],
+production: 'Team Project',
         },
         {
           name: 'Filmoteka',
@@ -1694,6 +1735,7 @@ const db = {
             'FireBase',
             'REST API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Resume',
@@ -1709,6 +1751,7 @@ const db = {
             'StyledComponents',
             'StyledSystem',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Animal Welfare',
@@ -1735,18 +1778,21 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'ByteGraphy',
           url: 'https://rudenkoserhii.github.io/Test_ByteCloud_Technologies/',
           preview: preview_bytegraphy,
           tech: ['HTML', 'CSS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Real Estate',
           url: 'https://rudenkoserhii.github.io/test-RemotEmployees/',
           preview: preview_real_estate,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
         {
           name: 'Pet Shop',
@@ -1772,6 +1818,7 @@ const db = {
             'Cloudinary',
             'GoogleMaps API',
           ],
+production: 'Team Project',
         },
         {
           name: 'Kanban GitHub',
@@ -1789,6 +1836,7 @@ const db = {
             'Bootstrap',
             'React-DnD',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Tweets',
@@ -1802,12 +1850,14 @@ const db = {
             'Axios',
             'StyledComponents',
           ],
+production: 'Individual Project',
         },
         {
           name: 'Webstudio',
           url: 'https://rudenkoserhii.github.io/goit-markup-hw-08/',
           preview: preview_webstudio,
           tech: ['HTML', 'SASS', 'VanillaJS'],
+production: 'Individual Project',
         },
       ],
       skills: [

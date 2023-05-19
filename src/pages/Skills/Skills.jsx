@@ -1,5 +1,13 @@
-import { ListStyled, NavLinkStyled, Title, Text } from './Skills.styled';
-import { useLocation } from 'react-router-dom';
+import {
+  ListStyled,
+  NavLinkStyled,
+  Text,
+  IconTech,
+  IconSoft,
+} from './Skills.styled';
+import { Title } from '../About/About.styled';
+import { Suspense } from 'react';
+import { Outlet, useLocation } from 'react-router-dom';
 
 const Skills = () => {
   const location = useLocation();
@@ -8,13 +16,19 @@ const Skills = () => {
     <>
       <Title className="first">Skiils</Title>
       <ListStyled className="second">
-        <NavLinkStyled to="soft" state={{ from: location }}>
-          <Text className="skills">Soft Skiils</Text>
-        </NavLinkStyled>
         <NavLinkStyled to="tech" state={{ from: location }}>
           <Text className="skills">Tech Skills</Text>
+          <IconTech className="skills__icon"/>
+        </NavLinkStyled>
+        <NavLinkStyled to="soft" state={{ from: location }}>
+          <Text className="skills">Soft Skiils</Text>
+          <IconSoft className="skills__icon"/>
         </NavLinkStyled>
       </ListStyled>
+      <Suspense fallback={null}>
+        <Outlet />
+      </Suspense>
+
     </>
   );
 };

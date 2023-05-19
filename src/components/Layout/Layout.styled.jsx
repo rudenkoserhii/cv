@@ -18,11 +18,14 @@ export const Name = styled.h1`
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
 
+  pointer-events: none;
+
   position: absolute;
   top: 0;
   left: 320px;
 
   font-size: 50px;
+  min-height: ${p => p.theme.space[6]}px;
 
   & > .firstName {
     position: relative;

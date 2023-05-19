@@ -11,6 +11,8 @@ export const LinkBack = styled(Link)`
   margin-bottom: ${p => p.theme.space[3]}px;
   padding: ${p => p.theme.space[3]}px;
 
+  pointer-events: auto;
+
   transition: all 200ms ease;
   :hover {
     color: ${p => p.theme.colors.seablue};

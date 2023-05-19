@@ -28,7 +28,7 @@ const ExperienceItem = () => {
   } = selectedCompany;
 
   return (
-    <Box className="first" key={companyName}>
+    <Box className="first" key={companyName} style={{ pointerEvents: 'none'}}>
       <LinkBack to={backLinkHref}>Back</LinkBack>
       <Box>
         <Text>{position}</Text>

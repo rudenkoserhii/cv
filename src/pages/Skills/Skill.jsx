@@ -7,16 +7,21 @@ import {
 } from '../Skills/Skills.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 
-const SoftSkills = () => {
+const Skill = () => {
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/skills';
 
   const { selected } = useContext(ThrowContext);
 
-  const arraySoftSkills = selected.skills.find(skill => skill.soft)['soft'];
+  const { skill } = useParams();
+
+  const array =
+    skill === 'soft'
+      ? selected.skills.find(skill => skill.soft)['soft']
+      : selected.skills.find(skill => skill.tech)['tech'];
 
   return (
     <>
@@ -24,7 +29,7 @@ const SoftSkills = () => {
         <span>Back</span>
       </LinkStyled>
       <ListStyled className="second">
-        {arraySoftSkills.map(({ name, icon }) => (
+        {array.map(({ name, icon }) => (
           <ListItem key={nanoid()}>
             <Img src={icon} alt={`Icon ${name}`} />
             <Text>{name}</Text>
@@ -35,4 +40,4 @@ const SoftSkills = () => {
   );
 };
 
-export default SoftSkills;
+export default Skill;

@@ -1,12 +1,14 @@
 import { NavLink, Link } from 'react-router-dom';
 
 import styled from 'styled-components';
+import { ReactComponent as Soft } from '../../img/skills/soft.svg';
+import { ReactComponent as Tech } from '../../img/skills/tech.svg';
 
 export const ListStyled = styled.ul`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  gap: ${p => p.theme.space[4]}px;
+  gap: ${p => p.theme.space[3]}px;
   flex-wrap: wrap;
 `;
 
@@ -14,6 +16,16 @@ export const ListItem = styled.li`
   display: flex;
   align-items: center;
   flex-direction: column;
+`;
+
+export const IconTech = styled(Tech)`
+  width: 100px;
+  height: auto;
+`;
+
+export const IconSoft = styled(Soft)`
+  width: 100px;
+  height: auto;
 `;
 
 export const Text = styled.p`
@@ -25,50 +37,47 @@ export const Text = styled.p`
   text-transform: capitalize;
 
   margin-top: auto;
+
+  pointer-events: none;
 `;
 export const Img = styled.img`
   width: 152px;
   padding: 20px;
 `;
 
-
 export const NavLinkStyled = styled(NavLink)`
-& > .skills {
-    transition: all 200ms ease;
-}
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 
-  &.active .skills {
-    color: ${p => p.theme.colors.seablue};
+  /* width: calc((100% - ${p => p.theme.space[4]}px) / 2); */
+
+  &:last-child {
+    align-items: flex-start;
   }
-  &:hover:not(.active) .skills {
+
+  & > .skills {
+    transition: all 200ms ease;
+  }
+
+  & .skills__icon {
+    fill: ${p => p.theme.colors.deepsea};
+
+    transition: all 200ms ease;
+  }
+
+  &.active .skills,
+  &.active .skills__icon {
     color: ${p => p.theme.colors.seablue};
+    fill: ${p => p.theme.colors.seablue};
+  }
+  &:hover:not(.active) .skills,
+  &:hover:not(.active) .skills__icon {
+    color: ${p => p.theme.colors.seablue};
+    fill: ${p => p.theme.colors.seablue};
     text-shadow: ${p => p.theme.shadows.text};
 
     transition: all 200ms ease;
-  }
-`;
-
-export const Title = styled.h2`
-  color: ${p => p.theme.colors.deepsea};
-  text-shadow: ${p => p.theme.shadows.first};
-
-  width: 100%;
-
-  margin-bottom: ${p => p.theme.space[3]}px;
-  padding: ${p => p.theme.space[3]}px;
-
-  display: block;
-
-  &::after {
-    content: '';
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-
-    width: 100%;
-    height: 1px;
-
-    background-color: ${p => p.theme.colors.deepsea};
   }
 `;
 
@@ -89,8 +98,6 @@ export const LinkStyled = styled(Link)`
     color: ${p => p.theme.colors.seablue};
     text-shadow: ${p => p.theme.shadows.text};
 
-  transition: all 200ms ease;
+    transition: all 200ms ease;
   }
-
-
 `;

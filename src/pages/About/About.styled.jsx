@@ -6,6 +6,8 @@ export const Text = styled.p`
 
   text-indent: ${p => p.theme.space[3]}px;
   margin-bottom: ${p => p.theme.space[3]}px;
+
+  pointer-events: none;
 `;
 
 export const Title = styled.h2`
@@ -18,6 +20,8 @@ export const Title = styled.h2`
   padding: ${p => p.theme.space[3]}px;
 
   display: block;
+
+  pointer-events: none;
 
   &::after {
     content: '';

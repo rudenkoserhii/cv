@@ -1,10 +1,10 @@
 import {
   Text,
   Paragraph,
-  Title,
   ListItem,
   ListStyled,
 } from './Education.styled';
+import { Title } from '../About/About.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import Box from 'components/Box/Box';
