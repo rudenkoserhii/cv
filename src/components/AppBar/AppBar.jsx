@@ -68,8 +68,8 @@ export const AppBar = () => {
               className="navIcon"
             />
           </NavLinkStyled>
-<Language />
         </ListItem>
+<Language />
       </ListStyled>
     </Wrap>
   );

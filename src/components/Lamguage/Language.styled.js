@@ -1,58 +1,62 @@
 import styled from 'styled-components';
 
-export const SelectContainerLanguage = styled.div`
-  position: absolute;
+export const SelectContainerLanguage = styled.fieldset`
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1px;
 
-  position: absolute;
-  left: 140px;
-  height: auto;
-
-  background-color: transparent;
-
-  border-color: ${props => props.theme.logout};
-  background: ${props => props.theme.mainBg};
+  border: none;
+  padding: 0;
 
   @media screen and (min-width: 768px) {
-    left: 165px;
   }
 `;
 
-export const SelectLanguage = styled.select`
-  width: auto;
+export const Label = styled.label`
   height: auto;
-  border-radius: 5px;
-  color: ${props => props.theme.black};
+
+  &:last-child {
+    border-top-right-radius: ${p => p.theme.space[4]}px;
+    border-bottom-right-radius: ${p => p.theme.space[4]}px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  &:not(:last-child) {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-top-left-radius: ${p => p.theme.space[4]}px;
+    border-bottom-left-radius: ${p => p.theme.space[4]}px;
+  }
+
+  color: ${p => p.theme.colors.deepseablue};
   border-color: transparent;
-  background: ${props => props.theme.mainBg};
-  padding: 3px;
+  background: ${p => p.theme.colors.deepsea};
+  padding: ${p => p.theme.space[3]}px;
   cursor: pointer;
 
-  font-family: 'Manrope';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  letter-spacing: 0.01em;
-  text-decoration: none;
-  transition: all 0.25s ease-in;
+  font-weight: ${p => p.theme.fontWeights.bold};
+  font-size: ${p => p.theme.fontSizes.m};
+  transition: all 200ms ease;
 
   @media screen and (min-width: 768px) {
-    font-size: 14px;
   }
 
   @media screen and (min-width: 1280px) {
-    font-size: 16px;
   }
 
   &:focus,
   &:hover,
   &:focus-visible {
-    border-color: ${props => props.theme.orangeLight};
+    background: ${p => p.theme.colors.seablue};
   }
-  &.active {
-    color: ${props => props.theme.orangeLight};
-    text-decoration: underline;
+`;
+
+export const Input = styled.input`
+  display: none;
+
+  &:checked + ${Label} {
+    background: ${p => p.theme.colors.seablue};
   }
 `;

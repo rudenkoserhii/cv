@@ -15,6 +15,10 @@ import { nanoid } from 'nanoid';
 const Portfolio = () => {
   const { selected } = useContext(ThrowContext);
 
+const toggleStackTechnologies = (e) => {
+e.target.children[0].classList.toggle('is-hidden');
+}
+
   return (
     <>
       <Title className="first">Portfolio</Title>
@@ -29,15 +33,18 @@ const Portfolio = () => {
                 alt={`Site ${name} preview`}
                 width="200px"
               />
+            </LinkStyled>
               <Text className="portfolioProduction">- {production} -</Text>
-              <ListTechStyled>
+              <Text as='div' className="portfolioStack" onClick={toggleStackTechnologies}>{"\u21D3"}  Stack Technologies  {"\u21D3"}
+
+              <ListTechStyled className="portfolioText is-hidden">
                 {tech.map(item => (
                   <ListItemTechStyled key={nanoid()}>
                     <TextTech className="portfolioText">{item}</TextTech>
                   </ListItemTechStyled>
                 ))}
               </ListTechStyled>
-            </LinkStyled>
+</Text>
           </ListItem>
         ))}
       </ListStyled>

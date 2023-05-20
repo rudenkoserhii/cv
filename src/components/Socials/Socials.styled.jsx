@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
-export const Img = styled.img``;
+export const Img = styled.img`
+  /* box-shadow: ${p => p.theme.shadows.text}; */
+    /* fill: ${p => p.theme.colors.seablue};
+    text-shadow: ${p => p.theme.shadows.text};
+    transition: all 200ms ease; */
+
+`;
 
 export const ListStyled = styled.ul`
   display: flex;
@@ -10,16 +16,21 @@ export const ListStyled = styled.ul`
 `;
 
 export const ListItem = styled.li`
-  width: 100%;
-  height: 100%;
-  box-shadow: ${p => p.theme.shadows.second};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
   border-radius: ${p => p.theme.radii.round};
-  background-color: ${p => p.theme.colors.seablue};
 
   transition: all 200ms ease;
   :hover,
   :focus {
-    transform: scale(1.1);
+  background-color: ${p => p.theme.colors.seablue};
+
+
+    /* transform: scale(1.1); */
 
     transition: all 200ms ease;
   }

@@ -1,9 +1,16 @@
 import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
-import { SelectContainerLanguage, SelectLanguage } from './Language.styled';
+import { SelectContainerLanguage, Label, Input } from './Language.styled';
 
 const Language = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('en');
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem('chosenLanguage') || 'en'
+  );
+
+  document.querySelector('body').style.fontFamily =
+    selectedLanguage === 'en'
+      ? "'Maven Pro', sans-serif"
+      : "'Balsamiq Sans', cursive";
 
   useEffect(() => {
     const saveLanguage = localStorage.getItem('chosenLanguage');
@@ -21,11 +28,23 @@ const Language = () => {
   };
 
   return (
-    <SelectContainerLanguage>
-      <SelectLanguage onChange={changeLanguage} value={selectedLanguage}>
-        <option value="en">En</option>
-        <option value="ua">Ua</option>
-      </SelectLanguage>
+    <SelectContainerLanguage onChange={e => changeLanguage(e)}>
+      <Input
+        id="en"
+        name="language"
+        type="radio"
+        value="en"
+        defaultChecked={'en' === selectedLanguage}
+      />
+      <Label htmlFor="en">EN</Label>
+      <Input
+        id="ua"
+        name="language"
+        type="radio"
+        value="ua"
+        defaultChecked={'ua' === selectedLanguage}
+      />
+      <Label htmlFor="ua">UA</Label>
     </SelectContainerLanguage>
   );
 };

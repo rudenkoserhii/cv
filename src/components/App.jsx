@@ -9,7 +9,6 @@ const Portfolio = lazy(() => import('../pages/Portfolio/Portfolio'));
 const Education = lazy(() => import('../pages/Education/Education'));
 const Skills = lazy(() => import('../pages/Skills/Skills'));
 const Skill = lazy(() => import('../pages/Skills/Skill'));
-// const SoftSkills = lazy(() => import('../pages/SoftSkills/SoftSkills'));
 const Experience = lazy(() => import('../pages/Experience/Experience'));
 const ExperienceItem = lazy(() =>
   import('../components/ExperienceItem/ExperienceItem')
@@ -31,7 +30,6 @@ export const App = () => {
           <Route path="portfolio" element={<Portfolio />} />
           <Route path="skills" element={<Skills />} >
           <Route path=":skill" element={<Skill />} />
-          {/* <Route path=":soft" element={<SoftSkills />} /> */}
         </Route>
         </Route>
       </Routes>

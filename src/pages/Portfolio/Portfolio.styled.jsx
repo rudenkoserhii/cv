@@ -20,14 +20,14 @@ export const LinkStyled = styled.a`
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: nowrap;
 
+margin-bottom: ${p => p.theme.space[3]}px;
+
   & .portfolioName,
-  & .portfolioText,
   & .portfolioImg {
     transition: all 200ms ease;
   }
 
-  &:hover .portfolioName,
-  &:hover .portfolioText {
+  &:hover .portfolioName {
     color: ${p => p.theme.colors.seablue};
     text-shadow: ${p => p.theme.shadows.text};
 
@@ -49,7 +49,26 @@ export const Text = styled.p`
   text-align: center;
 
   &.portfolioProduction {
+margin-bottom: ${p => p.theme.space[3]}px;
+
     font-size: ${p => p.theme.fontSizes.s};
+  }
+
+  &.portfolioStack {
+position: relative;
+
+cursor: pointer;
+
+    font-size: ${p => p.theme.fontSizes.xs};
+
+    transition: all 200ms ease;
+
+&:hover, &:focus {
+    color: ${p => p.theme.colors.seablue};
+    text-shadow: ${p => p.theme.shadows.text};
+    transition: all 200ms ease;
+
+}
   }
 `;
 
@@ -59,6 +78,16 @@ export const ListTechStyled = styled.ul`
   align-items: center;
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: wrap;
+
+background-color: ${p => p.theme.colors.seablue};
+backdrop-filter: opacity(50%);
+
+position: absolute;
+top: 200%;
+left: 0;
+&.is-hidden {
+display: none;
+}
 `;
 
 export const ListItemTechStyled = styled.li`
