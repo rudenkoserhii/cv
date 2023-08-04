@@ -11,9 +11,11 @@ import { Title } from '../About/About.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { nanoid } from 'nanoid';
+import { useTranslation } from 'react-i18next';
 
 const Portfolio = () => {
   const { selected } = useContext(ThrowContext);
+  const { t } = useTranslation();
 
   const toggleStackTechnologies = e => {
     e.currentTarget.children[0].classList.toggle('fourth');

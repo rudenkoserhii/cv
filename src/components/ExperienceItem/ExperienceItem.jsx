@@ -5,6 +5,7 @@ import { ThrowContext } from '../../components/Context/Context';
 import { useLocation, useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import Box from 'components/Box/Box';
+import { useTranslation } from 'react-i18next';
 
 const ExperienceItem = () => {
   const location = useLocation();
@@ -13,6 +14,7 @@ const ExperienceItem = () => {
   const { company } = useParams();
 
   const { selected } = useContext(ThrowContext);
+  const { t } = useTranslation();
 
   const selectedCompany = selected.jobs.find(
     ({ companyName }) => companyName === company

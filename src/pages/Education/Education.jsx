@@ -9,28 +9,30 @@ import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import Box from 'components/Box/Box';
 import { nanoid } from 'nanoid';
+import { useTranslation } from 'react-i18next';
 
 const Education = () => {
   const { selected } = useContext(ThrowContext);
+  const { t } = useTranslation();
 
   return (
     <>
-      <Title className="first">Education</Title>
+      <Title className="first">{t('Education')}</Title>
       <ListStyled className="second">
         {selected.education.map(
           ({ name, dateStart, dateEnd, speciality, country, city }) => (
             <ListItem key={nanoid()}>
               <Box className="third">
                 <Text>
-                  <b>{name}</b>
+                  <b>{t(name)}</b>
                 </Text>
-                <Text>{speciality}</Text>
+                <Text>{t(speciality)}</Text>
                 <Text>
-                  <Paragraph>{dateStart} - </Paragraph>
-                  <Paragraph>{dateEnd}</Paragraph>
+                  <Paragraph>{t(dateStart)} - </Paragraph>
+                  <Paragraph>{t(dateEnd)}</Paragraph>
                   <br />
-                  <Paragraph>{city}, </Paragraph>
-                  <Paragraph>{country}</Paragraph>
+                  <Paragraph>{t(city)}, </Paragraph>
+                  <Paragraph>{t(country)}</Paragraph>
                 </Text>
               </Box>
             </ListItem>

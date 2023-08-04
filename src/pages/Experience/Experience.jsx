@@ -11,9 +11,12 @@ import { Title } from '../About/About.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { nanoid } from 'nanoid';
+import { useTranslation } from 'react-i18next';
 
 const Experience = () => {
   const { selected } = useContext(ThrowContext);
+  const { t } = useTranslation();
+
   const location = useLocation();
 
   return (

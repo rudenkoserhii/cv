@@ -4,9 +4,12 @@ import { ModalContacts } from '../Modal/ModalContacts';
 import { ModalPrint } from '../Modal/ModalPrint';
 import { Socials } from '../Socials/Socials';
 import { ThrowContext } from '../Context/Context';
+import { useTranslation } from 'react-i18next';
 
 export const Footer = () => {
   const { selected } = useContext(ThrowContext);
+  const { t } = useTranslation();
+
   const [showModalContacts, setShowModalContacts] = useState(false);
   const [showModalPrint, setShowModalPrint] = useState(false);
 
@@ -26,9 +29,9 @@ export const Footer = () => {
     <>
       <FooterStyled>
         {/* <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button> */}
-        <LinkStyled onClick={toggleModalContacts}>Contacts</LinkStyled>
+        <LinkStyled onClick={toggleModalContacts}>{t('Contacts')}</LinkStyled>
         <Socials />
-        <LinkStyled onClick={toggleModalPrint}>Print Summary</LinkStyled>
+        <LinkStyled onClick={toggleModalPrint}>{t('Print Summary')}</LinkStyled>
       </FooterStyled>
       {showModalContacts && <ModalContacts onClose={toggleModalContacts} />}
       {showModalPrint && <ModalPrint onClose={toggleModalPrint} />}

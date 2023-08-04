@@ -10,12 +10,14 @@ import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { useLocation, useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
+import { useTranslation } from 'react-i18next';
 
 const Skill = () => {
   const location = useLocation();
   const backLinkHref = location.state?.from ?? '/skills';
 
   const { selected } = useContext(ThrowContext);
+  const { t } = useTranslation();
 
   const { skill } = useParams();
 

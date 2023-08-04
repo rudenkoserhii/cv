@@ -8,8 +8,11 @@ import {
 import { Title } from '../About/About.styled';
 import { Suspense } from 'react';
 import { Outlet, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   const location = useLocation();
 
   return (
