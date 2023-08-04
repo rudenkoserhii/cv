@@ -78,6 +78,10 @@ export const ListTechStyled = styled.ul`
   align-items: center;
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: wrap;
+padding: ${p => p.theme.space[3]}px;
+border-radius: ${p => p.theme.space[3]}px;
+
+box-shadow: 0px 0px 10px 10px ${p => p.theme.colors.seablue};
 
 background-color: ${p => p.theme.colors.seablue};
 backdrop-filter: opacity(50%);
@@ -85,9 +89,8 @@ backdrop-filter: opacity(50%);
 position: absolute;
 top: 200%;
 left: 0;
-&.is-hidden {
-display: none;
-}
+
+z-index: 5;
 `;
 
 export const ListItemTechStyled = styled.li`
@@ -108,7 +111,7 @@ export const ListItemTechStyled = styled.li`
 `;
 
 export const TextTech = styled.p`
-  color: ${p => p.theme.colors.deepsea};
+  color: ${p => p.theme.colors.deepseablue};
   text-shadow: ${p => p.theme.shadows.first};
 
   font-size: ${p => p.theme.fontSizes.xs};
