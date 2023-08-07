@@ -17,14 +17,14 @@ const Skills = () => {
 
   return (
     <>
-      <Title className="first">Skiils</Title>
+      <Title className="first">{t('Skiils')}</Title>
       <ListStyled className="second">
         <NavLinkStyled to="tech" state={{ from: location }}>
-          <Text className="skills">Tech Skills</Text>
+          <Text className="skills">{t('Tech Skills')}</Text>
           <IconTech className="skills__icon"/>
         </NavLinkStyled>
         <NavLinkStyled to="soft" state={{ from: location }}>
-          <Text className="skills">Soft Skiils</Text>
+          <Text className="skills">{t('Soft Skills')}</Text>
           <IconSoft className="skills__icon"/>
         </NavLinkStyled>
       </ListStyled>

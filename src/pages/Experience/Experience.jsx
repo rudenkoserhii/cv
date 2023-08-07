@@ -21,12 +21,12 @@ const Experience = () => {
 
   return (
     <>
-      <Title className="first">Work experience</Title>
+      <Title className="first">{t('Work experience')}</Title>
       <ListStyled className="second">
         {selected.jobs.map(({ companyName, logo }) => (
           <ListItem key={nanoid()}>
             <LinkStyled to={companyName} state={{ from: location }}>
-              <Text className="companyName">{companyName}</Text>
+              <Text className="companyName">{t(companyName)}</Text>
               <Img
                 src={logo}
                 alt={`Logo ${companyName}`}

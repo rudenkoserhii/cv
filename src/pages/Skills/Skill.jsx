@@ -29,13 +29,13 @@ const Skill = () => {
   return (
     <>
       <LinkStyled to={backLinkHref} className="first">
-        <SpanBack>Back</SpanBack>
+        <SpanBack>{t('Back')}</SpanBack>
       </LinkStyled>
       <ListStyled className="second">
         {array.map(({ name, icon }) => (
           <ListItem key={nanoid()}>
             <Img src={icon} alt={`Icon ${name}`} />
-            <Text>{name}</Text>
+            <Text>{t(name)}</Text>
           </ListItem>
         ))}
       </ListStyled>

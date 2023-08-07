@@ -79,24 +79,24 @@ export const ModalPrint = ({ onClose }) => {
           <img src={photo} alt="face" width="100%"></img>
           <div style={{ color: 'white', padding: '32px' }}>
             <div style={{ marginBottom: '20px' }}>
-              <h2 style={{ marginBottom: '10px' }}>Contacts</h2>
+              <h2 style={{ marginBottom: '10px' }}>{t('Contacts')}</h2>
               <ul style={{ listStyleType: 'circle' }}>
                 <li key={nanoid()} style={{ marginBottom: '5px' }}>
                   <a href={`tel:${phone}`}>
-                    Phone:
+                    {t('Phone:')}
                     <p>{phone}</p>
                   </a>
                 </li>
                 <li key={nanoid()}>
                   <a href={`mailto:${email}`}>
-                    E-mail:
+                    {t('E-mail:')}
                     <p>{email}</p>
                   </a>
                 </li>
               </ul>
             </div>
             <div style={{ marginBottom: '20px' }}>
-              <h2 style={{ marginBottom: '10px' }}>Tech Skills</h2>
+              <h2 style={{ marginBottom: '10px' }}>{t('Tech Skills')}</h2>
               <ul style={{ listStyleType: 'circle' }}>
                 {Object.values(Object.values(skills)[1])[0].map(skill => (
                   <li key={nanoid()} style={{ marginBottom: '5px' }}>
@@ -106,11 +106,11 @@ export const ModalPrint = ({ onClose }) => {
               </ul>
             </div>
             <div>
-              <h2 style={{ marginBottom: '10px' }}>Soft Skills</h2>
+              <h2 style={{ marginBottom: '10px' }}>{t('Soft Skills')}</h2>
               <ul style={{ listStyleType: 'circle' }}>
                 {Object.values(Object.values(skills)[0])[0].map(skill => (
                   <li key={nanoid()} style={{ marginBottom: '5px' }}>
-                    <p>{Object.values(skill)[0]}</p>
+                    <p>{t(Object.values(skill)[0])}</p>
                   </li>
                 ))}
               </ul>
@@ -126,12 +126,12 @@ export const ModalPrint = ({ onClose }) => {
           }}
         >
           <div>
-            <h3 style={{ marginBottom: '30px' }}>{job}</h3>
-            <h1 style={{ marginBottom: '50px', fontSize: '40px' }}>{name}</h1>
+            <h3 style={{ marginBottom: '30px' }}>{t(job)}</h3>
+            <h1 style={{ marginBottom: '50px', fontSize: '40px' }}>{t(name)}</h1>
             <p style={{ marginBottom: '20px' }}>
               {about.split('<br>').map(p => (
                 <span key={nanoid()} style={{ display: 'inline-block' }}>
-                  {p}
+                  {t(p)}
                 </span>
               ))}
             </p>
@@ -140,7 +140,7 @@ export const ModalPrint = ({ onClose }) => {
             <ul>
               <li>
                 <div style={{ marginBottom: '20px' }}>
-                  <h2 style={{ marginBottom: '10px' }}>Projects</h2>
+                  <h2 style={{ marginBottom: '10px' }}>{t('Portfolio')}</h2>
                   <ul style={{ listStyleType: 'circle' }}>
                     {Object.values(Object.values(portfolios)).map(portfolio => (
                       <li key={nanoid()} style={{ marginBottom: '5px' }}>
@@ -154,7 +154,7 @@ export const ModalPrint = ({ onClose }) => {
               </li>
               <li>
                 <div style={{ marginBottom: '20px' }}>
-                  <h2 style={{ marginBottom: '10px' }}>Work Experience</h2>
+                  <h2 style={{ marginBottom: '10px' }}>{t('Work experience')}</h2>
                   <ul style={{ listStyleType: 'circle' }}>
                     {Object.values(Object.values(jobs)).map(job => (
                       <li key={nanoid()} style={{ marginBottom: '5px' }}>
@@ -164,14 +164,14 @@ export const ModalPrint = ({ onClose }) => {
                             textTransform: 'capitalize',
                           }}
                         >
-                          <b>{Object.values(job)[0]}</b> -{' '}
-                          <span>{Object.values(job)[3]}</span>
+                          <b>{t(Object.values(job)[0])}</b> -{' '}
+                          <span>{t(Object.values(job)[3])}</span>
                         </p>
                         <p style={{ fontSize: '12px' }}>
-                          <span>{Object.values(job)[1]} - </span>
-                          <span>{Object.values(job)[2]} | </span>
-                          <span>{Object.values(job)[5]}, </span>
-                          <span>{Object.values(job)[6]}</span>
+                          <span>{t(Object.values(job)[1])} - </span>
+                          <span>{t(Object.values(job)[2])} | </span>
+                          <span>{t(Object.values(job)[5])}, </span>
+                          <span>{t(Object.values(job)[6])}</span>
                         </p>
                       </li>
                     ))}
@@ -180,19 +180,19 @@ export const ModalPrint = ({ onClose }) => {
               </li>
               <li>
                 <div>
-                  <h2 style={{ marginBottom: '10px' }}>Education</h2>
+                  <h2 style={{ marginBottom: '10px' }}>{t('Education')}</h2>
                   <ul style={{ listStyleType: 'circle' }}>
                     {Object.values(Object.values(education)).map(edu => (
                       <li key={nanoid()} style={{ marginBottom: '5px' }}>
                         <p style={{ marginBottom: '5px' }}>
-                          <b>{Object.values(edu)[0]}</b> -{' '}
-                          <span>{Object.values(edu)[1]}</span>
+                          <b>{t(Object.values(edu)[0])}</b> -{' '}
+                          <span>{t(Object.values(edu)[1])}</span>
                         </p>
                         <p style={{ fontSize: '12px' }}>
-                          <span>{Object.values(edu)[4]} - </span>
-                          <span>{Object.values(edu)[5]} | </span>
-                          <span>{Object.values(edu)[2]}, </span>
-                          <span>{Object.values(edu)[3]}</span>
+                          <span>{t(Object.values(edu)[4])} - </span>
+                          <span>{t(Object.values(edu)[5])} | </span>
+                          <span>{t(Object.values(edu)[2])}, </span>
+                          <span>{t(Object.values(edu)[3])}</span>
                         </p>
                       </li>
                     ))}

@@ -32,18 +32,18 @@ const ExperienceItem = () => {
 
   return (
     <Box className="first" key={companyName} style={{ pointerEvents: 'none'}}>
-      <LinkBack to={backLinkHref}><SpanBack>Back</SpanBack></LinkBack>
+      <LinkBack to={backLinkHref}><SpanBack>{t('Back')}</SpanBack></LinkBack>
       <Box>
-        <Text>{position}</Text>
+        <Text>{t(position)}</Text>
         <Text>
-          <Span>{dateStart} - </Span>
-          <Span>{dateEnd} | </Span>
-          <Span>{city}, </Span>
-          <Span>{country}</Span>
+          <Span>{t(dateStart)} - </Span>
+          <Span>{t(dateEnd)} | </Span>
+          <Span>{t(city)}, </Span>
+          <Span>{t(country)}</Span>
         </Text>
         <List>
           {responsibilities.map(item => (
-            <Item key={nanoid()}>{item}</Item>
+            <Item key={nanoid()}>{t(item)}</Item>
           ))}
         </List>
       </Box>

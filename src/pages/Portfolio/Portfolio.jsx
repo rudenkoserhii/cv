@@ -33,7 +33,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <Title className="first">Portfolio</Title>
+      <Title className="first">{t('Portfolio')}</Title>
       <ListStyled className="second">
         {selected.portfolios.map(({ name, url, preview, tech, production }) => (
           <ListItem key={nanoid()}>
@@ -46,13 +46,13 @@ const Portfolio = () => {
                 width="200px"
               />
             </LinkStyled>
-            <Text className="portfolioProduction">- {production} -</Text>
+            <Text className="portfolioProduction">- {t(production)} -</Text>
             <Text
               as="div"
               className="portfolioStack"
               onClick={toggleStackTechnologies}
             >
-              {'\u21D3'} Stack Technologies {'\u21D3'}
+              {'\u21D3'} {t('Stack Technologies')} {'\u21D3'}
               <ListTechStyled className="portfolioText fifth">
                 {tech.map(item => (
                   <ListItemTechStyled key={nanoid()}>
