@@ -194,5 +194,35 @@ background-color: ${p => p.theme.colors.seablue};
   }
 }
 }
+
+@-webkit-keyframes swirl-out-bck {
+  0% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+}
+@keyframes swirl-out-bck {
+  0% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    opacity: 0;
+  }
+}
+
+&.swirl-out-bck {
+	-webkit-animation: swirl-out-bck 0.6s ease-in both;
+	        animation: swirl-out-bck 0.6s ease-in both;
+}
 `;
 

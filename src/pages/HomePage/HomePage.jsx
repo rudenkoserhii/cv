@@ -12,7 +12,8 @@ const cards = [...Array(quantity).keys()]
 function onCardClick (e) {
 console.log(e.currentTarget.id)
 
-
+// e.currentTarget.style.visibility = 'hidden';
+e.currentTarget.classList.add('swirl-out-bck');
 }
 
   return (
