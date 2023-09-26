@@ -11,6 +11,7 @@ import { ThrowContext } from '../../components/Context/Context';
 import { useLocation, useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
+import { shuffle } from 'utils/shuffle';
 
 const Skill = () => {
   const location = useLocation();
@@ -32,7 +33,7 @@ const Skill = () => {
         <SpanBack>{t('Back')}</SpanBack>
       </LinkStyled>
       <ListStyled className="second">
-        {array.map(({ name, icon }) => (
+        {shuffle(array).map(({ name, icon }) => (
           <ListItem key={nanoid()}>
             <Img src={icon} alt={`Icon ${name}`} />
             <Text>{t(name)}</Text>

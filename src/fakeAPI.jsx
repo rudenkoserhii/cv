@@ -36,6 +36,19 @@ import react from './img/skills/tech/react.png';
 import node from './img/skills/tech/node.png';
 import github from './img/skills/tech/github.png';
 
+import bootstrap from './img/skills/tech/bootstrap.png';
+import webpack from './img/skills/tech/webpack.png';
+import parcel from './img/skills/tech/parcel.png';
+import mongoose from './img/skills/tech/mongoose.png';
+import mongodb from './img/skills/tech/mongodb.png';
+import firebase from './img/skills/tech/firebase.png';
+import gimp from './img/skills/tech/gimp.png';
+import inkscape from './img/skills/tech/inkscape.png';
+import jira from './img/skills/tech/jira.png';
+import trello from './img/skills/tech/trello.png';
+import slack from './img/skills/tech/slack.png';
+import redux from './img/skills/tech/redux.png';
+
 import preview_icecream from './img/portfolios/preview_icecream.jpg';
 import preview_filmoteka from './img/portfolios/preview_filmoteka.jpg';
 import preview_animal_welfare from './img/portfolios/preview_animal_welfare.jpg';
@@ -427,6 +440,55 @@ production: 'Individual Project',
               name: 'GitHub',
               icon: github,
             },
+            {
+              name: 'BootStrap',
+              icon: bootstrap,
+            },
+            {
+              name: 'WebPack',
+              icon: webpack,
+            },
+            {
+              name: 'Parcel',
+              icon: parcel,
+            },
+            {
+              name: 'FireBase',
+              icon: firebase,
+            },
+            {
+              name: 'Mongoose',
+              icon: mongoose,
+            },
+            {
+              name: 'MongoDB',
+              icon: mongodb,
+            },
+            {
+              name: 'Trello',
+              icon: trello,
+            },
+            {
+              name: 'Jira',
+              icon: jira,
+            },
+            {
+              name: 'Slack',
+              icon: slack,
+            },
+            {
+              name: 'Gimp',
+              icon: gimp,
+            },
+            {
+              name: 'Inkscape',
+              icon: inkscape,
+            },
+            {
+              name: 'Redux',
+              icon: redux,
+            },
+
           ],
         },
       ],
@@ -803,6 +865,55 @@ production: 'Individual Project',
               name: 'GitHub',
               icon: github,
             },
+            {
+              name: 'BootStrap',
+              icon: bootstrap,
+            },
+            {
+              name: 'WebPack',
+              icon: webpack,
+            },
+            {
+              name: 'Parcel',
+              icon: parcel,
+            },
+            {
+              name: 'FireBase',
+              icon: firebase,
+            },
+            {
+              name: 'Mongoose',
+              icon: mongoose,
+            },
+            {
+              name: 'MongoDB',
+              icon: mongodb,
+            },
+            {
+              name: 'Trello',
+              icon: trello,
+            },
+            {
+              name: 'Jira',
+              icon: jira,
+            },
+            {
+              name: 'Slack',
+              icon: slack,
+            },
+            {
+              name: 'Gimp',
+              icon: gimp,
+            },
+            {
+              name: 'Inkscape',
+              icon: inkscape,
+            },
+            {
+              name: 'Redux',
+              icon: redux,
+            },
+
           ],
         },
       ],
@@ -1179,6 +1290,55 @@ production: 'Individual Project',
               name: 'GitHub',
               icon: github,
             },
+            {
+              name: 'BootStrap',
+              icon: bootstrap,
+            },
+            {
+              name: 'WebPack',
+              icon: webpack,
+            },
+            {
+              name: 'Parcel',
+              icon: parcel,
+            },
+            {
+              name: 'FireBase',
+              icon: firebase,
+            },
+            {
+              name: 'Mongoose',
+              icon: mongoose,
+            },
+            {
+              name: 'MongoDB',
+              icon: mongodb,
+            },
+            {
+              name: 'Trello',
+              icon: trello,
+            },
+            {
+              name: 'Jira',
+              icon: jira,
+            },
+            {
+              name: 'Slack',
+              icon: slack,
+            },
+            {
+              name: 'Gimp',
+              icon: gimp,
+            },
+            {
+              name: 'Inkscape',
+              icon: inkscape,
+            },
+            {
+              name: 'Redux',
+              icon: redux,
+            },
+
           ],
         },
       ],
@@ -1555,6 +1715,55 @@ production: 'Individual Project',
               name: 'GitHub',
               icon: github,
             },
+            {
+              name: 'BootStrap',
+              icon: bootstrap,
+            },
+            {
+              name: 'WebPack',
+              icon: webpack,
+            },
+            {
+              name: 'Parcel',
+              icon: parcel,
+            },
+            {
+              name: 'FireBase',
+              icon: firebase,
+            },
+            {
+              name: 'Mongoose',
+              icon: mongoose,
+            },
+            {
+              name: 'MongoDB',
+              icon: mongodb,
+            },
+            {
+              name: 'Trello',
+              icon: trello,
+            },
+            {
+              name: 'Jira',
+              icon: jira,
+            },
+            {
+              name: 'Slack',
+              icon: slack,
+            },
+            {
+              name: 'Gimp',
+              icon: gimp,
+            },
+            {
+              name: 'Inkscape',
+              icon: inkscape,
+            },
+            {
+              name: 'Redux',
+              icon: redux,
+            },
+
           ],
         },
       ],
@@ -1931,6 +2140,55 @@ production: 'Individual Project',
               name: 'GitHub',
               icon: github,
             },
+            {
+              name: 'BootStrap',
+              icon: bootstrap,
+            },
+            {
+              name: 'WebPack',
+              icon: webpack,
+            },
+            {
+              name: 'Parcel',
+              icon: parcel,
+            },
+            {
+              name: 'FireBase',
+              icon: firebase,
+            },
+            {
+              name: 'Mongoose',
+              icon: mongoose,
+            },
+            {
+              name: 'MongoDB',
+              icon: mongodb,
+            },
+            {
+              name: 'Trello',
+              icon: trello,
+            },
+            {
+              name: 'Jira',
+              icon: jira,
+            },
+            {
+              name: 'Slack',
+              icon: slack,
+            },
+            {
+              name: 'Gimp',
+              icon: gimp,
+            },
+            {
+              name: 'Inkscape',
+              icon: inkscape,
+            },
+            {
+              name: 'Redux',
+              icon: redux,
+            },
+
           ],
         },
       ],
