@@ -52,51 +52,6 @@ a {
  * Animation
  */
 
-.first {
-  -webkit-animation: first 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
-  animation: first 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
-}
-
-@-webkit-keyframes first {
-  0% {
-    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-    -webkit-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
-    -webkit-filter: blur(40px);
-    filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-    transform: translateX(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
-@keyframes first {
-  0% {
-    -webkit-transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-    transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-    -webkit-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
-    -webkit-filter: blur(40px);
-    filter: blur(40px);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: translateX(0) scaleY(1) scaleX(1);
-    transform: translateX(0) scaleY(1) scaleX(1);
-    -webkit-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    -webkit-filter: blur(0);
-    filter: blur(0);
-    opacity: 1;
-  }
-}
 
 .second {
   -webkit-animation: second 0.6s cubic-bezier(0.23, 1, 0.32, 1) 300ms both;
@@ -191,77 +146,78 @@ a {
 }
 
 .fourth {
-	-webkit-animation: fourth 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: fourth 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  -webkit-animation: fourth 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: fourth 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 @-webkit-keyframes fourth {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
 }
 @keyframes fourth {
   0% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
 }
 
 .fifth {
-	-webkit-animation: fifth 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
-	        animation: fifth 0.5s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+  -webkit-animation: fifth 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: fifth 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
 
 @-webkit-keyframes fifth {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
 }
 @keyframes fifth {
   0% {
     -webkit-transform: scale(1);
-            transform: scale(1);
+    transform: scale(1);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
   100% {
     -webkit-transform: scale(0);
-            transform: scale(0);
+    transform: scale(0);
     -webkit-transform-origin: 50% 0%;
-            transform-origin: 50% 0%;
+    transform-origin: 50% 0%;
     opacity: 1;
   }
 }
+

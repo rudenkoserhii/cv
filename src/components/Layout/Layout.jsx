@@ -6,10 +6,16 @@ import Box from '../Box/Box';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { useTranslation } from 'react-i18next';
+import { Star } from 'components/Star/Star';
 
 export const Layout = () => {
   const { selected } = useContext(ThrowContext);
   const { t } = useTranslation();
+
+const quantity = 7;
+
+const stars = [...Array(quantity).keys()].map(el => el += 1)
+
 
   return (
     selected && (
@@ -22,6 +28,8 @@ export const Layout = () => {
         flexDirection="column"
         p={64}
       >
+{stars.map(star => <Star key={star} size={`${star}`}></Star>)}
+        
         <Box
           display="flex"
           mb={64}

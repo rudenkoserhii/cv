@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 export const SectionStyled = styled.section`
+position: relative;
+
   max-width: 800px;
   padding: ${p => p.theme.space[6]}px;
   padding-bottom: 0;
