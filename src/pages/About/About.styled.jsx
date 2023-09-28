@@ -11,6 +11,8 @@ export const Text = styled.p`
 `;
 
 export const Title = styled.h2`
+position: relative;
+
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
 
