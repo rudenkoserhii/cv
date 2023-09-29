@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Text = styled.p`
+  font-size: ${p => p.theme.fontSizes.xxs};
+  text-align: center;
+
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
 
@@ -8,10 +11,22 @@ export const Text = styled.p`
   margin-bottom: ${p => p.theme.space[3]}px;
 
   pointer-events: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: ${p => p.theme.fontSizes.xs};
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: ${p => p.theme.fontSizes.m};
+    text-align: left;
+  }
 `;
 
 export const Title = styled.h2`
-position: relative;
+  position: relative;
+
+  font-size: ${p => p.theme.fontSizes.xs};
+  text-align: center;
 
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
@@ -24,6 +39,15 @@ position: relative;
   display: block;
 
   pointer-events: none;
+
+  @media screen and (min-width: 768px) {
+    font-size: ${p => p.theme.fontSizes.m};
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: ${p => p.theme.fontSizes.l};
+    text-align: left;
+  }
 
   &::after {
     content: '';

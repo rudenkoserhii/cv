@@ -20,10 +20,14 @@ export const theme = {
     monospace: 'Menlo, monospace',
   },
   fontSizes: {
+    xxxs: '6px',
+    xxs: '8px',
     xs: '12px',
     s: '14px',
     m: '16px',
+    ml: '24px',
     l: '32px',
+    lxl: '48px',
     xl: '64px',
   },
   fontWeights: {

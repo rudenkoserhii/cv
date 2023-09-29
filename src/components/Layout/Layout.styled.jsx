@@ -7,6 +7,13 @@ export const Header = styled.header`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+
 `;
 
 export const Name = styled.h1`
