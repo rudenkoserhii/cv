@@ -2,54 +2,25 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const ListItem = styled.li`
-/* display: block; */
+  position: relative;
 
-position: relative;
+  &:not(:last-child)::after {
+    content: '';
+    width: 4px;
+    height: 4px;
 
-/* width: fit-content;
-height: fit-content; */
-&:not(:last-child)::after {
-content: '';
-width: 4px;
-height: 4px;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
 
-position: absolute;
-bottom: -4px;
-left: 50%;
-transform: translateX(-50%);
+    border-radius: 50%;
 
-border-radius: 50%;
-
-background-color: ${p => p.theme.colors.deepsea};
-  @media screen and (min-width: 1280px) {
-top: 50%;
-transform: translateY(-50%);
-left: 100%;
-}
-
-
-  /* @media screen and (min-width: 1280px) {
-&:not(:last-child)::after {
-content: '';
-width: 5px;
-height: 5px;
-
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-left: 100%;
-
-border-radius: 50%;
-
-background-color: ${p => p.theme.colors.deepsea};
-} */
-
-
-
-
+    background-color: ${p => p.theme.colors.deepsea};
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
   }
-
-
 `;
 
 export const ListStyled = styled.ul`
@@ -88,12 +59,11 @@ export const LinkStyled = styled(NavLink)`
 
     transition: all 200ms ease;
   }
-
 `;
 
 export const Text = styled.p`
-    font-size: ${p => p.theme.fontSizes.xxs};
-    text-align: center;
+  font-size: ${p => p.theme.fontSizes.xxs};
+  text-align: center;
 
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
@@ -112,16 +82,16 @@ export const Text = styled.p`
 `;
 
 export const Img = styled.img`
-width: 100px;
-height: 100px;
+  width: 100px;
+  height: 100px;
 
   @media screen and (min-width: 768px) {
-width: 120px;
-height: 120px;
+    width: 120px;
+    height: 120px;
   }
 
   @media screen and (min-width: 1280px) {
-width: 160px;
-height: 160px;
+    width: 160px;
+    height: 160px;
   }
 `;
