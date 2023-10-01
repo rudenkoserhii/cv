@@ -50,6 +50,11 @@ export const ListStyled = styled.ul`
 `;
 
 export const ListItem = styled.li`
+  background-image: url(${p => p.logo});
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
   pointer-events: none;
 
   width: auto;

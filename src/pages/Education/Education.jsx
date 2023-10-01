@@ -20,8 +20,8 @@ const Education = () => {
       <Title className="first">{t('Education')}</Title>
       <ListStyled className="second">
         {selected.education.map(
-          ({ name, dateStart, dateEnd, speciality, country, city }) => (
-            <ListItem key={nanoid()}>
+          ({ name, dateStart, dateEnd, speciality, country, city, logo }) => (
+            <ListItem key={nanoid()} logo={logo}>
               <Box className="third">
                 <Text>
                   <b>{t(name)}</b>

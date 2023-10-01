@@ -16,7 +16,9 @@ import kominmet from './img/company_logos/kominmet.png';
 import ukrauto from './img/company_logos/ukrauto.png';
 import karcher from './img/company_logos/karcher.png';
 import pegas from './img/company_logos/pegas.png';
-// import goit from './img/company_logos/goit.png';
+
+import goit from './img/education/goit.png';
+import diit from './img/education/diit.png';
 
 import communication from './img/skills/soft/communication.svg';
 import leadership from './img/skills/soft/leadership.svg';
