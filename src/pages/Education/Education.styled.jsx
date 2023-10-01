@@ -42,10 +42,16 @@ export const ListStyled = styled.ul`
 
   gap: ${p => p.theme.space[4]}px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
-    gap: ${p => p.theme.space[3]}px;
+    gap: ${p => p.theme.space[4]}px;
     flex-direction: row;
+  }
+
+  @media screen and (min-width: 1280px) {
+    /* justify-content: center; */
+    gap: ${p => p.theme.space[3]}px;
+    /* flex-direction: row; */
   }
 `;
 
@@ -59,9 +65,15 @@ export const ListItem = styled.li`
 
   width: auto;
 
+  @media screen and (min-width: 768px) {
+    width: calc(
+      (100% - ${p => p.theme.space[5]}px * 2 - ${p => p.theme.space[4]}px) / 2
+    );
+  }
+
   @media screen and (min-width: 1280px) {
     width: calc(
-      (800px - ${p => p.theme.space[6]}px * 2 - ${p => p.theme.space[3]}px) / 3
+      (100% - ${p => p.theme.space[6]}px * 2 - ${p => p.theme.space[3]}px) / 2
     );
   }
 `;
