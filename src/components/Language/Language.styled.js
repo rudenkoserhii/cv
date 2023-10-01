@@ -16,23 +16,9 @@ export const SelectContainerLanguage = styled.fieldset`
 export const Label = styled.label`
   height: auto;
 
-  /* &:last-child {
-    border-top-right-radius: ${p => p.theme.space[4]}px;
-    border-bottom-right-radius: ${p => p.theme.space[4]}px;
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-  }
-
-  &:not(:last-child) {
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-    border-top-left-radius: ${p => p.theme.space[4]}px;
-    border-bottom-left-radius: ${p => p.theme.space[4]}px;
-  } */
-
   color: ${p => p.theme.colors.deepsea};
   border-color: transparent;
-  /* background: ${p => p.theme.colors.deepsea}; */
+
   padding: ${p => p.theme.space[3]}px;
   cursor: pointer;
 
