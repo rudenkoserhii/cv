@@ -12,7 +12,6 @@ const HomePage = () => {
 
   useEffect(() => {
     localStorage.setItem('cards', JSON.stringify(cards));
-    console.log('click');
   }, [cards]);
 
   function onCardClick(e) {

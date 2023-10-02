@@ -49,7 +49,13 @@ export const EducationStyled = styled(Education)`
   filter: ${p => p.theme.shadows.svg};
 `;
 
-export const Wrap = styled.nav``;
+export const Wrap = styled.nav`
+display: none;
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+
+`;
 
 export const NavLinkStyled = styled(NavLink)`
   margin: auto;

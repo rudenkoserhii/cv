@@ -1,8 +1,8 @@
 import { AppBar } from '../AppBar/AppBar';
-import { Header, Name } from './Layout.styled';
+import { Header, Name, Wrap, WrapWhole } from './Layout.styled';
 import { Main } from '../Main/Main';
 import { Footer } from 'components/Footer/Footer';
-import Box from '../Box/Box';
+// import Box from '../Box/Box';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { useTranslation } from 'react-i18next';
@@ -19,7 +19,8 @@ const stars = [...Array(quantity).keys()].map(el => el += 1)
 
   return (
     selected && (
-      <Box
+<WrapWhole>
+      {/* <Box
         width="1200px"
         display="flex"
         justifyContent="center"
@@ -27,15 +28,15 @@ const stars = [...Array(quantity).keys()].map(el => el += 1)
         mr={'auto'}
         flexDirection="column"
         p={64}
-      >
+      > */}
 {stars.map(star => <Star key={star} size={`${star}`}></Star>)}
-        
-        <Box
+        <Wrap>
+        {/* <Box
           display="flex"
           mb={64}
           minHeight={600}
           style={{ position: 'relative' }}
-        >
+        > */}
           <Name className="fullName">
             <span className="firstName">{t(selected.name)}</span>
             <span className="secondName">{t(selected.job)}</span>
@@ -44,9 +45,11 @@ const stars = [...Array(quantity).keys()].map(el => el += 1)
             <AppBar />
           </Header>
           <Main />
-        </Box>
+        {/* </Box> */}
+</Wrap>
         <Footer />
-      </Box>
+      {/* </Box> */}
+</WrapWhole>
     )
   );
 };

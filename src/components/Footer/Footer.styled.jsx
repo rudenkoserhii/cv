@@ -2,10 +2,21 @@ import styled from 'styled-components';
 
 export const FooterStyled = styled.footer`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 
-  border-top: 1px ${p => p.theme.colors.deepsea};
+flex-direction: column-reverse;
+
+gap: ${p => p.theme.space[5]}px;
+
+
+  @media screen and (min-width: 1280px) {
+  justify-content: space-around;
+flex-direction: row;
+
+gap: ${p => p.theme.space[0]}px;
+
+  }
 `;
 
 export const LinkStyled = styled.a`
@@ -21,6 +32,13 @@ export const LinkStyled = styled.a`
 
     transition: all 200ms ease;
   }
+
+&.print {
+    display: none;
+  @media screen and (min-width: 1280px) {
+display: block;
+  }
+}
 `;
 
 export const Button = styled.button``;

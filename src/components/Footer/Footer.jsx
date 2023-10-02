@@ -31,7 +31,7 @@ export const Footer = () => {
         {/* <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button> */}
         <LinkStyled onClick={toggleModalContacts}>{t('Contacts')}</LinkStyled>
         <Socials />
-        <LinkStyled onClick={toggleModalPrint}>{t('Print Summary')}</LinkStyled>
+        <LinkStyled className='print' onClick={toggleModalPrint}>{t('Print Summary')}</LinkStyled>
       </FooterStyled>
       {showModalContacts && <ModalContacts onClose={toggleModalContacts} />}
       {showModalPrint && <ModalPrint onClose={toggleModalPrint} />}
