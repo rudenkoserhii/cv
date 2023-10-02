@@ -1,13 +1,11 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`
-  position: absolute;
-  right: 0;
-  top: 64px;
-  z-index: -9;
-
-  width: 800px;
-  height: 600px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+  /* width: auto; */
+  height: calc(100vh - 12px - 64px *3 - 60px);
 
   object-fit: contain;
 
@@ -54,15 +52,20 @@ export const Img = styled.img`
       opacity: 1;
     }
   }
+
+
 `;
 
 export const Cards = styled.div`
+display: none;
+  @media screen and (min-width: 1280px) {
+
   position: absolute;
   right: 0;
-  top: 64px;
+  top: 0;
   z-index: 11;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
 
@@ -111,6 +114,7 @@ export const Cards = styled.div`
       filter: blur(0);
       opacity: 1;
     }
+  }
   }
 `;
 

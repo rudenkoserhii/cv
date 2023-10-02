@@ -58,8 +58,9 @@ display: none;
 `;
 
 export const NavLinkStyled = styled(NavLink)`
+display: inline-block;
   margin: auto;
-
+max-height: 60px;
   & > .navIcon {
     transition: all 200ms ease;
   }

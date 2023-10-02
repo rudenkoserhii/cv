@@ -4,7 +4,6 @@ import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { useLocation, useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
-import Box from 'components/Box/Box';
 import { useTranslation } from 'react-i18next';
 
 const ExperienceItem = () => {
@@ -31,9 +30,9 @@ const ExperienceItem = () => {
   } = selectedCompany;
 
   return (
-    <Box className="first" key={companyName} style={{ pointerEvents: 'none'}}>
+    <div className="first" key={companyName} style={{ pointerEvents: 'none'}}>
       <LinkBack to={backLinkHref}><SpanBack>{t('Back')}</SpanBack></LinkBack>
-      <Box>
+      <div>
         <Text>{t(position)}</Text>
         <Text>
           <Span>{t(dateStart)} - </Span>
@@ -46,8 +45,8 @@ const ExperienceItem = () => {
             <Item key={nanoid()}>{t(item)}</Item>
           ))}
         </List>
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 };
 

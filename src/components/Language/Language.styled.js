@@ -8,6 +8,9 @@ export const SelectContainerLanguage = styled.fieldset`
 
   border: none;
   padding: 0;
+margin: 0;
+
+height: 35px;
 
   @media screen and (min-width: 768px) {
   }

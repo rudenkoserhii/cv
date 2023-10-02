@@ -1,69 +1,82 @@
 import styled from 'styled-components';
+import { ReactComponent as Burger } from '../../img/burger_menu/burger.svg';
+import { ReactComponent as Close } from '../../img/burger_menu/close.svg';
 
 export const WrapWhole = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-width: 360px;
-margin-left: auto;
-margin-right: auto;
-padding: ${p => p.theme.space[4]}px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 360px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: ${p => p.theme.space[4]}px;
+  padding-bottom: ${p => p.theme.space[4]}px;
 
   @media screen and (min-width: 768px) {
-width: 768px;
-padding: ${p => p.theme.space[5]}px;
-
+    max-width: 768px;
+    padding-top: ${p => p.theme.space[5]}px;
+    padding-bottom: ${p => p.theme.space[5]}px;
   }
 
   @media screen and (min-width: 1280px) {
-width: 1200px;
-padding: ${p => p.theme.space[6]}px;
-
+    max-width: 1200px;
+    padding-top: ${p => p.theme.space[6]}px;
+    padding-bottom: ${p => p.theme.space[6]}px;
   }
 `;
 
 export const Wrap = styled.div`
-          display: flex;
-flex-direction: column;
-margin-bottom: ${p => p.theme.space[4]}px;
-min-height: 600px;
-position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: ${p => p.theme.space[4]}px;
+  height: 100%;
+  position: relative;
 
   @media screen and (min-width: 768px) {
-margin-bottom: ${p => p.theme.space[5]}px;
+    margin-bottom: ${p => p.theme.space[5]}px;
   }
 
   @media screen and (min-width: 1280px) {
-flex-direction: row;
-margin-bottom: ${p => p.theme.space[6]}px;
+    flex-direction: row;
+    margin-bottom: ${p => p.theme.space[5]}px;
   }
 `;
 
-
 export const Header = styled.header`
-display: none;
+  display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 
+  width: 100%;
+/* height: 100px; */
+height: auto;
   @media screen and (min-width: 768px) {
   }
 
   @media screen and (min-width: 1280px) {
-  width: ${p => p.theme.space[8]}px;
+    /* width: ${p => p.theme.space[8]}px; */
 
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+  max-height: calc(100vh - 18px - 64px * 2);
+  margin-right: ${p => p.theme.space[6]}px;
   }
 `;
 
 export const Name = styled.h1`
   display: flex;
-justify-content: flex-start;
-align-items: center;
-flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-text-align: center;
-white-space: nowrap;
+  text-align: center;
+  white-space: nowrap;
+  line-height: 1;
 
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
@@ -109,48 +122,122 @@ white-space: nowrap;
       }
 
       @media screen and (min-width: 1280px) {
-      content: '';
-      position: absolute;
+        content: '';
+        position: absolute;
 
-      top: 0px;
-      right: -5px;
-      width: 5px;
-      height: 100%;
-      background-color: ${p => p.theme.colors.deepsea};
+        top: 0px;
+        right: -13px;
+        width: 5px;
+        height: 100%;
+        background-color: ${p => p.theme.colors.deepsea};
 
-        padding-right: ${p => p.theme.space[4]}px;
+        /* padding-right: ${p => p.theme.space[4]}px; */
       }
     }
   }
 
-& > .secondName {
-  font-size: 40px;
+  & > .secondName {
+    font-size: 40px;
 
-      @media screen and (min-width: 768px) {
-  font-size: 32px;
-      }
-
-      @media screen and (min-width: 1280px) {
-  font-size: 50px;
-      }
+    @media screen and (min-width: 768px) {
+      font-size: 32px;
     }
 
-  @media screen and (min-width: 768px) {
-  font-size: 36px;
+    @media screen and (min-width: 1280px) {
+      font-size: 50px;
+    }
+  }
 
+  @media screen and (min-width: 768px) {
+    font-size: 36px;
   }
 
   @media screen and (min-width: 1280px) {
     justify-content: flex-start;
     align-items: baseline;
-flex-direction: row;
+    flex-direction: row;
     gap: calc(${p => p.theme.space[4]}px + 5px);
 
-  font-size: 50px;
+    font-size: 50px;
 
-
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 320px;
+    left: 320px; */
+  }
+`;
+
+export const IconBurger = styled(Burger)`
+  filter: ${p => p.theme.shadows.svg};
+  fill: ${p => p.theme.colors.deepsea};
+
+  transition: all 200ms ease;
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+
+export const IconClose = styled(Close)`
+  & path {
+    stroke: ${p => p.theme.colors.deepsea};
+    filter: ${p => p.theme.shadows.svg};
+
+    transition: all 200ms ease;
+  }
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
+`;
+export const ButtonBurger = styled.button`
+  all: unset;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+
+position: absolute;
+top: 8px;
+left: 50%;
+transform: translateX(-50%);
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &:hover ${IconBurger}, :focus ${IconBurger} {
+    fill: ${p => p.theme.colors.seablue};
+    transition: all 200ms ease;
+  }
+`;
+
+export const ButtonClose = styled.button`
+  all: unset;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  visibility: hidden;
+
+position: absolute;
+top: 8px;
+left: 50%;
+transform: translateX(-50%);
+
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
+  &:hover ${IconClose} path,
+  :focus ${IconClose} path {
+    stroke: ${p => p.theme.colors.seablue};
+    transition: all 200ms ease;
   }
 `;
