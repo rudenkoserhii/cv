@@ -20,7 +20,7 @@ export const WrapWhole = styled.div`
   }
 
   @media screen and (min-width: 1280px) {
-    max-width: 1200px;
+    max-width: 1280px;
     padding-top: ${p => p.theme.space[6]}px;
     padding-bottom: ${p => p.theme.space[6]}px;
   }
@@ -157,6 +157,10 @@ position: static;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+transform: translateX(0);
+
+width: ${p => p.theme.space[7]}px;
 
   max-height: calc(100vh - 18px - 64px * 2);
   margin-right: ${p => p.theme.space[6]}px;

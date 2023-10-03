@@ -88,6 +88,7 @@ export const LinkStyled = styled(NavLink)`
 export const Text = styled.p`
   font-size: ${p => p.theme.fontSizes.xxs};
   text-align: center;
+line-height: 1;
 
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
@@ -115,7 +116,7 @@ export const Img = styled.img`
   }
 
   @media screen and (min-width: 1280px) {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
   }
 `;

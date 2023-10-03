@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 export const LinkBack = styled(Link)`
+
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
 
@@ -15,10 +16,40 @@ export const LinkBack = styled(Link)`
 
   cursor: default;
 
-  display: block;
+  display: inline-block;
+& span {
+    font-size: ${p => p.theme.fontSizes.m};
+line-height: 1;
+}
+`;
+
+export const Arrow = styled.img`
+position: absolute;
+  top: 250px;
+left: 50%;
+transform: translateX(-50%);
+width: 40px;
+height: 40px;
+
+
+`;
+
+
+export const Div = styled.div`
+  pointer-events: auto;
+overflow-y: scroll;
+
+height: calc(550px - 48px - 156px - 36px);
+
+&::-webkit-scrollbar {
+    display: none;
+}
+
 `;
 
 export const Span = styled.span`
+pointer-events: none;
+
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
 
@@ -26,6 +57,8 @@ export const Span = styled.span`
 `;
 
 export const Text = styled.p`
+pointer-events: none;
+
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
 
@@ -34,10 +67,14 @@ export const Text = styled.p`
 `;
 
 export const List = styled.ul`
+pointer-events: none;
   padding: ${p => p.theme.space[3]}px;
   list-style-position: outside;
   list-style: square;
+
+
 `;
+
 
 export const Item = styled.li`
   color: ${p => p.theme.colors.deepsea};

@@ -5,7 +5,8 @@ display: block;
 margin-left: auto;
 margin-right: auto;
   /* width: auto; */
-  height: calc(100vh - 12px - 64px *3 - 60px);
+  height: 550px;
+width: 650px;
 
   object-fit: contain;
 
@@ -65,7 +66,7 @@ display: none;
   top: 0;
   z-index: 11;
 
-  display: none;
+  display: flex;
   justify-content: center;
   align-items: center;
 
@@ -121,10 +122,10 @@ display: none;
 export const Card = styled.div`
   cursor: pointer;
 
-  width: 200px;
-  height: 200px;
+  width: calc(650px/4);
+  height: calc(550px/3);
 
-  max-width: 200px;
+  /* max-width: 200px; */
   background-color: ${p => p.theme.colors.deepsea};
   filter: blur(2px);
 

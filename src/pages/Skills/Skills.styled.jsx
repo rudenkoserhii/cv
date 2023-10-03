@@ -10,6 +10,16 @@ export const ListStyled = styled.ul`
   align-items: center;
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: wrap;
+
+&.skill {
+overflow-y: scroll;
+
+height: calc(550px - 48px - 36px - 270px - 8px);
+
+&::-webkit-scrollbar {
+    display: none;
+}
+}
 `;
 
 export const ListItem = styled.li`
@@ -33,6 +43,9 @@ export const Text = styled.p`
   text-shadow: ${p => p.theme.shadows.first};
 
   font-weight: ${p => p.theme.fontWeights.bold};
+    font-size: ${p => p.theme.fontSizes.m};
+line-height: 1;
+
   margin-bottom: ${p => p.theme.space[3]}px;
   text-transform: capitalize;
 
@@ -97,6 +110,8 @@ export const LinkStyled = styled(Link)`
 `;
 
 export const SpanBack = styled.span`
+    font-size: ${p => p.theme.fontSizes.m};
+line-height: 1;
   transition: all 200ms ease;
   :hover {
     cursor: pointer;

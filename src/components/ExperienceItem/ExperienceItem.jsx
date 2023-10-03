@@ -1,7 +1,8 @@
-import { LinkBack, Span, Text, List, Item } from './ExperienceItem.styled';
+import { LinkBack, Span, Text, List, Item, Div, Arrow } from './ExperienceItem.styled';
 import { SpanBack } from 'pages/Skills/Skills.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
+import arrow from '../../img/company_logos/arrow-down.gif';
 import { useLocation, useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
@@ -32,7 +33,8 @@ const ExperienceItem = () => {
   return (
     <div className="first" key={companyName} style={{ pointerEvents: 'none'}}>
       <LinkBack to={backLinkHref}><SpanBack>{t('Back')}</SpanBack></LinkBack>
-      <div>
+      <Div>
+<Arrow src={arrow} alt='arrow' width={'40px'} height={'40px'}/>
         <Text>{t(position)}</Text>
         <Text>
           <Span>{t(dateStart)} - </Span>
@@ -45,7 +47,7 @@ const ExperienceItem = () => {
             <Item key={nanoid()}>{t(item)}</Item>
           ))}
         </List>
-      </div>
+      </Div>
     </div>
   );
 };

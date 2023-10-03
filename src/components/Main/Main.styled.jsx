@@ -25,7 +25,15 @@ background-image: url(${flag});
 `;
 
 export const MainStyled = styled.main`
+width: 650px;
+height: 550px;
+  @media screen and (min-width: 768px) {
+width: 650px;
+  }
+  @media screen and (min-width: 1280px) {
+width: 650px;
+  }
 
-  width: 100%;
-height: 100%;
+  /* width: 100%;
+height: 100%; */
 `;

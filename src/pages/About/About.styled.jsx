@@ -28,6 +28,7 @@ export const Title = styled.h2`
 
   font-size: ${p => p.theme.fontSizes.xs};
   text-align: center;
+line-height: 1;
 
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
