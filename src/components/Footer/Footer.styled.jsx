@@ -51,5 +51,3 @@ display: block;
   }
 }
 `;
-
-export const Button = styled.button``;

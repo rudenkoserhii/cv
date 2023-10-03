@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const SelectContainerLanguage = styled.fieldset`
-  display: flex;
   justify-content: center;
   align-items: center;
   gap: 1px;
@@ -12,8 +11,23 @@ margin: 0;
 
 height: 35px;
 
-  @media screen and (min-width: 768px) {
+&.appbar {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+display: flex;
+
   }
+}
+
+&.footer {
+display: flex;
+  @media screen and (min-width: 1280px) {
+display: none
+}
+  }
+
+
 `;
 
 export const Label = styled.label`

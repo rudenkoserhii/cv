@@ -28,13 +28,21 @@ export const Layout = () => {
 
 console.log(e.currentTarget.parentElement.nextSibling)
     e.currentTarget.style.visibility = 'hidden';
+
     if (e.currentTarget.nextSibling) {
+e.currentTarget.parentElement.nextSibling.classList.add('slide-in-blurred-top');
+e.currentTarget.parentElement.nextSibling.classList.remove('slide-out-blurred-top');
       e.currentTarget.nextSibling.style.visibility = 'visible';
       e.currentTarget.parentElement.nextSibling.style.display = 'flex';
-
     }
     if (e.currentTarget.previousSibling) {
+e.currentTarget.parentElement.nextSibling.classList.remove('slide-in-blurred-top');
+e.currentTarget.parentElement.nextSibling.classList.add('slide-out-blurred-top');
       e.currentTarget.previousSibling.style.visibility = 'visible';
+// setTimeout(() => {
+//       e.currentTarget.parentElement.nextSibling.style.display = 'none';
+// }, 600)
+
     }
   }
 

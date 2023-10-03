@@ -50,11 +50,6 @@ export const EducationStyled = styled(Education)`
 `;
 
 export const Wrap = styled.nav`
-display: none;
-  @media screen and (min-width: 1280px) {
-    display: block;
-  }
-
 `;
 
 export const NavLinkStyled = styled(NavLink)`
@@ -77,11 +72,15 @@ max-height: 60px;
 
 export const ListStyled = styled.ul`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   gap: ${p => p.theme.space[5]}px;
+
+  @media screen and (min-width: 1280px) {
+  flex-direction: column;
+  }
+
 `;
 
 export const ListItem = styled.li``;
