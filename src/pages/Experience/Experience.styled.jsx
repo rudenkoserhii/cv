@@ -3,6 +3,18 @@ import { NavLink } from 'react-router-dom';
 
 export const ListItem = styled.li`
   position: relative;
+    @media screen and (min-width: 768px) {
+
+    width: calc(
+      (100% - ${p => p.theme.space[5]}px * 2 - ${p => p.theme.space[5]}px) / 2
+    );
+    }
+
+  @media screen and (min-width: 1280px) {
+    width: calc(
+      (100% - ${p => p.theme.space[5]}px * 2 - ${p => p.theme.space[2]}px * 3) / 4
+    );
+    }
 
   &:not(:last-child)::after {
     content: '';
@@ -17,7 +29,7 @@ export const ListItem = styled.li`
     border-radius: 50%;
 
     background-color: ${p => p.theme.colors.deepsea};
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 768px) {
       display: none;
     }
   }
@@ -30,10 +42,22 @@ export const ListStyled = styled.ul`
 
   gap: ${p => p.theme.space[5]}px;
 
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: ${p => p.theme.space[2]}px;
+    flex-direction: row;
+flex-wrap: wrap;
+
+
+  }
+
   @media screen and (min-width: 1280px) {
     justify-content: center;
     gap: ${p => p.theme.space[2]}px;
     flex-direction: row;
+flex-wrap: nowrap;
+
+
   }
 `;
 
@@ -64,6 +88,7 @@ export const LinkStyled = styled(NavLink)`
 export const Text = styled.p`
   font-size: ${p => p.theme.fontSizes.xxs};
   text-align: center;
+line-height: 1;
 
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
@@ -91,7 +116,7 @@ export const Img = styled.img`
   }
 
   @media screen and (min-width: 1280px) {
-    width: 160px;
-    height: 160px;
+    width: 140px;
+    height: 140px;
   }
 `;

@@ -12,7 +12,6 @@ const HomePage = () => {
 
   useEffect(() => {
     localStorage.setItem('cards', JSON.stringify(cards));
-    console.log('click');
   }, [cards]);
 
   function onCardClick(e) {
@@ -34,13 +33,12 @@ const HomePage = () => {
             ></Card>
           ))}
         </Cards>
-        <picture key={selected.name}>
+        <picture key={selected.name} style={{display:'block'}}>
           <source srcSet={selected.urlWebp} type="image/webp" />
           <source srcSet={selected.urlPng} type="image/png" />
           <Img
             src={selected.urlPng}
             alt="Man"
-            width="800px"
             className="first"
           />
         </picture>

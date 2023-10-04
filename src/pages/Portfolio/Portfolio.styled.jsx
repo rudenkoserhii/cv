@@ -73,6 +73,8 @@ cursor: pointer;
 `;
 
 export const ListTechStyled = styled.ul`
+visibility: hidden;
+
   display: flex;
   justify-content: flex-start;
   align-items: center;

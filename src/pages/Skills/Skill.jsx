@@ -6,16 +6,16 @@ import {
   Text,
   SpanBack,
 } from '../Skills/Skills.styled';
+import { Arrow } from 'components/ExperienceItem/ExperienceItem.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
-import { useLocation, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
 import { shuffle } from 'utils/shuffle';
 
 const Skill = () => {
-  const location = useLocation();
-  const backLinkHref = location.state?.from ?? '/skills';
+  const backLinkHref = '/skills';
 
   const { selected } = useContext(ThrowContext);
   const { t } = useTranslation();
@@ -32,7 +32,8 @@ const Skill = () => {
       <LinkStyled to={backLinkHref} className="first">
         <SpanBack>{t('Back')}</SpanBack>
       </LinkStyled>
-      <ListStyled className="second">
+      <ListStyled className="second skill">
+        <Arrow/>
         {shuffle(array).map(({ name, icon }) => (
           <ListItem key={nanoid()}>
             <Img src={icon} alt={`Icon ${name}`} />

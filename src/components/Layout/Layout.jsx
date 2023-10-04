@@ -1,52 +1,76 @@
 import { AppBar } from '../AppBar/AppBar';
-import { Header, Name } from './Layout.styled';
+import {
+  Header,
+  Name,
+  Wrap,
+  WrapWhole,
+  ButtonBurger,
+  ButtonClose,
+  IconBurger,
+  IconClose,
+  Div,
+} from './Layout.styled';
 import { Main } from '../Main/Main';
 import { Footer } from 'components/Footer/Footer';
-import Box from '../Box/Box';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { useTranslation } from 'react-i18next';
 import { Star } from 'components/Star/Star';
 
 export const Layout = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const { selected } = useContext(ThrowContext);
   const { t } = useTranslation();
 
-const quantity = 7;
+  const quantity = 7;
 
-const stars = [...Array(quantity).keys()].map(el => el += 1)
+  const stars = [...Array(quantity).keys()].map(el => (el += 1));
 
+  function handleClick() {
+    setIsExpanded(!isExpanded);
+  }
 
   return (
     selected && (
-      <Box
-        width="1200px"
-        display="flex"
-        justifyContent="center"
-        ml={'auto'}
-        mr={'auto'}
-        flexDirection="column"
-        p={64}
-      >
-{stars.map(star => <Star key={star} size={`${star}`}></Star>)}
-        
-        <Box
-          display="flex"
-          mb={64}
-          minHeight={600}
-          style={{ position: 'relative' }}
-        >
-          <Name className="fullName">
-            <span className="firstName">{t(selected.name)}</span>
-            <span className="secondName">{t(selected.job)}</span>
-          </Name>
-          <Header>
+      <WrapWhole>
+        <div>
+          {stars.map(star => (
+            <Star key={star} size={`${star}`}></Star>
+          ))}
+        </div>
+        <Wrap>
+          <Div>
+            <ButtonBurger
+              className={`${isExpanded}Expanded`}
+              type="button"
+              onClick={handleClick}
+            >
+              <IconBurger />
+            </ButtonBurger>
+            <ButtonClose
+              className={`${!isExpanded}Expanded`}
+              type="button"
+              onClick={handleClick}
+            >
+              <IconClose />
+            </ButtonClose>
+          </Div>
+          <Header
+            className={`${isExpanded}Expanded slide-in-blurred-top slide-out-blurred-top`}
+            onClick={handleClick}
+          >
             <AppBar />
           </Header>
-          <Main />
-        </Box>
+          <div>
+            <Name className="fullName">
+              <span className="firstName">{t(selected.name)}</span>
+              <span className="secondName">{t(selected.job)}</span>
+            </Name>
+            <Main />
+          </div>
+        </Wrap>
         <Footer />
-      </Box>
+      </WrapWhole>
     )
   );
 };

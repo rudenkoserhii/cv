@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
 export const Img = styled.img`
-  position: absolute;
-  right: 0;
-  top: 64px;
-  z-index: -9;
-
-  width: 800px;
-  height: 600px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+  /* width: auto; */
+  height: 550px;
+width: 650px;
 
   object-fit: contain;
 
@@ -54,12 +53,17 @@ export const Img = styled.img`
       opacity: 1;
     }
   }
+
+
 `;
 
 export const Cards = styled.div`
+display: none;
+  @media screen and (min-width: 1280px) {
+
   position: absolute;
   right: 0;
-  top: 64px;
+  top: 0;
   z-index: 11;
 
   display: flex;
@@ -112,15 +116,16 @@ export const Cards = styled.div`
       opacity: 1;
     }
   }
+  }
 `;
 
 export const Card = styled.div`
   cursor: pointer;
 
-  width: 200px;
-  height: 200px;
+  width: calc(650px/4);
+  height: calc(550px/3);
 
-  max-width: 200px;
+  /* max-width: 200px; */
   background-color: ${p => p.theme.colors.deepsea};
   filter: blur(2px);
 

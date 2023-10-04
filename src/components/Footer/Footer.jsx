@@ -1,4 +1,5 @@
 import { FooterStyled, LinkStyled } from './Footer.styled';
+import Language from 'components/Language/Language';
 import { useState, useContext } from 'react';
 import { ModalContacts } from '../Modal/ModalContacts';
 import { ModalPrint } from '../Modal/ModalPrint';
@@ -29,9 +30,10 @@ export const Footer = () => {
     <>
       <FooterStyled>
         {/* <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button> */}
+<Language place={'footer'}/>
         <LinkStyled onClick={toggleModalContacts}>{t('Contacts')}</LinkStyled>
         <Socials />
-        <LinkStyled onClick={toggleModalPrint}>{t('Print Summary')}</LinkStyled>
+        <LinkStyled className='print' onClick={toggleModalPrint}>{t('Print Summary')}</LinkStyled>
       </FooterStyled>
       {showModalContacts && <ModalContacts onClose={toggleModalContacts} />}
       {showModalPrint && <ModalPrint onClose={toggleModalPrint} />}

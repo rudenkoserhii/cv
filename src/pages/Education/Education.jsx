@@ -7,7 +7,6 @@ import {
 import { Title } from '../About/About.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
-import Box from 'components/Box/Box';
 import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
 
@@ -22,7 +21,7 @@ const Education = () => {
         {selected.education.map(
           ({ name, dateStart, dateEnd, speciality, country, city, logo }) => (
             <ListItem key={nanoid()} logo={logo}>
-              <Box className="third">
+              <div className="third">
                 <Text>
                   <b>{t(name)}</b>
                 </Text>
@@ -34,7 +33,7 @@ const Education = () => {
                   <Paragraph>{t(city)}, </Paragraph>
                   <Paragraph>{t(country)}</Paragraph>
                 </Text>
-              </Box>
+              </div>
             </ListItem>
           )
         )}

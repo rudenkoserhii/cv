@@ -16,6 +16,7 @@ import kominmet from './img/company_logos/kominmet.png';
 import ukrauto from './img/company_logos/ukrauto.png';
 import karcher from './img/company_logos/karcher.png';
 import pegas from './img/company_logos/pegas.png';
+import freelance from './img/company_logos/freelance.webp';
 
 import goit from './img/education/goit.png';
 import diit from './img/education/diit.png';
@@ -61,6 +62,7 @@ import preview_pet_shop from './img/portfolios/preview_pet_shop.jpg';
 import preview_tweets from './img/portfolios/preview_tweets.jpg';
 import preview_real_estate from './img/portfolios/preview_real_estate.jpg';
 import preview_webstudio from './img/portfolios/preview_webstudio.jpg';
+import preview_abyss from './img/portfolios/preview_abyss.jpg';
 
 import instagram from './img/socials_icons/instagram.svg';
 import twitter from './img/socials_icons/twitter.svg';
@@ -204,19 +206,19 @@ const db = {
           city: 'Dnipro',
           logo: pegas,
         },
-        // {
-        // companyName: "goit",
-        // dateStart: "April 2022",
-        // dateEnd: "March 2023",
-        // position: "Trainee",
-        // responsibilities: [
-        //   'Building the front-end portion of websites and web applications.',
-        //   'Using web languages such as HTML, CSS, and JavaScript.',
-        // ],
-        // country: "Ukraine",
-        // city: "Dnipro",
-        // logo: goit,
-        // },
+        {
+        companyName: "freelance",
+        dateStart: "April 2022",
+        dateEnd: 'now',
+        position: "Freelance Web Developer",
+        responsibilities: [
+          'Building the front-end portion of websites and web applications.',
+          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+        ],
+        country: "Ukraine",
+        city: "Dnipro",
+        logo: freelance,
+        },
       ],
       portfolios: [
         {
@@ -364,6 +366,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {
@@ -622,19 +639,19 @@ const db = {
           city: 'Dnipro',
           logo: pegas,
         },
-        // {
-        // companyName: "goit",
-        // dateStart: "April 2022",
-        // dateEnd: "March 2023",
-        // position: "Trainee",
-        // responsibilities: [
-        //   'Building the front-end portion of websites and web applications.',
-        //   'Using web languages such as HTML, CSS, and JavaScript.',
-        // ],
-        // country: "Ukraine",
-        // city: "Dnipro",
-        // logo: goit,
-        // },
+        {
+        companyName: "freelance",
+        dateStart: "April 2022",
+        dateEnd: 'now',
+        position: "Freelance Web Developer",
+        responsibilities: [
+          'Building the front-end portion of websites and web applications.',
+          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+        ],
+        country: "Ukraine",
+        city: "Dnipro",
+        logo: freelance,
+        },
       ],
       portfolios: [
         {
@@ -782,6 +799,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {
@@ -1040,19 +1072,19 @@ const db = {
           city: 'Dnipro',
           logo: pegas,
         },
-        // {
-        // companyName: "goit",
-        // dateStart: "April 2022",
-        // dateEnd: "March 2023",
-        // position: "Trainee",
-        // responsibilities: [
-        //   'Building the front-end portion of websites and web applications.',
-        //   'Using web languages such as HTML, CSS, and JavaScript.',
-        // ],
-        // country: "Ukraine",
-        // city: "Dnipro",
-        // logo: goit,
-        // },
+        {
+        companyName: "freelance",
+        dateStart: "April 2022",
+        dateEnd: 'now',
+        position: "Freelance Web Developer",
+        responsibilities: [
+          'Building the front-end portion of websites and web applications.',
+          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+        ],
+        country: "Ukraine",
+        city: "Dnipro",
+        logo: freelance,
+        },
       ],
       portfolios: [
         {
@@ -1200,6 +1232,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {
@@ -1458,19 +1505,19 @@ const db = {
           city: 'Dnipro',
           logo: pegas,
         },
-        // {
-        // companyName: "goit",
-        // dateStart: "April 2022",
-        // dateEnd: "March 2023",
-        // position: "Trainee",
-        // responsibilities: [
-        //   'Building the front-end portion of websites and web applications.',
-        //   'Using web languages such as HTML, CSS, and JavaScript.',
-        // ],
-        // country: "Ukraine",
-        // city: "Dnipro",
-        // logo: goit,
-        // },
+        {
+        companyName: "freelance",
+        dateStart: "April 2022",
+        dateEnd: 'now',
+        position: "Freelance Web Developer",
+        responsibilities: [
+          'Building the front-end portion of websites and web applications.',
+          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+        ],
+        country: "Ukraine",
+        city: "Dnipro",
+        logo: freelance,
+        },
       ],
       portfolios: [
         {
@@ -1618,6 +1665,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {
@@ -1876,19 +1938,19 @@ const db = {
           city: 'Dnipro',
           logo: pegas,
         },
-        // {
-        // companyName: "goit",
-        // dateStart: "April 2022",
-        // dateEnd: "March 2023",
-        // position: "Trainee",
-        // responsibilities: [
-        //   'Building the front-end portion of websites and web applications.',
-        //   'Using web languages such as HTML, CSS, and JavaScript.',
-        // ],
-        // country: "Ukraine",
-        // city: "Dnipro",
-        // logo: goit,
-        // },
+        {
+        companyName: "freelance",
+        dateStart: "April 2022",
+        dateEnd: 'now',
+        position: "Freelance Web Developer",
+        responsibilities: [
+          'Building the front-end portion of websites and web applications.',
+          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+        ],
+        country: "Ukraine",
+        city: "Dnipro",
+        logo: freelance,
+        },
       ],
       portfolios: [
         {
@@ -2036,6 +2098,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {

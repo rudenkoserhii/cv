@@ -49,11 +49,13 @@ export const EducationStyled = styled(Education)`
   filter: ${p => p.theme.shadows.svg};
 `;
 
-export const Wrap = styled.nav``;
+export const Wrap = styled.nav`
+`;
 
 export const NavLinkStyled = styled(NavLink)`
+display: inline-block;
   margin: auto;
-
+max-height: 60px;
   & > .navIcon {
     transition: all 200ms ease;
   }
@@ -61,20 +63,27 @@ export const NavLinkStyled = styled(NavLink)`
   &.active .navIcon {
     fill: ${p => p.theme.colors.seablue};
   }
-  :hover:not(.active) .navIcon {
+  &:hover:not(.active) .navIcon {
     fill: ${p => p.theme.colors.seablue};
     text-shadow: ${p => p.theme.shadows.text};
     transition: all 200ms ease;
   }
+&.active {
+pointer-events: none;
+}
 `;
 
 export const ListStyled = styled.ul`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   gap: ${p => p.theme.space[5]}px;
+
+  @media screen and (min-width: 1280px) {
+  flex-direction: column;
+  }
+
 `;
 
 export const ListItem = styled.li``;

@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Text = styled.p`
-  font-size: ${p => p.theme.fontSizes.xxs};
+  font-size: ${p => p.theme.fontSizes.xs};
   text-align: center;
 
   color: ${p => p.theme.colors.deepsea};
@@ -23,7 +23,7 @@ export const Paragraph = styled.span`
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
 
-  font-size: ${p => p.theme.fontSizes.xxxs};
+  font-size: ${p => p.theme.fontSizes.xxs};
 
   @media screen and (min-width: 768px) {
     font-size: ${p => p.theme.fontSizes.xxs};
