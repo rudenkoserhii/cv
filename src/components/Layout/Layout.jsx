@@ -11,12 +11,13 @@ import {
 } from './Layout.styled';
 import { Main } from '../Main/Main';
 import { Footer } from 'components/Footer/Footer';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { useTranslation } from 'react-i18next';
 import { Star } from 'components/Star/Star';
 
 export const Layout = () => {
+  const [isExpanded, setIsExpanded] = useState(false);
   const { selected } = useContext(ThrowContext);
   const { t } = useTranslation();
 
@@ -24,29 +25,8 @@ export const Layout = () => {
 
   const stars = [...Array(quantity).keys()].map(el => (el += 1));
 
-  function toggleBurgerMenu(e) {
-    console.log(e.currentTarget.parentElement.nextSibling);
-    e.currentTarget.style.visibility = 'hidden';
-
-    if (e.currentTarget.nextSibling) {
-      e.currentTarget.parentElement.nextSibling.classList.add(
-        'slide-in-blurred-top'
-      );
-      e.currentTarget.parentElement.nextSibling.classList.remove(
-        'slide-out-blurred-top'
-      );
-      e.currentTarget.nextSibling.style.visibility = 'visible';
-      e.currentTarget.parentElement.nextSibling.style.display = 'flex';
-    }
-    if (e.currentTarget.previousSibling) {
-      e.currentTarget.parentElement.nextSibling.classList.remove(
-        'slide-in-blurred-top'
-      );
-      e.currentTarget.parentElement.nextSibling.classList.add(
-        'slide-out-blurred-top'
-      );
-      e.currentTarget.previousSibling.style.visibility = 'visible';
-    }
+  function handleClick() {
+    setIsExpanded(!isExpanded);
   }
 
   return (
@@ -66,14 +46,25 @@ export const Layout = () => {
               margin: '32px auto 32px auto',
             }}
           >
-            <ButtonBurger type="button" onClick={toggleBurgerMenu}>
+            <ButtonBurger
+              className={`${isExpanded}Expanded`}
+              type="button"
+              onClick={handleClick}
+            >
               <IconBurger />
             </ButtonBurger>
-            <ButtonClose type="button" onClick={toggleBurgerMenu}>
+            <ButtonClose
+              className={`${!isExpanded}Expanded`}
+              type="button"
+              onClick={handleClick}
+            >
               <IconClose />
             </ButtonClose>
           </div>
-          <Header>
+          <Header
+            className={`${isExpanded}Expanded slide-in-blurred-top slide-out-blurred-top`}
+            onClick={handleClick}
+          >
             <AppBar />
           </Header>
           <div>

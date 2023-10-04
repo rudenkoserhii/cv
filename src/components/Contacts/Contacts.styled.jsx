@@ -22,3 +22,34 @@ export const Link = styled.a`
     transition: all 200ms ease;
   }
 `;
+
+export const Gmail = styled.img`
+width: 80px;
+height: auto;
+
+opacity: 0.5;
+  @media screen and (min-width: 768px) {
+width: 50px;
+height: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+width: 100px;
+height: auto;
+  }
+`;
+
+export const Messengers = styled.img`
+width: 100px;
+height: auto;
+opacity: 0.5;
+  @media screen and (min-width: 768px) {
+width: 80px;
+height: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+width: 150px;
+height: auto;
+  }
+`;

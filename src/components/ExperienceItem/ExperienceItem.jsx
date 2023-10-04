@@ -1,15 +1,22 @@
-import { LinkBack, Span, Text, List, Item, Div, Arrow } from './ExperienceItem.styled';
+import {
+  LinkBack,
+  Span,
+  Text,
+  List,
+  Item,
+  Div,
+  Arrow,
+} from './ExperienceItem.styled';
 import { SpanBack } from 'pages/Skills/Skills.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
-import arrow from '../../img/company_logos/arrow-down.gif';
-import { useLocation, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
 
 const ExperienceItem = () => {
-  const location = useLocation();
-  const backLinkHref = location.state?.from ?? '/experience';
+
+  const backLinkHref = '/experience';
 
   const { company } = useParams();
 
@@ -31,10 +38,11 @@ const ExperienceItem = () => {
   } = selectedCompany;
 
   return (
-    <div className="first" key={companyName} style={{ pointerEvents: 'none'}}>
-      <LinkBack to={backLinkHref}><SpanBack>{t('Back')}</SpanBack></LinkBack>
-      <Div>
-<Arrow src={arrow} alt='arrow' width={'40px'} height={'40px'}/>
+    <div className="first" key={companyName} style={{ pointerEvents: 'none' }}>
+      <LinkBack to={backLinkHref}>
+        <SpanBack>{t('Back')}</SpanBack>
+      </LinkBack>
+      <Div className='item-div'>
         <Text>{t(position)}</Text>
         <Text>
           <Span>{t(dateStart)} - </Span>
@@ -48,6 +56,7 @@ const ExperienceItem = () => {
           ))}
         </List>
       </Div>
+        <Arrow top={'240px'}/>
     </div>
   );
 };

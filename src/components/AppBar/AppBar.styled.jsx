@@ -63,11 +63,14 @@ max-height: 60px;
   &.active .navIcon {
     fill: ${p => p.theme.colors.seablue};
   }
-  :hover:not(.active) .navIcon {
+  &:hover:not(.active) .navIcon {
     fill: ${p => p.theme.colors.seablue};
     text-shadow: ${p => p.theme.shadows.text};
     transition: all 200ms ease;
   }
+&.active {
+pointer-events: none;
+}
 `;
 
 export const ListStyled = styled.ul`

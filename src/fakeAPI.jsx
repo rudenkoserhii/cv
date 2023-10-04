@@ -61,6 +61,7 @@ import preview_pet_shop from './img/portfolios/preview_pet_shop.jpg';
 import preview_tweets from './img/portfolios/preview_tweets.jpg';
 import preview_real_estate from './img/portfolios/preview_real_estate.jpg';
 import preview_webstudio from './img/portfolios/preview_webstudio.jpg';
+import preview_abyss from './img/portfolios/preview_abyss.jpg';
 
 import instagram from './img/socials_icons/instagram.svg';
 import twitter from './img/socials_icons/twitter.svg';
@@ -364,6 +365,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {
@@ -782,6 +798,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {
@@ -1200,6 +1231,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {
@@ -1618,6 +1664,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {
@@ -2036,6 +2097,21 @@ const db = {
           tech: ['HTML', 'SASS', 'VanillaJS'],
           production: 'Individual Project',
         },
+        {
+          name: 'Category Tree',
+          url: 'https://rudenkoserhii.github.io/test-abyss/',
+          preview: preview_abyss,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'WebPack',
+            'TypeScript',
+            'StyledComponents',
+          ],
+          production: 'Individual Project',
+        },
+
       ],
       skills: [
         {

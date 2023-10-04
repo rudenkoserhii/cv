@@ -14,7 +14,7 @@ export const ListStyled = styled.ul`
 &.skill {
 overflow-y: scroll;
 
-height: calc(550px - 48px - 36px - 270px - 8px);
+height: calc(550px - 36px - 209px - 48px);
 
 &::-webkit-scrollbar {
     display: none;
@@ -92,6 +92,10 @@ export const NavLinkStyled = styled(NavLink)`
 
     transition: all 200ms ease;
   }
+
+&.active {
+pointer-events: none;
+}
 `;
 
 export const LinkStyled = styled(Link)`

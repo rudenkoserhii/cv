@@ -18,6 +18,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   const toggleStackTechnologies = e => {
+e.currentTarget.children[0].style.visibility = 'visible'
     e.currentTarget.children[0].classList.toggle('fourth');
     e.currentTarget.children[0].classList.toggle('fifth');
     document.querySelectorAll('.portfolioText').forEach(el => {
