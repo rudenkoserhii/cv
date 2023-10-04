@@ -8,6 +8,7 @@ import {
   ButtonClose,
   IconBurger,
   IconClose,
+  Div,
 } from './Layout.styled';
 import { Main } from '../Main/Main';
 import { Footer } from 'components/Footer/Footer';
@@ -38,14 +39,7 @@ export const Layout = () => {
           ))}
         </div>
         <Wrap>
-          <div
-            style={{
-              position: 'relative',
-              height: 'auto',
-              width: 'auto',
-              margin: '32px auto 32px auto',
-            }}
-          >
+          <Div>
             <ButtonBurger
               className={`${isExpanded}Expanded`}
               type="button"
@@ -60,7 +54,7 @@ export const Layout = () => {
             >
               <IconClose />
             </ButtonClose>
-          </div>
+          </Div>
           <Header
             className={`${isExpanded}Expanded slide-in-blurred-top slide-out-blurred-top`}
             onClick={handleClick}

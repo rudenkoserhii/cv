@@ -1,39 +1,46 @@
 import styled from 'styled-components';
-import flag from '../../img/about/flag.png'
+import flag from '../../img/about/flag.png';
 
 export const SectionStyled = styled.section`
+  position: relative;
 
-
-
-position: relative;
-
-  max-width: 800px;
-/* width: calc(100vw - ${p => p.theme.space[8]}px - ${p => p.theme.space[6]}px * 2); */
-height: 100%;
-  /* padding: ${p => p.theme.space[6]}px; */
+  max-width: 780px;
+  height: 100%;
   padding-bottom: 0;
 
-&.flag {
-background-image: url(${flag});
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
+  @media screen and (min-width: 768px) {
+    max-width: 600px;
+  }
+  @media screen and (min-width: 1280px) {
+    max-width: 800px;
+  }
 
-  transition: all 200ms ease;
+  &.flag {
+    background-image: url(${flag});
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
 
-}
+    transition: all 200ms ease;
+
+    @media screen and (min-width: 768px) {
+      background-size: contain;
+    }
+    @media screen and (min-width: 1280px) {
+      background-size: cover;
+    }
+  }
 `;
 
 export const MainStyled = styled.main`
-width: 650px;
-height: 550px;
+  width: 350px;
+  height: 400px;
   @media screen and (min-width: 768px) {
-width: 650px;
+    width: 400px;
+    height: 500px;
   }
   @media screen and (min-width: 1280px) {
-width: 650px;
+    width: 650px;
+    height: 550px;
   }
-
-  /* width: 100%;
-height: 100%; */
 `;

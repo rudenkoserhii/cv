@@ -30,11 +30,14 @@ export const Wrap = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: ${p => p.theme.space[4]}px;
+  margin-top: ${p => p.theme.space[4]}px;
   height: 100%;
   position: relative;
 
   @media screen and (min-width: 768px) {
     margin-bottom: ${p => p.theme.space[5]}px;
+  margin-top: ${p => p.theme.space[5]}px;
+
   }
 
   @media screen and (min-width: 1280px) {
@@ -396,5 +399,20 @@ export const ButtonClose = styled.button`
     @media screen and (min-width: 1280px) {
       display: none;
     }
+  }
+`;
+
+export const Div = styled.div`
+position: relative;
+height: ${p => p.theme.space[6]}px;
+width: auto;
+margin-top: ${p => p.theme.space[5]}px;
+
+  @media screen and (min-width: 768px) {
+height: ${p => p.theme.space[6]}px;
+  }
+
+  @media screen and (min-width: 1280px) {
+height: auto;
   }
 `;

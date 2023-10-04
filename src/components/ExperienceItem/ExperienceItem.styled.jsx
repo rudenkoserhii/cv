@@ -7,7 +7,6 @@ export const LinkBack = styled(Link)`
   text-shadow: ${p => p.theme.shadows.first};
 
   width: 100%;
-  border-bottom: ${p => p.theme.borders.deepsea};
 
   margin-bottom: ${p => p.theme.space[3]}px;
   padding: ${p => p.theme.space[3]}px;
@@ -18,14 +17,49 @@ export const LinkBack = styled(Link)`
 
   display: inline-block;
   & span {
-    font-size: ${p => p.theme.fontSizes.m};
+    font-size: ${p => p.theme.fontSizes.s};
     line-height: 1;
+
+  @media screen and (min-width: 1280px) {
+  font-size: ${p => p.theme.fontSizes.m};
+  }
+
+  }
+
+  text-align: center;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40%;
+    height: 1px;
+
+    background-color: ${p => p.theme.colors.deepsea};
+
+    @media screen and (min-width: 768px) {
+      width: 70%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 0px;
+      transform: translateX(0);
+
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    text-align: left;
   }
 `;
 
 export const Arrow = styled(ArrowSvg)`
   position: absolute;
-  top: ${p => p.top};
+  top: 0;
   left: 50%;
   width: 40px;
   height: 40px;
@@ -60,23 +94,28 @@ export const Arrow = styled(ArrowSvg)`
       opacity: 1;
     }
   }
-  @media screen and (min-width: 768px) {
-  }
-
-  @media screen and (min-width: 1280px) {
-    /* display: ${p => (p.divheight > 310 ? 'block' : 'none')}; */
-  }
 `;
 
 export const Div = styled.div`
+  position: relative;
   pointer-events: auto;
   overflow-y: scroll;
 
+  height: 100px;
+
+  @media screen and (min-width: 768px) {
+  height: 150px;
+  }
+
+  @media screen and (min-width: 1280px) {
   height: calc(550px - 48px - 156px - 36px);
+  }
 
   &::-webkit-scrollbar {
     display: none;
   }
+
+
 `;
 
 export const Span = styled.span`

@@ -11,15 +11,25 @@ export const ListStyled = styled.ul`
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: wrap;
 
-&.skill {
-overflow-y: scroll;
+  &.skill {
+    position: relative;
+    overflow-y: scroll;
 
-height: calc(550px - 36px - 209px - 48px);
+    height: 150px;
 
-&::-webkit-scrollbar {
-    display: none;
-}
-}
+    @media screen and (min-width: 768px) {
+    height: calc(550px - 36px - 209px - 48px);
+    }
+
+    @media screen and (min-width: 1280px) {
+    height: calc(550px - 36px - 209px - 48px);
+    }
+
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
 `;
 
 export const ListItem = styled.li`
@@ -29,13 +39,33 @@ export const ListItem = styled.li`
 `;
 
 export const IconTech = styled(Tech)`
+  width: auto;
+  height: 130px;
+
+    @media screen and (min-width: 768px) {
+      height: 130px;
+    }
+
+    @media screen and (min-width: 1280px) {
   width: 100px;
-  height: auto;
+height: auto;
+    }
+
 `;
 
 export const IconSoft = styled(Soft)`
+  width: auto;
+  height: 130px;
+
+    @media screen and (min-width: 768px) {
+      height: 130px;
+    }
+
+    @media screen and (min-width: 1280px) {
   width: 100px;
-  height: auto;
+height: auto;
+    }
+
 `;
 
 export const Text = styled.p`
@@ -43,19 +73,41 @@ export const Text = styled.p`
   text-shadow: ${p => p.theme.shadows.first};
 
   font-weight: ${p => p.theme.fontWeights.bold};
-    font-size: ${p => p.theme.fontSizes.m};
-line-height: 1;
+  font-size: ${p => p.theme.fontSizes.s};
+  line-height: 1;
 
-  margin-bottom: ${p => p.theme.space[3]}px;
+  margin-bottom: ${p => p.theme.space[4]}px;
   text-transform: capitalize;
 
   margin-top: auto;
 
   pointer-events: none;
+
+    @media screen and (min-width: 768px) {
+  font-size: ${p => p.theme.fontSizes.s};
+  margin-bottom: ${p => p.theme.space[4]}px;
+    }
+
+    @media screen and (min-width: 1280px) {
+  font-size: ${p => p.theme.fontSizes.m};
+  margin-bottom: ${p => p.theme.space[3]}px;
+    }
+
 `;
 export const Img = styled.img`
+  width: 100px;
+  padding: 10px;
+
+    @media screen and (min-width: 768px) {
+  width: 120px;
+  padding: 15px;
+    }
+
+    @media screen and (min-width: 1280px) {
   width: 152px;
   padding: 20px;
+    }
+
 `;
 
 export const NavLinkStyled = styled(NavLink)`
@@ -93,9 +145,9 @@ export const NavLinkStyled = styled(NavLink)`
     transition: all 200ms ease;
   }
 
-&.active {
-pointer-events: none;
-}
+  &.active {
+    pointer-events: none;
+  }
 `;
 
 export const LinkStyled = styled(Link)`
@@ -105,18 +157,51 @@ export const LinkStyled = styled(Link)`
   text-shadow: ${p => p.theme.shadows.first};
 
   width: 100%;
-  border-bottom: ${p => p.theme.borders.deepsea};
-
-  margin-bottom: ${p => p.theme.space[3]}px;
+height: fit-content;
   padding: ${p => p.theme.space[3]}px;
+  margin-bottom: ${p => p.theme.space[3]}px;
 
   cursor: default;
+  text-align: center;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40%;
+    height: 1px;
+
+    background-color: ${p => p.theme.colors.deepsea};
+
+    @media screen and (min-width: 768px) {
+      width: 70%;
+    }
+
+    @media screen and (min-width: 1280px) {
+      left: 0px;
+      transform: translateX(0);
+
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    text-align: left;
+  }
 `;
 
 export const SpanBack = styled.span`
-    font-size: ${p => p.theme.fontSizes.m};
-line-height: 1;
+  font-size: ${p => p.theme.fontSizes.s};
+  line-height: 1;
   transition: all 200ms ease;
+
+  @media screen and (min-width: 1280px) {
+  font-size: ${p => p.theme.fontSizes.m};
+  }
+
   :hover {
     cursor: pointer;
 

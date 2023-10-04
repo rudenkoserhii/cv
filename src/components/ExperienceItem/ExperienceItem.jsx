@@ -43,6 +43,7 @@ const ExperienceItem = () => {
         <SpanBack>{t('Back')}</SpanBack>
       </LinkBack>
       <Div className='item-div'>
+        <Arrow/>
         <Text>{t(position)}</Text>
         <Text>
           <Span>{t(dateStart)} - </Span>
@@ -56,7 +57,6 @@ const ExperienceItem = () => {
           ))}
         </List>
       </Div>
-        <Arrow top={'240px'}/>
     </div>
   );
 };
