@@ -51,6 +51,8 @@ import jira from './img/skills/tech/jira.png';
 import trello from './img/skills/tech/trello.png';
 import slack from './img/skills/tech/slack.png';
 import redux from './img/skills/tech/redux.png';
+import googleappsscript from './img/skills/tech/googleappsscript.png';
+import typescript from './img/skills/tech/typescript.png';
 
 import preview_icecream from './img/portfolios/preview_icecream.jpg';
 import preview_filmoteka from './img/portfolios/preview_filmoteka.jpg';
@@ -63,6 +65,7 @@ import preview_tweets from './img/portfolios/preview_tweets.jpg';
 import preview_real_estate from './img/portfolios/preview_real_estate.jpg';
 import preview_webstudio from './img/portfolios/preview_webstudio.jpg';
 import preview_abyss from './img/portfolios/preview_abyss.jpg';
+import preview_dashboard from './img/portfolios/preview_dashboard.jpg';
 
 import instagram from './img/socials_icons/instagram.svg';
 import twitter from './img/socials_icons/twitter.svg';
@@ -221,6 +224,13 @@ const db = {
         },
       ],
       portfolios: [
+        {
+          name: 'Dashboard',
+          url: 'https://docs.google.com/spreadsheets/d/1Nycj4i7IgzLa0D11LEoamW1RX8_ZUxlxPixewc0343I/edit?usp=sharing',
+          preview: preview_dashboard,
+          tech: ['GoogleSheets', 'Google Apps Script'],
+          production: 'Individual Project',
+        },
         {
           name: 'Ice-Cream',
           url: 'https://hresko.github.io/Ice-Cream/',
@@ -420,6 +430,14 @@ const db = {
         },
         {
           tech: [
+            {
+              name: 'Google Apps Script',
+              icon: googleappsscript,
+            },
+            {
+              name: 'TypeScript',
+              icon: typescript,
+            },
             {
               name: 'HTML5',
               icon: html,
@@ -654,6 +672,13 @@ const db = {
       ],
       portfolios: [
         {
+          name: 'Dashboard',
+          url: 'https://docs.google.com/spreadsheets/d/1Nycj4i7IgzLa0D11LEoamW1RX8_ZUxlxPixewc0343I/edit?usp=sharing',
+          preview: preview_dashboard,
+          tech: ['GoogleSheets', 'Google Apps Script'],
+          production: 'Individual Project',
+        },
+        {
           name: 'Ice-Cream',
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
@@ -852,6 +877,14 @@ const db = {
         },
         {
           tech: [
+            {
+              name: 'Google Apps Script',
+              icon: googleappsscript,
+            },
+            {
+              name: 'TypeScript',
+              icon: typescript,
+            },
             {
               name: 'HTML5',
               icon: html,
@@ -1086,6 +1119,13 @@ const db = {
       ],
       portfolios: [
         {
+          name: 'Dashboard',
+          url: 'https://docs.google.com/spreadsheets/d/1Nycj4i7IgzLa0D11LEoamW1RX8_ZUxlxPixewc0343I/edit?usp=sharing',
+          preview: preview_dashboard,
+          tech: ['GoogleSheets', 'Google Apps Script'],
+          production: 'Individual Project',
+        },
+        {
           name: 'Ice-Cream',
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
@@ -1284,6 +1324,14 @@ const db = {
         },
         {
           tech: [
+            {
+              name: 'Google Apps Script',
+              icon: googleappsscript,
+            },
+            {
+              name: 'TypeScript',
+              icon: typescript,
+            },
             {
               name: 'HTML5',
               icon: html,
@@ -1518,6 +1566,13 @@ const db = {
       ],
       portfolios: [
         {
+          name: 'Dashboard',
+          url: 'https://docs.google.com/spreadsheets/d/1Nycj4i7IgzLa0D11LEoamW1RX8_ZUxlxPixewc0343I/edit?usp=sharing',
+          preview: preview_dashboard,
+          tech: ['GoogleSheets', 'Google Apps Script'],
+          production: 'Individual Project',
+        },
+        {
           name: 'Ice-Cream',
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
@@ -1716,6 +1771,14 @@ const db = {
         },
         {
           tech: [
+            {
+              name: 'Google Apps Script',
+              icon: googleappsscript,
+            },
+            {
+              name: 'TypeScript',
+              icon: typescript,
+            },
             {
               name: 'HTML5',
               icon: html,
@@ -1950,6 +2013,13 @@ const db = {
       ],
       portfolios: [
         {
+          name: 'Dashboard',
+          url: 'https://docs.google.com/spreadsheets/d/1Nycj4i7IgzLa0D11LEoamW1RX8_ZUxlxPixewc0343I/edit?usp=sharing',
+          preview: preview_dashboard,
+          tech: ['GoogleSheets', 'Google Apps Script'],
+          production: 'Individual Project',
+        },
+        {
           name: 'Ice-Cream',
           url: 'https://hresko.github.io/Ice-Cream/',
           preview: preview_icecream,
@@ -2148,6 +2218,14 @@ const db = {
         },
         {
           tech: [
+            {
+              name: 'Google Apps Script',
+              icon: googleappsscript,
+            },
+            {
+              name: 'TypeScript',
+              icon: typescript,
+            },
             {
               name: 'HTML5',
               icon: html,
