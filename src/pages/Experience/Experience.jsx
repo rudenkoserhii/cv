@@ -30,8 +30,8 @@ const Experience = () => {
               <Img
                 src={logo}
                 alt={`Logo ${companyName}`}
-                width="160px"
-                height="160px"
+                width="300px"
+                height="200px"
               />
             </LinkStyled>
           </ListItem>

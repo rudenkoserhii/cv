@@ -3,18 +3,16 @@ import { NavLink } from 'react-router-dom';
 
 export const ListItem = styled.li`
   position: relative;
-    @media screen and (min-width: 768px) {
-
-    width: calc(
-      (100% - ${p => p.theme.space[5]}px * 2 - ${p => p.theme.space[5]}px) / 2
-    );
-    }
+  width: calc((100% - ${p => p.theme.space[2]}px * 2) / 3);
+  @media screen and (min-width: 768px) {
+  }
 
   @media screen and (min-width: 1280px) {
     width: calc(
-      (100% - ${p => p.theme.space[5]}px * 2 - ${p => p.theme.space[2]}px * 3) / 4
+      (100% - ${p => p.theme.space[5]}px * 2 - ${p => p.theme.space[2]}px * 3) /
+        4
     );
-    }
+  }
 
   &:not(:last-child)::after {
     content: '';
@@ -37,27 +35,17 @@ export const ListItem = styled.li`
 
 export const ListStyled = styled.ul`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  gap: ${p => p.theme.space[5]}px;
-
-  @media screen and (min-width: 768px) {
-    justify-content: center;
-    gap: ${p => p.theme.space[2]}px;
-    flex-direction: row;
-flex-wrap: wrap;
-
-
-  }
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: ${p => p.theme.space[2]}px;
+  flex-direction: row;
 
   @media screen and (min-width: 1280px) {
     justify-content: center;
     gap: ${p => p.theme.space[2]}px;
     flex-direction: row;
-flex-wrap: nowrap;
-
-
+    flex-wrap: nowrap;
   }
 `;
 
@@ -86,9 +74,9 @@ export const LinkStyled = styled(NavLink)`
 `;
 
 export const Text = styled.p`
-  font-size: ${p => p.theme.fontSizes.xxs};
+  font-size: ${p => p.theme.fontSizes.xs};
   text-align: center;
-line-height: 1;
+  line-height: 1;
 
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
@@ -107,16 +95,17 @@ line-height: 1;
 `;
 
 export const Img = styled.img`
-  width: 100px;
-  height: 100px;
+  display: block;
+  /* width: 100px;
+  height: 100px; */
 
   @media screen and (min-width: 768px) {
-    width: 120px;
-    height: 120px;
+    /* width: 120px;
+    height: 120px; */
   }
 
   @media screen and (min-width: 1280px) {
-    width: 140px;
-    height: 140px;
+    /* width: 140px;
+    height: 140px; */
   }
 `;

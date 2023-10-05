@@ -31,25 +31,13 @@ export const LinkBack = styled(Link)`
   &::after {
     content: '';
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-    transform: translateX(-50%);
+    bottom: 0;
+    left: 0;
 
-    width: 40%;
+    width: 100%;
     height: 1px;
 
     background-color: ${p => p.theme.colors.deepsea};
-
-    @media screen and (min-width: 768px) {
-      width: 70%;
-    }
-
-    @media screen and (min-width: 1280px) {
-      left: 0px;
-      transform: translateX(0);
-
-      width: 100%;
-    }
   }
 
   @media screen and (min-width: 1280px) {
@@ -125,6 +113,17 @@ export const Span = styled.span`
   text-shadow: ${p => p.theme.shadows.first};
 
   margin-bottom: ${p => p.theme.space[3]}px;
+
+font-size: ${p => p.theme.fontSizes.xxs};
+
+  @media screen and (min-width: 768px) {
+font-size: ${p => p.theme.fontSizes.xs};
+  }
+
+  @media screen and (min-width: 1280px) {
+font-size: ${p => p.theme.fontSizes.s};
+  }
+
 `;
 
 export const Text = styled.p`
@@ -135,12 +134,25 @@ export const Text = styled.p`
 
   font-weight: ${p => p.theme.fontWeights.bold};
   margin-bottom: ${p => p.theme.space[3]}px;
+
+font-size: ${p => p.theme.fontSizes.xs};
+text-align: center;
+
+  @media screen and (min-width: 768px) {
+font-size: ${p => p.theme.fontSizes.s};
+  }
+
+  @media screen and (min-width: 1280px) {
+font-size: ${p => p.theme.fontSizes.m};
+text-align: left;
+  }
+
 `;
 
 export const List = styled.ul`
   pointer-events: none;
   padding: ${p => p.theme.space[3]}px;
-  list-style-position: outside;
+  list-style-position: inside;
   list-style: square;
 `;
 
@@ -149,4 +161,16 @@ export const Item = styled.li`
   text-shadow: ${p => p.theme.shadows.first};
 
   margin-bottom: ${p => p.theme.space[3]}px;
+
+font-size: ${p => p.theme.fontSizes.xs};
+text-align: center;
+  @media screen and (min-width: 768px) {
+font-size: ${p => p.theme.fontSizes.s};
+  }
+
+  @media screen and (min-width: 1280px) {
+font-size: ${p => p.theme.fontSizes.m};
+text-align: left;
+  }
+
 `;

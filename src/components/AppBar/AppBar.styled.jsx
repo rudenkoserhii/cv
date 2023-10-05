@@ -8,45 +8,105 @@ import { ReactComponent as Experience } from '../../img/nav_icons/experience.svg
 import { ReactComponent as Education } from '../../img/nav_icons/education.svg';
 
 export const HomeStyled = styled(Home)`
-  width: 50px;
-  height: 60px;
+  width: 30px;
+  height: 36px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
+
+  @media screen and (min-width: 768px) {
+  width: 40px;
+  height: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  width: 50px;
+  height: 60px;
+  }
 `;
 
 export const AboutStyled = styled(About)`
-  width: 50px;
-  height: 60px;
+  width: 30px;
+  height: 36px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
+
+  @media screen and (min-width: 768px) {
+  width: 40px;
+  height: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  width: 50px;
+  height: 60px;
+  }
 `;
 
 export const PortfolioStyled = styled(Portfolio)`
-  width: 50px;
-  height: 60px;
+  width: 30px;
+  height: 36px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
+
+  @media screen and (min-width: 768px) {
+  width: 40px;
+  height: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  width: 50px;
+  height: 60px;
+  }
 `;
 
 export const SkillsStyled = styled(Skills)`
-  width: 50px;
-  height: 60px;
+  width: 30px;
+  height: 36px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
+
+  @media screen and (min-width: 768px) {
+  width: 40px;
+  height: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  width: 50px;
+  height: 60px;
+  }
 `;
 
 export const ExperienceStyled = styled(Experience)`
-  width: 50px;
-  height: 60px;
+  width: 30px;
+  height: 36px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
+
+  @media screen and (min-width: 768px) {
+  width: 40px;
+  height: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  width: 50px;
+  height: 60px;
+  }
 `;
 
 export const EducationStyled = styled(Education)`
-  width: 50px;
-  max-height: 60px;
+  width: 30px;
+  height: 36px;
   fill: ${p => p.theme.colors.deepsea};
   filter: ${p => p.theme.shadows.svg};
+
+  @media screen and (min-width: 768px) {
+  width: 40px;
+  height: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+  width: 50px;
+  height: 60px;
+  }
 `;
 
 export const Wrap = styled.nav`
@@ -80,9 +140,10 @@ export const ListStyled = styled.ul`
 
   gap: ${p => p.theme.space[5]}px;
 
+
   @media screen and (min-width: 1280px) {
   flex-direction: column;
-  }
+}
 
 `;
 

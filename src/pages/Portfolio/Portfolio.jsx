@@ -12,6 +12,7 @@ import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
 import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
+import { Arrow } from 'components/ExperienceItem/ExperienceItem.styled';
 
 const Portfolio = () => {
   const { selected } = useContext(ThrowContext);
@@ -36,6 +37,7 @@ e.currentTarget.children[0].style.visibility = 'visible'
     <>
       <Title className="first">{t('Portfolio')}</Title>
       <ListStyled className="second">
+<Arrow/>
         {selected.portfolios.map(({ name, url, preview, tech, production }) => (
           <ListItem key={nanoid()}>
             <LinkStyled href={url} target="_blank">
@@ -45,6 +47,7 @@ e.currentTarget.children[0].style.visibility = 'visible'
                 src={preview}
                 alt={`Site ${name} preview`}
                 width="200px"
+style={{display: 'block'}}
               />
             </LinkStyled>
             <Text className="portfolioProduction">- {t(production)} -</Text>

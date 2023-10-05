@@ -64,25 +64,12 @@ line-height: 1;
   &::after {
     content: '';
     position: absolute;
-    bottom: 0px;
-    left: 50%;
-transform: translateX(-50%);
+    bottom: 0;
+    left: 0;
 
-    width: 70%;
+    width: 100%;
     height: 1px;
 
     background-color: ${p => p.theme.colors.deepsea};
-
-  @media screen and (min-width: 768px) {
-    width: 40%;
-  }
-
-  @media screen and (min-width: 1280px) {
-    left: 0px;
-transform: translateX(0);
-
-    width: 100%;
-  }
-
   }
 `;

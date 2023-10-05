@@ -2,25 +2,52 @@ import styled from 'styled-components';
 
 export const ListStyled = styled.ul`
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: wrap;
+
+  position: relative;
+  overflow-y: scroll;
+
+  height: 352px;
+
+  @media screen and (min-width: 768px) {
+    height: 444px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 502px;
+  justify-content: flex-start;
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `;
 
 export const ListItem = styled.li`
-  width: calc((100% - 3 * ${p => p.theme.space[3]}px) / 4);
+  width: fit-content;
 
   padding: ${p => p.theme.space[3]}px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - ${p => p.theme.space[3]}px) / 2);
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: calc((100% - 3 * ${p => p.theme.space[3]}px) / 4);
+  }
 `;
 
 export const LinkStyled = styled.a`
   display: flex;
   flex-direction: column;
+align-items: center;
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: nowrap;
 
-margin-bottom: ${p => p.theme.space[3]}px;
+  margin-bottom: ${p => p.theme.space[3]}px;
 
   & .portfolioName,
   & .portfolioImg {
@@ -49,50 +76,50 @@ export const Text = styled.p`
   text-align: center;
 
   &.portfolioProduction {
-margin-bottom: ${p => p.theme.space[3]}px;
+    margin-bottom: ${p => p.theme.space[3]}px;
 
     font-size: ${p => p.theme.fontSizes.s};
   }
 
   &.portfolioStack {
-position: relative;
+    position: relative;
 
-cursor: pointer;
+    cursor: pointer;
 
     font-size: ${p => p.theme.fontSizes.xs};
 
     transition: all 200ms ease;
 
-&:hover, &:focus {
-    color: ${p => p.theme.colors.seablue};
-    text-shadow: ${p => p.theme.shadows.text};
-    transition: all 200ms ease;
-
-}
+    &:hover,
+    &:focus {
+      color: ${p => p.theme.colors.seablue};
+      text-shadow: ${p => p.theme.shadows.text};
+      transition: all 200ms ease;
+    }
   }
 `;
 
 export const ListTechStyled = styled.ul`
-visibility: hidden;
+  visibility: hidden;
 
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: wrap;
-padding: ${p => p.theme.space[3]}px;
-border-radius: ${p => p.theme.space[3]}px;
+  padding: ${p => p.theme.space[3]}px;
+  border-radius: ${p => p.theme.space[3]}px;
 
-box-shadow: 0px 0px 10px 10px ${p => p.theme.colors.seablue};
+  box-shadow: 0px 0px 10px 10px ${p => p.theme.colors.seablue};
 
-background-color: ${p => p.theme.colors.seablue};
-backdrop-filter: opacity(50%);
+  background-color: ${p => p.theme.colors.seablue};
+  backdrop-filter: opacity(50%);
 
-position: absolute;
-top: 200%;
-left: 0;
+  position: absolute;
+  top: 200%;
+  left: 0;
 
-z-index: 5;
+  z-index: 5;
 `;
 
 export const ListItemTechStyled = styled.li`

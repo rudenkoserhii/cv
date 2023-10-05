@@ -4,7 +4,7 @@ import flag from '../../img/about/flag.png';
 export const SectionStyled = styled.section`
   position: relative;
 
-  max-width: 780px;
+  width: 100%;
   height: 100%;
   padding-bottom: 0;
 
@@ -36,7 +36,7 @@ export const MainStyled = styled.main`
   width: 350px;
   height: 400px;
   @media screen and (min-width: 768px) {
-    width: 400px;
+    width: 600px;
     height: 500px;
   }
   @media screen and (min-width: 1280px) {

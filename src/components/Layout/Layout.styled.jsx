@@ -60,6 +60,7 @@ export const Header = styled.header`
   transform: translateX(-50%);
 
   width: 100%;
+max-width: 350px;
 
   &.trueExpanded.slide-in-blurred-top {
     -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1)
@@ -81,6 +82,11 @@ animation: none;
   }
 
   @media screen and (min-width: 1280px) {
+max-width: 600px;
+  }
+
+  @media screen and (min-width: 1280px) {
+max-width: none;
     visibility: visible;
 
     position: static;

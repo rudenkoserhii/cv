@@ -16,7 +16,7 @@ import kominmet from './img/company_logos/kominmet.png';
 import ukrauto from './img/company_logos/ukrauto.png';
 import karcher from './img/company_logos/karcher.png';
 import pegas from './img/company_logos/pegas.png';
-import freelance from './img/company_logos/freelance.webp';
+import freelance from './img/company_logos/freelance.png';
 
 import goit from './img/education/goit.png';
 import diit from './img/education/diit.png';
