@@ -33,7 +33,7 @@ const Skill = () => {
         <SpanBack>{t('Back')}</SpanBack>
       </LinkStyled>
       <ListStyled className="second skill">
-        <Arrow/>
+        <Arrow />
         {shuffle(array).map(({ name, icon }) => (
           <ListItem key={nanoid()}>
             <Img src={icon} alt={`Icon ${name}`} />

@@ -21,17 +21,16 @@ const Skills = () => {
       <ListStyled className="second">
         <NavLinkStyled to="tech" state={{ from: location }}>
           <Text className="skills">{t('Tech Skills')}</Text>
-          <IconTech className="skills__icon"/>
+          <IconTech className="skills__icon" />
         </NavLinkStyled>
         <NavLinkStyled to="soft" state={{ from: location }}>
           <Text className="skills">{t('Soft Skills')}</Text>
-          <IconSoft className="skills__icon"/>
+          <IconSoft className="skills__icon" />
         </NavLinkStyled>
       </ListStyled>
       <Suspense fallback={null}>
         <Outlet />
       </Suspense>
-
     </>
   );
 };

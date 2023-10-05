@@ -18,13 +18,12 @@ export const ListStyled = styled.ul`
     height: 150px;
 
     @media screen and (min-width: 768px) {
-    height: calc(550px - 36px - 209px - 48px);
+      height: calc(550px - 36px - 209px - 48px);
     }
 
     @media screen and (min-width: 1280px) {
-    height: calc(550px - 36px - 209px - 48px);
+      height: calc(550px - 36px - 209px - 48px);
     }
-
 
     &::-webkit-scrollbar {
       display: none;
@@ -42,30 +41,28 @@ export const IconTech = styled(Tech)`
   width: auto;
   height: 130px;
 
-    @media screen and (min-width: 768px) {
-      height: 130px;
-    }
+  @media screen and (min-width: 768px) {
+    height: 130px;
+  }
 
-    @media screen and (min-width: 1280px) {
-  width: 100px;
-height: auto;
-    }
-
+  @media screen and (min-width: 1280px) {
+    width: 100px;
+    height: auto;
+  }
 `;
 
 export const IconSoft = styled(Soft)`
   width: auto;
   height: 130px;
 
-    @media screen and (min-width: 768px) {
-      height: 130px;
-    }
+  @media screen and (min-width: 768px) {
+    height: 130px;
+  }
 
-    @media screen and (min-width: 1280px) {
-  width: 100px;
-height: auto;
-    }
-
+  @media screen and (min-width: 1280px) {
+    width: 100px;
+    height: auto;
+  }
 `;
 
 export const Text = styled.p`
@@ -83,39 +80,35 @@ export const Text = styled.p`
 
   pointer-events: none;
 
-    @media screen and (min-width: 768px) {
-  font-size: ${p => p.theme.fontSizes.s};
-  margin-bottom: ${p => p.theme.space[4]}px;
-    }
+  @media screen and (min-width: 768px) {
+    font-size: ${p => p.theme.fontSizes.s};
+    margin-bottom: ${p => p.theme.space[4]}px;
+  }
 
-    @media screen and (min-width: 1280px) {
-  font-size: ${p => p.theme.fontSizes.m};
-  margin-bottom: ${p => p.theme.space[3]}px;
-    }
-
+  @media screen and (min-width: 1280px) {
+    font-size: ${p => p.theme.fontSizes.m};
+    margin-bottom: ${p => p.theme.space[3]}px;
+  }
 `;
 export const Img = styled.img`
   width: 100px;
   padding: 10px;
 
-    @media screen and (min-width: 768px) {
-  width: 120px;
-  padding: 15px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 120px;
+    padding: 15px;
+  }
 
-    @media screen and (min-width: 1280px) {
-  width: 152px;
-  padding: 20px;
-    }
-
+  @media screen and (min-width: 1280px) {
+    width: 152px;
+    padding: 20px;
+  }
 `;
 
 export const NavLinkStyled = styled(NavLink)`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
-
-  /* width: calc((100% - ${p => p.theme.space[4]}px) / 2); */
 
   &:last-child {
     align-items: flex-start;
@@ -157,7 +150,7 @@ export const LinkStyled = styled(Link)`
   text-shadow: ${p => p.theme.shadows.first};
 
   width: 100%;
-height: fit-content;
+  height: fit-content;
   padding: ${p => p.theme.space[3]}px;
   margin-bottom: ${p => p.theme.space[3]}px;
 
@@ -187,7 +180,7 @@ export const SpanBack = styled.span`
   transition: all 200ms ease;
 
   @media screen and (min-width: 1280px) {
-  font-size: ${p => p.theme.fontSizes.m};
+    font-size: ${p => p.theme.fontSizes.m};
   }
 
   :hover {

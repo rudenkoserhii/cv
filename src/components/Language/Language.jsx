@@ -2,7 +2,7 @@ import i18next from 'i18next';
 import React, { useEffect, useState } from 'react';
 import { SelectContainerLanguage, Label, Input } from './Language.styled';
 
-const Language = ({place}) => {
+const Language = ({ place }) => {
   const [selectedLanguage, setSelectedLanguage] = useState(
     localStorage.getItem('chosenLanguage') || 'en'
   );
@@ -27,7 +27,10 @@ const Language = ({place}) => {
     setSelectedLanguage(language);
   };
   return (
-    <SelectContainerLanguage className={place} onChange={e => changeLanguage(e)}>
+    <SelectContainerLanguage
+      className={place}
+      onChange={e => changeLanguage(e)}
+    >
       <Input
         id="en"
         name="language"

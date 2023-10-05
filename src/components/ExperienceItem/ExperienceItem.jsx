@@ -15,7 +15,6 @@ import { nanoid } from 'nanoid';
 import { useTranslation } from 'react-i18next';
 
 const ExperienceItem = () => {
-
   const backLinkHref = '/experience';
 
   const { company } = useParams();
@@ -42,8 +41,8 @@ const ExperienceItem = () => {
       <LinkBack to={backLinkHref}>
         <SpanBack>{t('Back')}</SpanBack>
       </LinkBack>
-      <Div className='item-div'>
-        <Arrow/>
+      <Div className="item-div">
+        <Arrow />
         <Text>{t(position)}</Text>
         <Text>
           <Span>{t(dateStart)} - </Span>

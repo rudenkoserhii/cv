@@ -1,9 +1,4 @@
-import {
-  Text,
-  Paragraph,
-  ListItem,
-  ListStyled,
-} from './Education.styled';
+import { Text, Paragraph, ListItem, ListStyled } from './Education.styled';
 import { Title } from '../About/About.styled';
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';

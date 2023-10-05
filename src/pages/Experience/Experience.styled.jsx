@@ -96,16 +96,4 @@ export const Text = styled.p`
 
 export const Img = styled.img`
   display: block;
-  /* width: 100px;
-  height: 100px; */
-
-  @media screen and (min-width: 768px) {
-    /* width: 120px;
-    height: 120px; */
-  }
-
-  @media screen and (min-width: 1280px) {
-    /* width: 140px;
-    height: 140px; */
-  }
 `;

@@ -36,8 +36,7 @@ export const Wrap = styled.div`
 
   @media screen and (min-width: 768px) {
     margin-bottom: ${p => p.theme.space[5]}px;
-  margin-top: ${p => p.theme.space[5]}px;
-
+    margin-top: ${p => p.theme.space[5]}px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -60,15 +59,15 @@ export const Header = styled.header`
   transform: translateX(-50%);
 
   width: 100%;
-max-width: 350px;
+  max-width: 350px;
 
   &.trueExpanded.slide-in-blurred-top {
     -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1)
       both;
     animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
-  @media screen and (min-width: 1280px) {
-animation: none;
-  }
+    @media screen and (min-width: 1280px) {
+      animation: none;
+    }
   }
 
   &.falseExpanded.slide-out-blurred-top {
@@ -76,17 +75,17 @@ animation: none;
       cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
     animation: slide-out-blurred-top 0.45s
       cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
-  @media screen and (min-width: 1280px) {
-animation: none;
-  }
-  }
-
-  @media screen and (min-width: 1280px) {
-max-width: 600px;
+    @media screen and (min-width: 1280px) {
+      animation: none;
+    }
   }
 
   @media screen and (min-width: 1280px) {
-max-width: none;
+    max-width: 600px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: none;
     visibility: visible;
 
     position: static;
@@ -217,7 +216,6 @@ export const Name = styled.h1`
   pointer-events: none;
 
   font-size: 44px;
-  /* min-height: ${p => p.theme.space[6]}px; */
 
   -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1)
     both;
@@ -263,8 +261,6 @@ export const Name = styled.h1`
         width: 5px;
         height: 100%;
         background-color: ${p => p.theme.colors.deepsea};
-
-        /* padding-right: ${p => p.theme.space[4]}px; */
       }
     }
   }
@@ -292,10 +288,6 @@ export const Name = styled.h1`
     gap: calc(${p => p.theme.space[4]}px + 5px);
 
     font-size: 50px;
-
-    /* position: absolute;
-    top: 0;
-    left: 320px; */
   }
 `;
 
@@ -370,7 +362,6 @@ export const ButtonClose = styled.button`
   width: 40px;
   height: 40px;
   cursor: pointer;
-  /* visibility: hidden; */
   display: none;
 
   position: absolute;
@@ -409,16 +400,16 @@ export const ButtonClose = styled.button`
 `;
 
 export const Div = styled.div`
-position: relative;
-height: ${p => p.theme.space[6]}px;
-width: auto;
-margin-top: ${p => p.theme.space[5]}px;
+  position: relative;
+  height: ${p => p.theme.space[6]}px;
+  width: auto;
+  margin-top: ${p => p.theme.space[5]}px;
 
   @media screen and (min-width: 768px) {
-height: ${p => p.theme.space[6]}px;
+    height: ${p => p.theme.space[6]}px;
   }
 
   @media screen and (min-width: 1280px) {
-height: auto;
+    height: auto;
   }
 `;

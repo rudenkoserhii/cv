@@ -127,7 +127,9 @@ export const ModalPrint = ({ onClose }) => {
         >
           <div>
             <h3 style={{ marginBottom: '30px' }}>{t(job)}</h3>
-            <h1 style={{ marginBottom: '50px', fontSize: '40px' }}>{t(name)}</h1>
+            <h1 style={{ marginBottom: '50px', fontSize: '40px' }}>
+              {t(name)}
+            </h1>
             <p style={{ marginBottom: '20px' }}>
               {about.split('<br>').map(p => (
                 <span key={nanoid()} style={{ display: 'inline-block' }}>
@@ -154,7 +156,9 @@ export const ModalPrint = ({ onClose }) => {
               </li>
               <li>
                 <div style={{ marginBottom: '20px' }}>
-                  <h2 style={{ marginBottom: '10px' }}>{t('Work experience')}</h2>
+                  <h2 style={{ marginBottom: '10px' }}>
+                    {t('Work experience')}
+                  </h2>
                   <ul style={{ listStyleType: 'circle' }}>
                     {Object.values(Object.values(jobs)).map(job => (
                       <li key={nanoid()} style={{ marginBottom: '5px' }}>

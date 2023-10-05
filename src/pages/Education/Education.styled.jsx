@@ -49,9 +49,7 @@ export const ListStyled = styled.ul`
   }
 
   @media screen and (min-width: 1280px) {
-    /* justify-content: center; */
     gap: ${p => p.theme.space[3]}px;
-    /* flex-direction: row; */
   }
 `;
 

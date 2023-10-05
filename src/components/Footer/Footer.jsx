@@ -29,11 +29,12 @@ export const Footer = () => {
   return (
     <>
       <FooterStyled>
-        {/* <Button onClick={() => {setTheme(theme === 'light' ? 'dark' : 'light')}}>{`Theme ${theme}`}</Button> */}
-<Language place={'footer'}/>
+        <Language place={'footer'} />
         <LinkStyled onClick={toggleModalContacts}>{t('Contacts')}</LinkStyled>
         <Socials />
-        <LinkStyled className='print' onClick={toggleModalPrint}>{t('Print Summary')}</LinkStyled>
+        <LinkStyled className="print" onClick={toggleModalPrint}>
+          {t('Print Summary')}
+        </LinkStyled>
       </FooterStyled>
       {showModalContacts && <ModalContacts onClose={toggleModalContacts} />}
       {showModalPrint && <ModalPrint onClose={toggleModalPrint} />}

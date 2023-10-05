@@ -33,14 +33,10 @@ const HomePage = () => {
             ></Card>
           ))}
         </Cards>
-        <picture key={selected.name} style={{display:'block'}}>
+        <picture key={selected.name} style={{ display: 'block' }}>
           <source srcSet={selected.urlWebp} type="image/webp" />
           <source srcSet={selected.urlPng} type="image/png" />
-          <Img
-            src={selected.urlPng}
-            alt="Man"
-            className="first"
-          />
+          <Img src={selected.urlPng} alt="Man" className="first" />
         </picture>
       </>
     )

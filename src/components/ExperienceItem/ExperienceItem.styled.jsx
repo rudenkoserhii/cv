@@ -20,10 +20,9 @@ export const LinkBack = styled(Link)`
     font-size: ${p => p.theme.fontSizes.s};
     line-height: 1;
 
-  @media screen and (min-width: 1280px) {
-  font-size: ${p => p.theme.fontSizes.m};
-  }
-
+    @media screen and (min-width: 1280px) {
+      font-size: ${p => p.theme.fontSizes.m};
+    }
   }
 
   text-align: center;
@@ -92,18 +91,16 @@ export const Div = styled.div`
   height: 100px;
 
   @media screen and (min-width: 768px) {
-  height: 150px;
+    height: 150px;
   }
 
   @media screen and (min-width: 1280px) {
-  height: calc(550px - 48px - 156px - 36px);
+    height: calc(550px - 48px - 156px - 36px);
   }
 
   &::-webkit-scrollbar {
     display: none;
   }
-
-
 `;
 
 export const Span = styled.span`
@@ -114,16 +111,15 @@ export const Span = styled.span`
 
   margin-bottom: ${p => p.theme.space[3]}px;
 
-font-size: ${p => p.theme.fontSizes.xxs};
+  font-size: ${p => p.theme.fontSizes.xxs};
 
   @media screen and (min-width: 768px) {
-font-size: ${p => p.theme.fontSizes.xs};
+    font-size: ${p => p.theme.fontSizes.xs};
   }
 
   @media screen and (min-width: 1280px) {
-font-size: ${p => p.theme.fontSizes.s};
+    font-size: ${p => p.theme.fontSizes.s};
   }
-
 `;
 
 export const Text = styled.p`
@@ -135,18 +131,17 @@ export const Text = styled.p`
   font-weight: ${p => p.theme.fontWeights.bold};
   margin-bottom: ${p => p.theme.space[3]}px;
 
-font-size: ${p => p.theme.fontSizes.xs};
-text-align: center;
+  font-size: ${p => p.theme.fontSizes.xs};
+  text-align: center;
 
   @media screen and (min-width: 768px) {
-font-size: ${p => p.theme.fontSizes.s};
+    font-size: ${p => p.theme.fontSizes.s};
   }
 
   @media screen and (min-width: 1280px) {
-font-size: ${p => p.theme.fontSizes.m};
-text-align: left;
+    font-size: ${p => p.theme.fontSizes.m};
+    text-align: left;
   }
-
 `;
 
 export const List = styled.ul`
@@ -162,15 +157,14 @@ export const Item = styled.li`
 
   margin-bottom: ${p => p.theme.space[3]}px;
 
-font-size: ${p => p.theme.fontSizes.xs};
-text-align: center;
+  font-size: ${p => p.theme.fontSizes.xs};
+  text-align: center;
   @media screen and (min-width: 768px) {
-font-size: ${p => p.theme.fontSizes.s};
+    font-size: ${p => p.theme.fontSizes.s};
   }
 
   @media screen and (min-width: 1280px) {
-font-size: ${p => p.theme.fontSizes.m};
-text-align: left;
+    font-size: ${p => p.theme.fontSizes.m};
+    text-align: left;
   }
-
 `;

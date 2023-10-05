@@ -7,27 +7,24 @@ export const SelectContainerLanguage = styled.fieldset`
 
   border: none;
   padding: 0;
-margin: 0;
+  margin: 0;
 
-height: 35px;
+  height: 35px;
 
-&.appbar {
-  display: none;
+  &.appbar {
+    display: none;
 
-  @media screen and (min-width: 1280px) {
-display: flex;
-
-  }
-}
-
-&.footer {
-display: flex;
-  @media screen and (min-width: 1280px) {
-display: none
-}
+    @media screen and (min-width: 1280px) {
+      display: flex;
+    }
   }
 
-
+  &.footer {
+    display: flex;
+    @media screen and (min-width: 1280px) {
+      display: none;
+    }
+  }
 `;
 
 export const Label = styled.label`
@@ -61,6 +58,6 @@ export const Input = styled.input`
 
   &:checked + ${Label} {
     color: ${p => p.theme.colors.seablue};
-pointer-events: none;
+    pointer-events: none;
   }
 `;

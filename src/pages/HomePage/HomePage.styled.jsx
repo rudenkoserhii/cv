@@ -54,13 +54,10 @@ export const Img = styled.img`
   }
 
   @media screen and (min-width: 768px) {
-
   }
 
   @media screen and (min-width: 768px) {
-
   }
-
 `;
 
 export const Cards = styled.div`

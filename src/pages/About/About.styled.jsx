@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const Text = styled.p`
-
   font-size: ${p => p.theme.fontSizes.xxs};
   text-align: center;
 
@@ -28,7 +27,7 @@ export const Title = styled.h2`
 
   font-size: ${p => p.theme.fontSizes.m};
   text-align: center;
-line-height: 1;
+  line-height: 1;
 
   color: ${p => p.theme.colors.deepsea};
   text-shadow: ${p => p.theme.shadows.first};
@@ -45,20 +44,16 @@ line-height: 1;
   @media screen and (min-width: 768px) {
     font-size: ${p => p.theme.fontSizes.ml};
 
-  margin-bottom: ${p => p.theme.space[4]}px;
-  padding: ${p => p.theme.space[4]}px;
-
-
+    margin-bottom: ${p => p.theme.space[4]}px;
+    padding: ${p => p.theme.space[4]}px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: ${p => p.theme.fontSizes.l};
     text-align: left;
 
-  margin-bottom: ${p => p.theme.space[3]}px;
-  padding: ${p => p.theme.space[3]}px;
-
-
+    margin-bottom: ${p => p.theme.space[3]}px;
+    padding: ${p => p.theme.space[3]}px;
   }
 
   &::after {

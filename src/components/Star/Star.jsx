@@ -2,8 +2,6 @@ import {
   StarStyled,
   StarStyledHorisontal,
   StarStyledVertical,
-//   StarStyledDiagonalLeft,
-//   StarStyledDiagonalRight,
 } from './Star.styled';
 
 export const Star = ({ size }) => {
@@ -16,8 +14,6 @@ export const Star = ({ size }) => {
       >
         <StarStyledHorisontal size={size}></StarStyledHorisontal>
         <StarStyledVertical size={size}></StarStyledVertical>
-        {/* <StarStyledDiagonalLeft size={size}></StarStyledDiagonalLeft>
-        <StarStyledDiagonalRight size={size}></StarStyledDiagonalRight> */}
       </StarStyled>
     </>
   );

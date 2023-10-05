@@ -19,7 +19,7 @@ const Portfolio = () => {
   const { t } = useTranslation();
 
   const toggleStackTechnologies = e => {
-e.currentTarget.children[0].style.visibility = 'visible'
+    e.currentTarget.children[0].style.visibility = 'visible';
     e.currentTarget.children[0].classList.toggle('fourth');
     e.currentTarget.children[0].classList.toggle('fifth');
     document.querySelectorAll('.portfolioText').forEach(el => {
@@ -37,7 +37,7 @@ e.currentTarget.children[0].style.visibility = 'visible'
     <>
       <Title className="first">{t('Portfolio')}</Title>
       <ListStyled className="second">
-<Arrow/>
+        <Arrow />
         {selected.portfolios.map(({ name, url, preview, tech, production }) => (
           <ListItem key={nanoid()}>
             <LinkStyled href={url} target="_blank">
@@ -47,7 +47,6 @@ e.currentTarget.children[0].style.visibility = 'visible'
                 src={preview}
                 alt={`Site ${name} preview`}
                 width="200px"
-style={{display: 'block'}}
               />
             </LinkStyled>
             <Text className="portfolioProduction">- {t(production)} -</Text>

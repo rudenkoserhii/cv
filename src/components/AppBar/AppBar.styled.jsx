@@ -14,13 +14,13 @@ export const HomeStyled = styled(Home)`
   filter: ${p => p.theme.shadows.svg};
 
   @media screen and (min-width: 768px) {
-  width: 40px;
-  height: 48px;
+    width: 40px;
+    height: 48px;
   }
 
   @media screen and (min-width: 1280px) {
-  width: 50px;
-  height: 60px;
+    width: 50px;
+    height: 60px;
   }
 `;
 
@@ -31,13 +31,13 @@ export const AboutStyled = styled(About)`
   filter: ${p => p.theme.shadows.svg};
 
   @media screen and (min-width: 768px) {
-  width: 40px;
-  height: 48px;
+    width: 40px;
+    height: 48px;
   }
 
   @media screen and (min-width: 1280px) {
-  width: 50px;
-  height: 60px;
+    width: 50px;
+    height: 60px;
   }
 `;
 
@@ -48,13 +48,13 @@ export const PortfolioStyled = styled(Portfolio)`
   filter: ${p => p.theme.shadows.svg};
 
   @media screen and (min-width: 768px) {
-  width: 40px;
-  height: 48px;
+    width: 40px;
+    height: 48px;
   }
 
   @media screen and (min-width: 1280px) {
-  width: 50px;
-  height: 60px;
+    width: 50px;
+    height: 60px;
   }
 `;
 
@@ -65,13 +65,13 @@ export const SkillsStyled = styled(Skills)`
   filter: ${p => p.theme.shadows.svg};
 
   @media screen and (min-width: 768px) {
-  width: 40px;
-  height: 48px;
+    width: 40px;
+    height: 48px;
   }
 
   @media screen and (min-width: 1280px) {
-  width: 50px;
-  height: 60px;
+    width: 50px;
+    height: 60px;
   }
 `;
 
@@ -82,13 +82,13 @@ export const ExperienceStyled = styled(Experience)`
   filter: ${p => p.theme.shadows.svg};
 
   @media screen and (min-width: 768px) {
-  width: 40px;
-  height: 48px;
+    width: 40px;
+    height: 48px;
   }
 
   @media screen and (min-width: 1280px) {
-  width: 50px;
-  height: 60px;
+    width: 50px;
+    height: 60px;
   }
 `;
 
@@ -99,23 +99,22 @@ export const EducationStyled = styled(Education)`
   filter: ${p => p.theme.shadows.svg};
 
   @media screen and (min-width: 768px) {
-  width: 40px;
-  height: 48px;
+    width: 40px;
+    height: 48px;
   }
 
   @media screen and (min-width: 1280px) {
-  width: 50px;
-  height: 60px;
+    width: 50px;
+    height: 60px;
   }
 `;
 
-export const Wrap = styled.nav`
-`;
+export const Wrap = styled.nav``;
 
 export const NavLinkStyled = styled(NavLink)`
-display: inline-block;
+  display: inline-block;
   margin: auto;
-max-height: 60px;
+  max-height: 60px;
   & > .navIcon {
     transition: all 200ms ease;
   }
@@ -128,9 +127,9 @@ max-height: 60px;
     text-shadow: ${p => p.theme.shadows.text};
     transition: all 200ms ease;
   }
-&.active {
-pointer-events: none;
-}
+  &.active {
+    pointer-events: none;
+  }
 `;
 
 export const ListStyled = styled.ul`
@@ -140,11 +139,9 @@ export const ListStyled = styled.ul`
 
   gap: ${p => p.theme.space[5]}px;
 
-
   @media screen and (min-width: 1280px) {
-  flex-direction: column;
-}
-
+    flex-direction: column;
+  }
 `;
 
 export const ListItem = styled.li``;

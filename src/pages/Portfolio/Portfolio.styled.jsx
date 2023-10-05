@@ -18,7 +18,7 @@ export const ListStyled = styled.ul`
 
   @media screen and (min-width: 1280px) {
     height: 502px;
-  justify-content: flex-start;
+    justify-content: flex-start;
   }
 
   &::-webkit-scrollbar {
@@ -43,7 +43,7 @@ export const ListItem = styled.li`
 export const LinkStyled = styled.a`
   display: flex;
   flex-direction: column;
-align-items: center;
+  align-items: center;
   gap: ${p => p.theme.space[3]}px;
   flex-wrap: nowrap;
 

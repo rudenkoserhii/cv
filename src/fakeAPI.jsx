@@ -207,17 +207,17 @@ const db = {
           logo: pegas,
         },
         {
-        companyName: "freelance",
-        dateStart: "April 2022",
-        dateEnd: 'now',
-        position: "Freelance Web Developer",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.',
-          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: freelance,
+          companyName: 'freelance',
+          dateStart: 'April 2022',
+          dateEnd: 'now',
+          position: 'Freelance Web Developer',
+          responsibilities: [
+            'Building the front-end portion of websites and web applications.',
+            'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+          ],
+          country: 'Ukraine',
+          city: 'Dnipro',
+          logo: freelance,
         },
       ],
       portfolios: [
@@ -380,7 +380,6 @@ const db = {
           ],
           production: 'Individual Project',
         },
-
       ],
       skills: [
         {
@@ -640,17 +639,17 @@ const db = {
           logo: pegas,
         },
         {
-        companyName: "freelance",
-        dateStart: "April 2022",
-        dateEnd: 'now',
-        position: "Freelance Web Developer",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.',
-          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: freelance,
+          companyName: 'freelance',
+          dateStart: 'April 2022',
+          dateEnd: 'now',
+          position: 'Freelance Web Developer',
+          responsibilities: [
+            'Building the front-end portion of websites and web applications.',
+            'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+          ],
+          country: 'Ukraine',
+          city: 'Dnipro',
+          logo: freelance,
         },
       ],
       portfolios: [
@@ -813,7 +812,6 @@ const db = {
           ],
           production: 'Individual Project',
         },
-
       ],
       skills: [
         {
@@ -1073,17 +1071,17 @@ const db = {
           logo: pegas,
         },
         {
-        companyName: "freelance",
-        dateStart: "April 2022",
-        dateEnd: 'now',
-        position: "Freelance Web Developer",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.',
-          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: freelance,
+          companyName: 'freelance',
+          dateStart: 'April 2022',
+          dateEnd: 'now',
+          position: 'Freelance Web Developer',
+          responsibilities: [
+            'Building the front-end portion of websites and web applications.',
+            'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+          ],
+          country: 'Ukraine',
+          city: 'Dnipro',
+          logo: freelance,
         },
       ],
       portfolios: [
@@ -1246,7 +1244,6 @@ const db = {
           ],
           production: 'Individual Project',
         },
-
       ],
       skills: [
         {
@@ -1506,17 +1503,17 @@ const db = {
           logo: pegas,
         },
         {
-        companyName: "freelance",
-        dateStart: "April 2022",
-        dateEnd: 'now',
-        position: "Freelance Web Developer",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.',
-          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: freelance,
+          companyName: 'freelance',
+          dateStart: 'April 2022',
+          dateEnd: 'now',
+          position: 'Freelance Web Developer',
+          responsibilities: [
+            'Building the front-end portion of websites and web applications.',
+            'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+          ],
+          country: 'Ukraine',
+          city: 'Dnipro',
+          logo: freelance,
         },
       ],
       portfolios: [
@@ -1679,7 +1676,6 @@ const db = {
           ],
           production: 'Individual Project',
         },
-
       ],
       skills: [
         {
@@ -1939,17 +1935,17 @@ const db = {
           logo: pegas,
         },
         {
-        companyName: "freelance",
-        dateStart: "April 2022",
-        dateEnd: 'now',
-        position: "Freelance Web Developer",
-        responsibilities: [
-          'Building the front-end portion of websites and web applications.',
-          'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
-        ],
-        country: "Ukraine",
-        city: "Dnipro",
-        logo: freelance,
+          companyName: 'freelance',
+          dateStart: 'April 2022',
+          dateEnd: 'now',
+          position: 'Freelance Web Developer',
+          responsibilities: [
+            'Building the front-end portion of websites and web applications.',
+            'Using web languages such as HTML, CSS, JavaScript and TypeScript.',
+          ],
+          country: 'Ukraine',
+          city: 'Dnipro',
+          logo: freelance,
         },
       ],
       portfolios: [
@@ -2112,7 +2108,6 @@ const db = {
           ],
           production: 'Individual Project',
         },
-
       ],
       skills: [
         {

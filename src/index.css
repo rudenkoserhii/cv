@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   font-family: 'Maven Pro', sans-serif;
-  color: #212121;
+  color: #3B9C9C;
   background-color: #123456;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -50,7 +50,6 @@ a {
 /*
  * Animation
  */
-
 
 .second {
   -webkit-animation: second 0.6s cubic-bezier(0.23, 1, 0.32, 1) 300ms both;
@@ -219,4 +218,3 @@ a {
     opacity: 1;
   }
 }
-

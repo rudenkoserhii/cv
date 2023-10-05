@@ -69,7 +69,7 @@ export const AppBar = () => {
             />
           </NavLinkStyled>
         </ListItem>
-        <Language place={'appbar'}/>
+        <Language place={'appbar'} />
       </ListStyled>
     </Wrap>
   );
