@@ -26,6 +26,7 @@ const Language = ({ place }) => {
     localStorage.setItem('chosenLanguage', language);
     setSelectedLanguage(language);
   };
+console.log('ua' === selectedLanguage)
   return (
     <SelectContainerLanguage
       className={place}

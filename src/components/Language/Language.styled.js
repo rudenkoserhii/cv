@@ -13,7 +13,6 @@ export const SelectContainerLanguage = styled.fieldset`
 
   &.appbar {
     display: none;
-
     @media screen and (min-width: 1280px) {
       display: flex;
     }
