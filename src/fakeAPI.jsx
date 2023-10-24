@@ -54,6 +54,12 @@ import redux from './img/skills/tech/redux.png';
 import googleappsscript from './img/skills/tech/googleappsscript.png';
 import typescript from './img/skills/tech/typescript.png';
 
+import render from './img/skills/tech/render.png';
+import nestjs from './img/skills/tech/nestjs.png';
+import postgres from './img/skills/tech/postgres.png';
+import swagger from './img/skills/tech/swagger.png';
+import netlify from './img/skills/tech/netlify.png';
+
 import preview_icecream from './img/portfolios/preview_icecream.jpg';
 import preview_filmoteka from './img/portfolios/preview_filmoteka.jpg';
 import preview_animal_welfare from './img/portfolios/preview_animal_welfare.jpg';
@@ -66,6 +72,7 @@ import preview_real_estate from './img/portfolios/preview_real_estate.jpg';
 import preview_webstudio from './img/portfolios/preview_webstudio.jpg';
 import preview_abyss from './img/portfolios/preview_abyss.jpg';
 import preview_dashboard from './img/portfolios/preview_dashboard.jpg';
+import preview_zenbit from './img/portfolios/preview_zenbit.jpg';
 
 import instagram from './img/socials_icons/instagram.svg';
 import twitter from './img/socials_icons/twitter.svg';
@@ -390,6 +397,30 @@ const db = {
           ],
           production: 'Individual Project',
         },
+        {
+          name: 'City Buildings',
+          url: 'https://symphonious-yeot-829608.netlify.app/',
+          preview: preview_zenbit,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'Redux',
+            'RTKQuery',
+            'Redux-Persist',
+            'WebPack',
+            'Axios',
+            'StyledComponents',
+            'Swagger',
+            'NodeJS',
+            'NestJS',
+            'PostgreSQL',
+            'Render',
+            'Netlify',
+            'Rest API',
+          ],
+          production: 'Individual Project',
+        },
       ],
       skills: [
         {
@@ -459,11 +490,11 @@ const db = {
               icon: js,
             },
             {
-              name: 'React.js',
+              name: 'ReactJS',
               icon: react,
             },
             {
-              name: 'Node.js',
+              name: 'NodeJS',
               icon: node,
             },
             {
@@ -517,6 +548,26 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
+            },
+            {
+              name: 'Render',
+              icon: render,
+            },
+            {
+              name: 'Swagger',
+              icon: swagger,
+            },
+            {
+              name: 'PostgreSQL',
+              icon: postgres,
+            },
+            {
+              name: 'NestJS',
+              icon: nestjs,
+            },
+            {
+              name: 'Netlify',
+              icon: netlify,
             },
           ],
         },
@@ -837,6 +888,30 @@ const db = {
           ],
           production: 'Individual Project',
         },
+        {
+          name: 'City Buildings',
+          url: 'https://symphonious-yeot-829608.netlify.app/',
+          preview: preview_zenbit,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'Redux',
+            'RTKQuery',
+            'Redux-Persist',
+            'WebPack',
+            'Axios',
+            'StyledComponents',
+            'Swagger',
+            'NodeJS',
+            'NestJS',
+            'PostgreSQL',
+            'Render',
+            'Netlify',
+            'Rest API',
+          ],
+          production: 'Individual Project',
+        },
       ],
       skills: [
         {
@@ -906,11 +981,11 @@ const db = {
               icon: js,
             },
             {
-              name: 'React.js',
+              name: 'ReactJS',
               icon: react,
             },
             {
-              name: 'Node.js',
+              name: 'NodeJS',
               icon: node,
             },
             {
@@ -964,6 +1039,26 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
+            },
+            {
+              name: 'Render',
+              icon: render,
+            },
+            {
+              name: 'Swagger',
+              icon: swagger,
+            },
+            {
+              name: 'PostgreSQL',
+              icon: postgres,
+            },
+            {
+              name: 'NestJS',
+              icon: nestjs,
+            },
+            {
+              name: 'Netlify',
+              icon: netlify,
             },
           ],
         },
@@ -1284,6 +1379,30 @@ const db = {
           ],
           production: 'Individual Project',
         },
+        {
+          name: 'City Buildings',
+          url: 'https://symphonious-yeot-829608.netlify.app/',
+          preview: preview_zenbit,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'Redux',
+            'RTKQuery',
+            'Redux-Persist',
+            'WebPack',
+            'Axios',
+            'StyledComponents',
+            'Swagger',
+            'NodeJS',
+            'NestJS',
+            'PostgreSQL',
+            'Render',
+            'Netlify',
+            'Rest API',
+          ],
+          production: 'Individual Project',
+        },
       ],
       skills: [
         {
@@ -1353,11 +1472,11 @@ const db = {
               icon: js,
             },
             {
-              name: 'React.js',
+              name: 'ReactJS',
               icon: react,
             },
             {
-              name: 'Node.js',
+              name: 'NodeJS',
               icon: node,
             },
             {
@@ -1411,6 +1530,26 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
+            },
+            {
+              name: 'Render',
+              icon: render,
+            },
+            {
+              name: 'Swagger',
+              icon: swagger,
+            },
+            {
+              name: 'PostgreSQL',
+              icon: postgres,
+            },
+            {
+              name: 'NestJS',
+              icon: nestjs,
+            },
+            {
+              name: 'Netlify',
+              icon: netlify,
             },
           ],
         },
@@ -1731,6 +1870,30 @@ const db = {
           ],
           production: 'Individual Project',
         },
+        {
+          name: 'City Buildings',
+          url: 'https://symphonious-yeot-829608.netlify.app/',
+          preview: preview_zenbit,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'Redux',
+            'RTKQuery',
+            'Redux-Persist',
+            'WebPack',
+            'Axios',
+            'StyledComponents',
+            'Swagger',
+            'NodeJS',
+            'NestJS',
+            'PostgreSQL',
+            'Render',
+            'Netlify',
+            'Rest API',
+          ],
+          production: 'Individual Project',
+        },
       ],
       skills: [
         {
@@ -1800,11 +1963,11 @@ const db = {
               icon: js,
             },
             {
-              name: 'React.js',
+              name: 'ReactJS',
               icon: react,
             },
             {
-              name: 'Node.js',
+              name: 'NodeJS',
               icon: node,
             },
             {
@@ -1858,6 +2021,26 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
+            },
+            {
+              name: 'Render',
+              icon: render,
+            },
+            {
+              name: 'Swagger',
+              icon: swagger,
+            },
+            {
+              name: 'PostgreSQL',
+              icon: postgres,
+            },
+            {
+              name: 'NestJS',
+              icon: nestjs,
+            },
+            {
+              name: 'Netlify',
+              icon: netlify,
             },
           ],
         },
@@ -2178,6 +2361,30 @@ const db = {
           ],
           production: 'Individual Project',
         },
+        {
+          name: 'City Buildings',
+          url: 'https://symphonious-yeot-829608.netlify.app/',
+          preview: preview_zenbit,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'Redux',
+            'RTKQuery',
+            'Redux-Persist',
+            'WebPack',
+            'Axios',
+            'StyledComponents',
+            'Swagger',
+            'NodeJS',
+            'NestJS',
+            'PostgreSQL',
+            'Render',
+            'Netlify',
+            'Rest API',
+          ],
+          production: 'Individual Project',
+        },
       ],
       skills: [
         {
@@ -2247,11 +2454,11 @@ const db = {
               icon: js,
             },
             {
-              name: 'React.js',
+              name: 'ReactJS',
               icon: react,
             },
             {
-              name: 'Node.js',
+              name: 'NodeJS',
               icon: node,
             },
             {
@@ -2305,6 +2512,26 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
+            },
+            {
+              name: 'Render',
+              icon: render,
+            },
+            {
+              name: 'Swagger',
+              icon: swagger,
+            },
+            {
+              name: 'PostgreSQL',
+              icon: postgres,
+            },
+            {
+              name: 'NestJS',
+              icon: nestjs,
+            },
+            {
+              name: 'Netlify',
+              icon: netlify,
             },
           ],
         },
