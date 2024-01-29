@@ -2,6 +2,7 @@ import { Routes, Route } from 'react-router-dom';
 import { Layout } from './Layout/Layout';
 import { lazy } from 'react';
 import { Context } from './Context/Context';
+import ReactGA from 'react-ga';
 
 const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
 const About = lazy(() => import('../pages/About/About'));
@@ -14,7 +15,11 @@ const ExperienceItem = lazy(() =>
   import('../components/ExperienceItem/ExperienceItem')
 );
 
+const TRACKING_ID = 'G-GVS6E671K3';
+
 export const App = () => {
+  ReactGA.initialize(TRACKING_ID);
+
   return (
     <Context>
       <Routes>
