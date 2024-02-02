@@ -5,14 +5,16 @@ export const SectionStyled = styled.section`
   position: relative;
 
   width: 100%;
-  height: 100%;
+  max-height: calc(100dvh - 400px);
   padding-bottom: 0;
 
   @media screen and (min-width: 768px) {
     max-width: 600px;
+    max-height: calc(100dvh - 390px);
   }
   @media screen and (min-width: 1280px) {
     max-width: 800px;
+    max-height: calc(100dvh - 200px);
   }
 
   &.flag {
@@ -33,14 +35,14 @@ export const SectionStyled = styled.section`
 `;
 
 export const MainStyled = styled.main`
-  width: 350px;
-  height: 400px;
+  width: calc(100vw - 64px);
+  height: calc(100dvh - 400px);
   @media screen and (min-width: 768px) {
     width: 600px;
-    height: 500px;
+    height: calc(100dvh - 390px);
   }
   @media screen and (min-width: 1280px) {
     width: 650px;
-    height: 550px;
+    height: calc(100dvh - 200px);
   }
 `;

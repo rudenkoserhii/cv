@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export const ListItem = styled.li`
   position: relative;
-  width: calc((100% - ${p => p.theme.space[2]}px * 2) / 3);
+  width: calc((100% - ${p => p.theme.space[2]}px * 3) / 4);
   @media screen and (min-width: 768px) {
   }
 
@@ -12,24 +12,6 @@ export const ListItem = styled.li`
       (100% - ${p => p.theme.space[5]}px * 2 - ${p => p.theme.space[2]}px * 3) /
         4
     );
-  }
-
-  &:not(:last-child)::after {
-    content: '';
-    width: 4px;
-    height: 4px;
-
-    position: absolute;
-    bottom: -4px;
-    left: 50%;
-    transform: translateX(-50%);
-
-    border-radius: 50%;
-
-    background-color: ${p => p.theme.colors.deepsea};
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
   }
 `;
 

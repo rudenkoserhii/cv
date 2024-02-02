@@ -4,6 +4,7 @@ export const StarStyled = styled.div`
   position: absolute;
   top: ${p => p.top}px;
   left: ${p => p.left}px;
+  z-index: 100;
 
   transform: rotate(${p => p.rotate}deg);
 `;
@@ -12,6 +13,7 @@ export const StarStyledHorisontal = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
 
   width: ${p => p.size / 3}px;
   height: ${p => p.size / 3}px;
@@ -67,6 +69,7 @@ export const StarStyledVertical = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 100;
 
   width: ${p => p.size / 3}px;
   height: ${p => p.size / 3}px;

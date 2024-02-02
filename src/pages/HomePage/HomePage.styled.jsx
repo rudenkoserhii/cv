@@ -4,10 +4,19 @@ export const Img = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  height: auto;
-  width: 100%;
+  max-height: calc(100vh - 400px);
+  min-width: 300px;
 
   object-fit: contain;
+
+  @media screen and (min-width: 768px) {
+    /* max-width: 600px; */
+    max-height: calc(100dvh - 390px);
+  }
+  @media screen and (min-width: 1280px) {
+    /* max-width: 800px; */
+    max-height: calc(100dvh - 200px);
+  }
 
   -webkit-animation: first 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
   animation: first 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;

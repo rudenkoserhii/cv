@@ -8,8 +8,12 @@ export const Star = ({ size }) => {
   return (
     <>
       <StarStyled
-        left={Math.floor(Math.random() * window.visualViewport.width)}
-        top={Math.floor(Math.random() * window.visualViewport.height)}
+        left={
+          10 + Math.floor(Math.random() * (window.visualViewport.width - 20))
+        }
+        top={
+          10 + Math.floor(Math.random() * (window.visualViewport.height - 20))
+        }
         rotate={Math.floor(Math.random() * 360)}
       >
         <StarStyledHorisontal size={size}></StarStyledHorisontal>

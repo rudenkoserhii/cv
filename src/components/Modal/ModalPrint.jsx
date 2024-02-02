@@ -29,6 +29,7 @@ export const ModalPrint = ({ onClose }) => {
     portfolios,
     education,
     jobs,
+    certificates,
   } = selected;
 
   useEffect(() => {
@@ -183,7 +184,7 @@ export const ModalPrint = ({ onClose }) => {
                 </div>
               </li>
               <li>
-                <div>
+                <div style={{ marginBottom: '20px' }}>
                   <h2 style={{ marginBottom: '10px' }}>{t('Education')}</h2>
                   <ul style={{ listStyleType: 'circle' }}>
                     {Object.values(Object.values(education)).map(edu => (
@@ -198,6 +199,34 @@ export const ModalPrint = ({ onClose }) => {
                           <span>{t(Object.values(edu)[2])}, </span>
                           <span>{t(Object.values(edu)[3])}</span>
                         </p>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2 style={{ marginBottom: '10px' }}>{t('Certificate')}</h2>
+                  <ul style={{ listStyleType: 'circle' }}>
+                    {Object.values(Object.values(certificates)).map(cert => (
+                      <li key={nanoid()} style={{ marginBottom: '5px' }}>
+                        <a href={cert.link}>
+                          <p
+                            style={{
+                              marginBottom: '5px',
+                              textTransform: 'capitalize',
+                            }}
+                          >
+                            {cert.name}
+                          </p>
+                          <img
+                            src={cert.preview}
+                            alt="Certificate preview"
+                            width={100}
+                            height={200}
+                            target="_blank"
+                          />
+                        </a>
                       </li>
                     ))}
                   </ul>

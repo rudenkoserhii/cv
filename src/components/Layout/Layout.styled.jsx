@@ -8,6 +8,7 @@ export const WrapWhole = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 360px;
+  max-height: 100vh;
   margin-left: auto;
   margin-right: auto;
   padding-top: ${p => p.theme.space[4]}px;
@@ -54,12 +55,16 @@ export const Header = styled.header`
   visibility: hidden;
 
   position: absolute;
-  top: -${p => p.theme.space[5]}px;
+  top: -${p => p.theme.space[4]}px;
   left: 50%;
   transform: translateX(-50%);
 
   width: 100%;
   max-width: 350px;
+
+  @media screen and (min-width: 768px) {
+    top: -${p => p.theme.space[5]}px;
+  }
 
   &.trueExpanded.slide-in-blurred-top {
     -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1)

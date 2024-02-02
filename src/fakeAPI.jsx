@@ -17,6 +17,8 @@ import ukrauto from './img/company_logos/ukrauto.png';
 import karcher from './img/company_logos/karcher.png';
 import pegas from './img/company_logos/pegas.png';
 import freelance from './img/company_logos/freelance.png';
+import betrbeta from './img/company_logos/betrbeta.png';
+import zenbit from './img/company_logos/zenbit.png';
 
 import goit from './img/education/goit.png';
 import diit from './img/education/diit.png';
@@ -53,6 +55,23 @@ import slack from './img/skills/tech/slack.png';
 import redux from './img/skills/tech/redux.png';
 import googleappsscript from './img/skills/tech/googleappsscript.png';
 import typescript from './img/skills/tech/typescript.png';
+import nextjs from './img/skills/tech/nextjs.png';
+import mysql from './img/skills/tech/mysql.png';
+import socket from './img/skills/tech/socket.png';
+import reactpdf from './img/skills/tech/reactpdf.png';
+import quill from './img/skills/tech/quill.png';
+import mui from './img/skills/tech/mui.png';
+import tailwind from './img/skills/tech/tailwind.png';
+import chakra from './img/skills/tech/chakra.png';
+import i18n from './img/skills/tech/i18n.png';
+import pwa from './img/skills/tech/pwa.png';
+import formik from './img/skills/tech/formik.png';
+import pino from './img/skills/tech/pino.png';
+import mixpanel from './img/skills/tech/mixpanel.png';
+import openai from './img/skills/tech/openai.png';
+import cypress from './img/skills/tech/cypress.png';
+import k6 from './img/skills/tech/k6.png';
+import puppeteer from './img/skills/tech/puppeteer.png';
 
 import render from './img/skills/tech/render.png';
 import nestjs from './img/skills/tech/nestjs.png';
@@ -79,6 +98,10 @@ import twitter from './img/socials_icons/twitter.svg';
 import facebook from './img/socials_icons/facebook.svg';
 import linkedin from './img/socials_icons/linkedin.svg';
 import githubIcon from './img/socials_icons/github.svg';
+
+import englishCertificate from './img/certificates/english.png';
+import goitCertificate from './img/certificates/goit.png';
+import zenbitCertificate from './img/certificates/zenbit.png';
 
 const db = {
   peoples: [
@@ -119,7 +142,8 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about:
-        'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as:<br>Creativity, <br>Problem-solving, Communication, Teamwork.',
+        // 'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as:<br>Creativity, Problem-solving, Communication, Teamwork.',
+        "Hi! My name is Serhii Rudenko. I'm a JavaScript developer.<br>My major motivation in life is never give up and keep going!<br>Motivators such as meeting deadlines, a friendly team, positive feedback from clients and continuous professional growth are also important to me.<br>My major goals-principles to professional succeeding are possibility (opportunities that push my career boundaries), presence (personal brand and professional image), people (professional network), perspective (about long-term career development), and perseverance (determined to overcome difficulties).<br>My main qaulities are responsibility, confidence, creative minding, accuracy, decency  and high learnability.<br>I can normally work under work pressure, like high speed, short deadlines, extra time, new technologies.<br>Let's cooperate together!",
       education: [
         {
           name: 'National Railway University',
@@ -140,64 +164,81 @@ const db = {
           logo: goit,
         },
       ],
+      certificates: [
+        {
+          name: 'EF SET English',
+          preview: englishCertificate,
+          link: 'https://www.efset.org/cert/6TpVdk',
+        },
+        {
+          name: 'ZenBit FullStack Internship',
+          preview: zenbitCertificate,
+          link: 'https://drive.google.com/file/d/1yM8uqw-VdU1lVebs0fQsjK5NUDw4T-tY/view?usp=sharing',
+        },
+        {
+          name: 'GoIT FullStack Course',
+          preview: goitCertificate,
+          link: 'https://drive.google.com/file/d/19QUbALg8VER5ZbpF_pwblIn1xDqOdcXr/view?usp=sharing',
+        },
+      ],
       jobs: [
-        {
-          companyName: 'kominmet',
-          dateStart: 'May 2003',
-          dateEnd: 'December 2003',
-          position: 'Dispatcher',
-          responsibilities: [
-            'Ensure compliance with all railroad rules, procedures, and regulations for safety and operations.',
-            'Direct and coordinate railroad traffic, issue permits and authorities, monitor all rail movements and maintain computerized records of all activities.',
-            'Know assigned territory and keep informed of changes in the physical characteristics.',
-            'Maintain familiarity with scheduled trains, destinations, times of arrivals and departures.',
-            'Communicate with personnel on weather or any environmental conditions affecting train movement.',
-            'Coordinate movement of trains according to operating plan and customer needs.',
-            'Monitor train and track movements.',
-            'Remotely control track switches and traffic signals and apply and remove blocking devices.',
-            'Report alleged violations of operating rules and any irregularity relating to the movement of trains.',
-            'Plan in advance for smooth and effective movement of priority trains, trains containing hazardous material or restricted shipments, and meets/passes to avoid unnecessary delays.',
-            'Coordinate track usage with Engineering Department personnel.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: kominmet,
-        },
-        {
-          companyName: 'ukrAuto',
-          dateStart: 'January 2004',
-          dateEnd: 'September 2004',
-          position: 'Ingeneer',
-          responsibilities: [
-            'Making plans using detailed drawings.',
-            'Preparing estimates and budgets.',
-            'Creating accurate project specifications.',
-            'Designing engineering experiments.',
-            'Creating technical reports for customers.',
-            'Completing regulatory documents concerning safety issues.',
-            'Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: ukrauto,
-        },
-        {
-          companyName: 'karcher',
-          dateStart: 'Oktober 2004',
-          dateEnd: 'November 2006',
-          position: 'Sales Manager',
-          responsibilities: [
-            'Achieve growth and hit sales targets by successfully managing the sales team.',
-            'Design and implement a strategic business plan that expands company’s customer base and ensure it’s strong presence.',
-            'Own recruiting, objectives setting, coaching and performance monitoring of sales representatives.',
-            'Build and promote strong, long-lasting customer relationships by partnering with them and understanding their needs.',
-            'Present sales, revenue and expenses reports and realistic forecasts to the management team.',
-            'Identify emerging markets and market shifts while being fully aware of new products and competition status.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: karcher,
-        },
+        // {
+        //   companyName: 'kominmet',
+        //   dateStart: 'May 2003',
+        //   dateEnd: 'December 2003',
+        //   position: 'Dispatcher',
+        //   responsibilities: [
+        //     'Ensure compliance with all railroad rules, procedures, and regulations for safety and operations.',
+        //     'Direct and coordinate railroad traffic, issue permits and authorities, monitor all rail movements and maintain computerized records of all activities.',
+        //     'Know assigned territory and keep informed of changes in the physical characteristics.',
+        //     'Maintain familiarity with scheduled trains, destinations, times of arrivals and departures.',
+        //     'Communicate with personnel on weather or any environmental conditions affecting train movement.',
+        //     'Coordinate movement of trains according to operating plan and customer needs.',
+        //     'Monitor train and track movements.',
+        //     'Remotely control track switches and traffic signals and apply and remove blocking devices.',
+        //     'Report alleged violations of operating rules and any irregularity relating to the movement of trains.',
+        //     'Plan in advance for smooth and effective movement of priority trains, trains containing hazardous material or restricted shipments, and meets/passes to avoid unnecessary delays.',
+        //     'Coordinate track usage with Engineering Department personnel.',
+        //   ],
+        //   country: 'Ukraine',
+        //   city: 'Dnipro',
+        //   logo: kominmet,
+        // },
+        // {
+        //   companyName: 'ukrAuto',
+        //   dateStart: 'January 2004',
+        //   dateEnd: 'September 2004',
+        //   position: 'Ingeneer',
+        //   responsibilities: [
+        //     'Making plans using detailed drawings.',
+        //     'Preparing estimates and budgets.',
+        //     'Creating accurate project specifications.',
+        //     'Designing engineering experiments.',
+        //     'Creating technical reports for customers.',
+        //     'Completing regulatory documents concerning safety issues.',
+        //     'Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.',
+        //   ],
+        //   country: 'Ukraine',
+        //   city: 'Dnipro',
+        //   logo: ukrauto,
+        // },
+        // {
+        //   companyName: 'karcher',
+        //   dateStart: 'Oktober 2004',
+        //   dateEnd: 'November 2006',
+        //   position: 'Sales Manager',
+        //   responsibilities: [
+        //     'Achieve growth and hit sales targets by successfully managing the sales team.',
+        //     'Design and implement a strategic business plan that expands company’s customer base and ensure it’s strong presence.',
+        //     'Own recruiting, objectives setting, coaching and performance monitoring of sales representatives.',
+        //     'Build and promote strong, long-lasting customer relationships by partnering with them and understanding their needs.',
+        //     'Present sales, revenue and expenses reports and realistic forecasts to the management team.',
+        //     'Identify emerging markets and market shifts while being fully aware of new products and competition status.',
+        //   ],
+        //   country: 'Ukraine',
+        //   city: 'Dnipro',
+        //   logo: karcher,
+        // },
         {
           companyName: 'pegas',
           dateStart: 'December 2006',
@@ -215,6 +256,42 @@ const db = {
           country: 'Ukraine',
           city: 'Dnipro',
           logo: pegas,
+        },
+        {
+          companyName: 'BetrBeta',
+          dateStart: 'September 2023',
+          dateEnd: 'November 2023',
+          position: 'Software Engineer Intern',
+          responsibilities: [
+            'Develop in Typescript and Javascript (Nodejs)',
+            'Build nodejs APIs',
+            'Front end development with React (Nextjs)',
+            'Create integrations with Frontend and Databases',
+            'Is reliable and committed to delivering functionality that others can experience',
+            'Work cross-functionally to define and write code for new features',
+            'Implement Integrations with GCP',
+          ],
+          country: 'Singapore',
+          city: 'remote',
+          logo: betrbeta,
+        },
+        {
+          companyName: 'ZenBit',
+          dateStart: 'December 2023',
+          dateEnd: 'February 2024',
+          position: 'FullStack Developer Intern',
+          responsibilities: [
+            'Established process - Experience of daily work on Scrum methodology – daily calls, weekly work planning',
+            'Simulation of a real project - Independently develop applications in an agile team',
+            'In-demand technologies - React-redux, Nest.js, TypeScript, Mysql',
+            'Mentor - Teamlead who supervises the work, gives feedback and clarification of difficult things',
+            'Teamwork - Writing a project as a team',
+            'Online - Communication will be online',
+            'Structured and understandable code - Daily code review',
+          ],
+          country: 'Poland',
+          city: 'remote',
+          logo: zenbit,
         },
         {
           companyName: 'freelance',
@@ -505,14 +582,14 @@ const db = {
               name: 'BootStrap',
               icon: bootstrap,
             },
-            {
-              name: 'WebPack',
-              icon: webpack,
-            },
-            {
-              name: 'Parcel',
-              icon: parcel,
-            },
+            // {
+            //   name: 'WebPack',
+            //   icon: webpack,
+            // },
+            // {
+            //   name: 'Parcel',
+            //   icon: parcel,
+            // },
             {
               name: 'FireBase',
               icon: firebase,
@@ -533,10 +610,10 @@ const db = {
               name: 'Jira',
               icon: jira,
             },
-            {
-              name: 'Slack',
-              icon: slack,
-            },
+            // {
+            //   name: 'Slack',
+            //   icon: slack,
+            // },
             {
               name: 'Gimp',
               icon: gimp,
@@ -549,10 +626,10 @@ const db = {
               name: 'Redux',
               icon: redux,
             },
-            {
-              name: 'Render',
-              icon: render,
-            },
+            // {
+            //   name: 'Render',
+            //   icon: render,
+            // },
             {
               name: 'Swagger',
               icon: swagger,
@@ -565,10 +642,27 @@ const db = {
               name: 'NestJS',
               icon: nestjs,
             },
-            {
-              name: 'Netlify',
-              icon: netlify,
-            },
+            // {
+            //   name: 'Netlify',
+            //   icon: netlify,
+            // },
+            { name: 'NextJS', icon: nextjs },
+            { name: 'MySQL', icon: mysql },
+            { name: 'SocketIO', icon: socket },
+            { name: 'ReactPDF', icon: reactpdf },
+            { name: 'Quill', icon: quill },
+            { name: 'MUI', icon: mui },
+            { name: 'TailWind', icon: tailwind },
+            { name: 'Chakra', icon: chakra },
+            { name: 'i18n', icon: i18n },
+            { name: 'PWA', icon: pwa },
+            { name: 'Formik', icon: formik },
+            { name: 'Pino', icon: pino },
+            { name: 'MixPanel', icon: mixpanel },
+            { name: 'OpenAI', icon: openai },
+            { name: 'Cypress', icon: cypress },
+            { name: 'K6', icon: k6 },
+            { name: 'Puppeteer', icon: puppeteer },
           ],
         },
       ],
@@ -610,7 +704,7 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about:
-        'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as:<br>Creativity, Problem-solving, Communication, Teamwork.',
+        "Hi! My name is Serhii Rudenko. I'm a JavaScript developer.<br>My major motivation in life is never give up and keep going!<br>Motivators such as meeting deadlines, a friendly team, positive feedback from clients and continuous professional growth are also important to me.<br>My major goals-principles to professional succeeding are possibility (opportunities that push my career boundaries), presence (personal brand and professional image), people (professional network), perspective (about long-term career development), and perseverance (determined to overcome difficulties).<br>My main qaulities are responsibility, confidence, creative minding, accuracy, decency  and high learnability.<br>I can normally work under work pressure, like high speed, short deadlines, extra time, new technologies.<br>Let's cooperate together!",
       education: [
         {
           name: 'National Railway University',
@@ -631,64 +725,24 @@ const db = {
           logo: goit,
         },
       ],
+      certificates: [
+        {
+          name: 'EF SET English',
+          preview: englishCertificate,
+          link: 'https://www.efset.org/cert/6TpVdk',
+        },
+        {
+          name: 'ZenBit FullStack Internship',
+          preview: zenbitCertificate,
+          link: 'https://drive.google.com/file/d/1yM8uqw-VdU1lVebs0fQsjK5NUDw4T-tY/view?usp=sharing',
+        },
+        {
+          name: 'GoIT FullStack Course',
+          preview: goitCertificate,
+          link: 'https://drive.google.com/file/d/19QUbALg8VER5ZbpF_pwblIn1xDqOdcXr/view?usp=sharing',
+        },
+      ],
       jobs: [
-        {
-          companyName: 'kominmet',
-          dateStart: 'May 2003',
-          dateEnd: 'December 2003',
-          position: 'Dispatcher',
-          responsibilities: [
-            'Ensure compliance with all railroad rules, procedures, and regulations for safety and operations.',
-            'Direct and coordinate railroad traffic, issue permits and authorities, monitor all rail movements and maintain computerized records of all activities.',
-            'Know assigned territory and keep informed of changes in the physical characteristics.',
-            'Maintain familiarity with scheduled trains, destinations, times of arrivals and departures.',
-            'Communicate with personnel on weather or any environmental conditions affecting train movement.',
-            'Coordinate movement of trains according to operating plan and customer needs.',
-            'Monitor train and track movements.',
-            'Remotely control track switches and traffic signals and apply and remove blocking devices.',
-            'Report alleged violations of operating rules and any irregularity relating to the movement of trains.',
-            'Plan in advance for smooth and effective movement of priority trains, trains containing hazardous material or restricted shipments, and meets/passes to avoid unnecessary delays.',
-            'Coordinate track usage with Engineering Department personnel.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: kominmet,
-        },
-        {
-          companyName: 'ukrAuto',
-          dateStart: 'January 2004',
-          dateEnd: 'September 2004',
-          position: 'Ingeneer',
-          responsibilities: [
-            'Making plans using detailed drawings.',
-            'Preparing estimates and budgets.',
-            'Creating accurate project specifications.',
-            'Designing engineering experiments.',
-            'Creating technical reports for customers.',
-            'Completing regulatory documents concerning safety issues.',
-            'Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: ukrauto,
-        },
-        {
-          companyName: 'karcher',
-          dateStart: 'Oktober 2004',
-          dateEnd: 'November 2006',
-          position: 'Sales Manager',
-          responsibilities: [
-            'Achieve growth and hit sales targets by successfully managing the sales team.',
-            'Design and implement a strategic business plan that expands company’s customer base and ensure it’s strong presence.',
-            'Own recruiting, objectives setting, coaching and performance monitoring of sales representatives.',
-            'Build and promote strong, long-lasting customer relationships by partnering with them and understanding their needs.',
-            'Present sales, revenue and expenses reports and realistic forecasts to the management team.',
-            'Identify emerging markets and market shifts while being fully aware of new products and competition status.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: karcher,
-        },
         {
           companyName: 'pegas',
           dateStart: 'December 2006',
@@ -706,6 +760,42 @@ const db = {
           country: 'Ukraine',
           city: 'Dnipro',
           logo: pegas,
+        },
+        {
+          companyName: 'BetrBeta',
+          dateStart: 'September 2023',
+          dateEnd: 'November 2023',
+          position: 'Software Engineer Intern',
+          responsibilities: [
+            'Develop in Typescript and Javascript (Nodejs)',
+            'Build nodejs APIs',
+            'Front end development with React (Nextjs)',
+            'Create integrations with Frontend and Databases',
+            'Is reliable and committed to delivering functionality that others can experience',
+            'Work cross-functionally to define and write code for new features',
+            'Implement Integrations with GCP',
+          ],
+          country: 'Singapore',
+          city: 'remote',
+          logo: betrbeta,
+        },
+        {
+          companyName: 'ZenBit',
+          dateStart: 'December 2023',
+          dateEnd: 'February 2024',
+          position: 'FullStack Developer Intern',
+          responsibilities: [
+            'Established process - Experience of daily work on Scrum methodology – daily calls, weekly work planning',
+            'Simulation of a real project - Independently develop applications in an agile team',
+            'In-demand technologies - React-redux, Nest.js, TypeScript, Mysql',
+            'Mentor - Teamlead who supervises the work, gives feedback and clarification of difficult things',
+            'Teamwork - Writing a project as a team',
+            'Online - Communication will be online',
+            'Structured and understandable code - Daily code review',
+          ],
+          country: 'Poland',
+          city: 'remote',
+          logo: zenbit,
         },
         {
           companyName: 'freelance',
@@ -997,14 +1087,6 @@ const db = {
               icon: bootstrap,
             },
             {
-              name: 'WebPack',
-              icon: webpack,
-            },
-            {
-              name: 'Parcel',
-              icon: parcel,
-            },
-            {
               name: 'FireBase',
               icon: firebase,
             },
@@ -1025,10 +1107,6 @@ const db = {
               icon: jira,
             },
             {
-              name: 'Slack',
-              icon: slack,
-            },
-            {
               name: 'Gimp',
               icon: gimp,
             },
@@ -1039,10 +1117,6 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
-            },
-            {
-              name: 'Render',
-              icon: render,
             },
             {
               name: 'Swagger',
@@ -1056,10 +1130,23 @@ const db = {
               name: 'NestJS',
               icon: nestjs,
             },
-            {
-              name: 'Netlify',
-              icon: netlify,
-            },
+            { name: 'NextJS', icon: nextjs },
+            { name: 'MySQL', icon: mysql },
+            { name: 'SocketIO', icon: socket },
+            { name: 'ReactPDF', icon: reactpdf },
+            { name: 'Quill', icon: quill },
+            { name: 'MUI', icon: mui },
+            { name: 'TailWind', icon: tailwind },
+            { name: 'Chakra', icon: chakra },
+            { name: 'i18n', icon: i18n },
+            { name: 'PWA', icon: pwa },
+            { name: 'Formik', icon: formik },
+            { name: 'Pino', icon: pino },
+            { name: 'MixPanel', icon: mixpanel },
+            { name: 'OpenAI', icon: openai },
+            { name: 'Cypress', icon: cypress },
+            { name: 'K6', icon: k6 },
+            { name: 'Puppeteer', icon: puppeteer },
           ],
         },
       ],
@@ -1101,7 +1188,7 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about:
-        'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as:<br>Creativity, Problem-solving, Communication, Teamwork.',
+        "Hi! My name is Serhii Rudenko. I'm a JavaScript developer.<br>My major motivation in life is never give up and keep going!<br>Motivators such as meeting deadlines, a friendly team, positive feedback from clients and continuous professional growth are also important to me.<br>My major goals-principles to professional succeeding are possibility (opportunities that push my career boundaries), presence (personal brand and professional image), people (professional network), perspective (about long-term career development), and perseverance (determined to overcome difficulties).<br>My main qaulities are responsibility, confidence, creative minding, accuracy, decency  and high learnability.<br>I can normally work under work pressure, like high speed, short deadlines, extra time, new technologies.<br>Let's cooperate together!",
       education: [
         {
           name: 'National Railway University',
@@ -1122,64 +1209,24 @@ const db = {
           logo: goit,
         },
       ],
+      certificates: [
+        {
+          name: 'EF SET English',
+          preview: englishCertificate,
+          link: 'https://www.efset.org/cert/6TpVdk',
+        },
+        {
+          name: 'ZenBit FullStack Internship',
+          preview: zenbitCertificate,
+          link: 'https://drive.google.com/file/d/1yM8uqw-VdU1lVebs0fQsjK5NUDw4T-tY/view?usp=sharing',
+        },
+        {
+          name: 'GoIT FullStack Course',
+          preview: goitCertificate,
+          link: 'https://drive.google.com/file/d/19QUbALg8VER5ZbpF_pwblIn1xDqOdcXr/view?usp=sharing',
+        },
+      ],
       jobs: [
-        {
-          companyName: 'kominmet',
-          dateStart: 'May 2003',
-          dateEnd: 'December 2003',
-          position: 'Dispatcher',
-          responsibilities: [
-            'Ensure compliance with all railroad rules, procedures, and regulations for safety and operations.',
-            'Direct and coordinate railroad traffic, issue permits and authorities, monitor all rail movements and maintain computerized records of all activities.',
-            'Know assigned territory and keep informed of changes in the physical characteristics.',
-            'Maintain familiarity with scheduled trains, destinations, times of arrivals and departures.',
-            'Communicate with personnel on weather or any environmental conditions affecting train movement.',
-            'Coordinate movement of trains according to operating plan and customer needs.',
-            'Monitor train and track movements.',
-            'Remotely control track switches and traffic signals and apply and remove blocking devices.',
-            'Report alleged violations of operating rules and any irregularity relating to the movement of trains.',
-            'Plan in advance for smooth and effective movement of priority trains, trains containing hazardous material or restricted shipments, and meets/passes to avoid unnecessary delays.',
-            'Coordinate track usage with Engineering Department personnel.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: kominmet,
-        },
-        {
-          companyName: 'ukrAuto',
-          dateStart: 'January 2004',
-          dateEnd: 'September 2004',
-          position: 'Ingeneer',
-          responsibilities: [
-            'Making plans using detailed drawings.',
-            'Preparing estimates and budgets.',
-            'Creating accurate project specifications.',
-            'Designing engineering experiments.',
-            'Creating technical reports for customers.',
-            'Completing regulatory documents concerning safety issues.',
-            'Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: ukrauto,
-        },
-        {
-          companyName: 'karcher',
-          dateStart: 'Oktober 2004',
-          dateEnd: 'November 2006',
-          position: 'Sales Manager',
-          responsibilities: [
-            'Achieve growth and hit sales targets by successfully managing the sales team.',
-            'Design and implement a strategic business plan that expands company’s customer base and ensure it’s strong presence.',
-            'Own recruiting, objectives setting, coaching and performance monitoring of sales representatives.',
-            'Build and promote strong, long-lasting customer relationships by partnering with them and understanding their needs.',
-            'Present sales, revenue and expenses reports and realistic forecasts to the management team.',
-            'Identify emerging markets and market shifts while being fully aware of new products and competition status.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: karcher,
-        },
         {
           companyName: 'pegas',
           dateStart: 'December 2006',
@@ -1197,6 +1244,42 @@ const db = {
           country: 'Ukraine',
           city: 'Dnipro',
           logo: pegas,
+        },
+        {
+          companyName: 'BetrBeta',
+          dateStart: 'September 2023',
+          dateEnd: 'November 2023',
+          position: 'Software Engineer Intern',
+          responsibilities: [
+            'Develop in Typescript and Javascript (Nodejs)',
+            'Build nodejs APIs',
+            'Front end development with React (Nextjs)',
+            'Create integrations with Frontend and Databases',
+            'Is reliable and committed to delivering functionality that others can experience',
+            'Work cross-functionally to define and write code for new features',
+            'Implement Integrations with GCP',
+          ],
+          country: 'Singapore',
+          city: 'remote',
+          logo: betrbeta,
+        },
+        {
+          companyName: 'ZenBit',
+          dateStart: 'December 2023',
+          dateEnd: 'February 2024',
+          position: 'FullStack Developer Intern',
+          responsibilities: [
+            'Established process - Experience of daily work on Scrum methodology – daily calls, weekly work planning',
+            'Simulation of a real project - Independently develop applications in an agile team',
+            'In-demand technologies - React-redux, Nest.js, TypeScript, Mysql',
+            'Mentor - Teamlead who supervises the work, gives feedback and clarification of difficult things',
+            'Teamwork - Writing a project as a team',
+            'Online - Communication will be online',
+            'Structured and understandable code - Daily code review',
+          ],
+          country: 'Poland',
+          city: 'remote',
+          logo: zenbit,
         },
         {
           companyName: 'freelance',
@@ -1488,14 +1571,6 @@ const db = {
               icon: bootstrap,
             },
             {
-              name: 'WebPack',
-              icon: webpack,
-            },
-            {
-              name: 'Parcel',
-              icon: parcel,
-            },
-            {
               name: 'FireBase',
               icon: firebase,
             },
@@ -1516,10 +1591,6 @@ const db = {
               icon: jira,
             },
             {
-              name: 'Slack',
-              icon: slack,
-            },
-            {
               name: 'Gimp',
               icon: gimp,
             },
@@ -1530,10 +1601,6 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
-            },
-            {
-              name: 'Render',
-              icon: render,
             },
             {
               name: 'Swagger',
@@ -1547,10 +1614,23 @@ const db = {
               name: 'NestJS',
               icon: nestjs,
             },
-            {
-              name: 'Netlify',
-              icon: netlify,
-            },
+            { name: 'NextJS', icon: nextjs },
+            { name: 'MySQL', icon: mysql },
+            { name: 'SocketIO', icon: socket },
+            { name: 'ReactPDF', icon: reactpdf },
+            { name: 'Quill', icon: quill },
+            { name: 'MUI', icon: mui },
+            { name: 'TailWind', icon: tailwind },
+            { name: 'Chakra', icon: chakra },
+            { name: 'i18n', icon: i18n },
+            { name: 'PWA', icon: pwa },
+            { name: 'Formik', icon: formik },
+            { name: 'Pino', icon: pino },
+            { name: 'MixPanel', icon: mixpanel },
+            { name: 'OpenAI', icon: openai },
+            { name: 'Cypress', icon: cypress },
+            { name: 'K6', icon: k6 },
+            { name: 'Puppeteer', icon: puppeteer },
           ],
         },
       ],
@@ -1592,7 +1672,7 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about:
-        'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as:<br>Creativity, Problem-solving, Communication, Teamwork.',
+        "Hi! My name is Serhii Rudenko. I'm a JavaScript developer.<br>My major motivation in life is never give up and keep going!<br>Motivators such as meeting deadlines, a friendly team, positive feedback from clients and continuous professional growth are also important to me.<br>My major goals-principles to professional succeeding are possibility (opportunities that push my career boundaries), presence (personal brand and professional image), people (professional network), perspective (about long-term career development), and perseverance (determined to overcome difficulties).<br>My main qaulities are responsibility, confidence, creative minding, accuracy, decency  and high learnability.<br>I can normally work under work pressure, like high speed, short deadlines, extra time, new technologies.<br>Let's cooperate together!",
       education: [
         {
           name: 'National Railway University',
@@ -1613,64 +1693,24 @@ const db = {
           logo: goit,
         },
       ],
+      certificates: [
+        {
+          name: 'EF SET English',
+          preview: englishCertificate,
+          link: 'https://www.efset.org/cert/6TpVdk',
+        },
+        {
+          name: 'ZenBit FullStack Internship',
+          preview: zenbitCertificate,
+          link: 'https://drive.google.com/file/d/1yM8uqw-VdU1lVebs0fQsjK5NUDw4T-tY/view?usp=sharing',
+        },
+        {
+          name: 'GoIT FullStack Course',
+          preview: goitCertificate,
+          link: 'https://drive.google.com/file/d/19QUbALg8VER5ZbpF_pwblIn1xDqOdcXr/view?usp=sharing',
+        },
+      ],
       jobs: [
-        {
-          companyName: 'kominmet',
-          dateStart: 'May 2003',
-          dateEnd: 'December 2003',
-          position: 'Dispatcher',
-          responsibilities: [
-            'Ensure compliance with all railroad rules, procedures, and regulations for safety and operations.',
-            'Direct and coordinate railroad traffic, issue permits and authorities, monitor all rail movements and maintain computerized records of all activities.',
-            'Know assigned territory and keep informed of changes in the physical characteristics.',
-            'Maintain familiarity with scheduled trains, destinations, times of arrivals and departures.',
-            'Communicate with personnel on weather or any environmental conditions affecting train movement.',
-            'Coordinate movement of trains according to operating plan and customer needs.',
-            'Monitor train and track movements.',
-            'Remotely control track switches and traffic signals and apply and remove blocking devices.',
-            'Report alleged violations of operating rules and any irregularity relating to the movement of trains.',
-            'Plan in advance for smooth and effective movement of priority trains, trains containing hazardous material or restricted shipments, and meets/passes to avoid unnecessary delays.',
-            'Coordinate track usage with Engineering Department personnel.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: kominmet,
-        },
-        {
-          companyName: 'ukrAuto',
-          dateStart: 'January 2004',
-          dateEnd: 'September 2004',
-          position: 'Ingeneer',
-          responsibilities: [
-            'Making plans using detailed drawings.',
-            'Preparing estimates and budgets.',
-            'Creating accurate project specifications.',
-            'Designing engineering experiments.',
-            'Creating technical reports for customers.',
-            'Completing regulatory documents concerning safety issues.',
-            'Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: ukrauto,
-        },
-        {
-          companyName: 'karcher',
-          dateStart: 'Oktober 2004',
-          dateEnd: 'November 2006',
-          position: 'Sales Manager',
-          responsibilities: [
-            'Achieve growth and hit sales targets by successfully managing the sales team.',
-            'Design and implement a strategic business plan that expands company’s customer base and ensure it’s strong presence.',
-            'Own recruiting, objectives setting, coaching and performance monitoring of sales representatives.',
-            'Build and promote strong, long-lasting customer relationships by partnering with them and understanding their needs.',
-            'Present sales, revenue and expenses reports and realistic forecasts to the management team.',
-            'Identify emerging markets and market shifts while being fully aware of new products and competition status.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: karcher,
-        },
         {
           companyName: 'pegas',
           dateStart: 'December 2006',
@@ -1688,6 +1728,42 @@ const db = {
           country: 'Ukraine',
           city: 'Dnipro',
           logo: pegas,
+        },
+        {
+          companyName: 'BetrBeta',
+          dateStart: 'September 2023',
+          dateEnd: 'November 2023',
+          position: 'Software Engineer Intern',
+          responsibilities: [
+            'Develop in Typescript and Javascript (Nodejs)',
+            'Build nodejs APIs',
+            'Front end development with React (Nextjs)',
+            'Create integrations with Frontend and Databases',
+            'Is reliable and committed to delivering functionality that others can experience',
+            'Work cross-functionally to define and write code for new features',
+            'Implement Integrations with GCP',
+          ],
+          country: 'Singapore',
+          city: 'remote',
+          logo: betrbeta,
+        },
+        {
+          companyName: 'ZenBit',
+          dateStart: 'December 2023',
+          dateEnd: 'February 2024',
+          position: 'FullStack Developer Intern',
+          responsibilities: [
+            'Established process - Experience of daily work on Scrum methodology – daily calls, weekly work planning',
+            'Simulation of a real project - Independently develop applications in an agile team',
+            'In-demand technologies - React-redux, Nest.js, TypeScript, Mysql',
+            'Mentor - Teamlead who supervises the work, gives feedback and clarification of difficult things',
+            'Teamwork - Writing a project as a team',
+            'Online - Communication will be online',
+            'Structured and understandable code - Daily code review',
+          ],
+          country: 'Poland',
+          city: 'remote',
+          logo: zenbit,
         },
         {
           companyName: 'freelance',
@@ -1979,14 +2055,6 @@ const db = {
               icon: bootstrap,
             },
             {
-              name: 'WebPack',
-              icon: webpack,
-            },
-            {
-              name: 'Parcel',
-              icon: parcel,
-            },
-            {
               name: 'FireBase',
               icon: firebase,
             },
@@ -2007,10 +2075,6 @@ const db = {
               icon: jira,
             },
             {
-              name: 'Slack',
-              icon: slack,
-            },
-            {
               name: 'Gimp',
               icon: gimp,
             },
@@ -2021,10 +2085,6 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
-            },
-            {
-              name: 'Render',
-              icon: render,
             },
             {
               name: 'Swagger',
@@ -2038,10 +2098,23 @@ const db = {
               name: 'NestJS',
               icon: nestjs,
             },
-            {
-              name: 'Netlify',
-              icon: netlify,
-            },
+            { name: 'NextJS', icon: nextjs },
+            { name: 'MySQL', icon: mysql },
+            { name: 'SocketIO', icon: socket },
+            { name: 'ReactPDF', icon: reactpdf },
+            { name: 'Quill', icon: quill },
+            { name: 'MUI', icon: mui },
+            { name: 'TailWind', icon: tailwind },
+            { name: 'Chakra', icon: chakra },
+            { name: 'i18n', icon: i18n },
+            { name: 'PWA', icon: pwa },
+            { name: 'Formik', icon: formik },
+            { name: 'Pino', icon: pino },
+            { name: 'MixPanel', icon: mixpanel },
+            { name: 'OpenAI', icon: openai },
+            { name: 'Cypress', icon: cypress },
+            { name: 'K6', icon: k6 },
+            { name: 'Puppeteer', icon: puppeteer },
           ],
         },
       ],
@@ -2083,7 +2156,7 @@ const db = {
       email: 'rudenko.serhii.v@gmail.com',
       phone: '+380504521144',
       about:
-        'I am Ukrainian and live in Ukraine in Dnipro city.<br>I understand the technologies that drives a website.<br>I have all needed Tech Skills, Soft Skills & some specific Workplace Skills, such as:<br>Creativity, Problem-solving, Communication, Teamwork.',
+        "Hi! My name is Serhii Rudenko. I'm a JavaScript developer.<br>My major motivation in life is never give up and keep going!<br>Motivators such as meeting deadlines, a friendly team, positive feedback from clients and continuous professional growth are also important to me.<br>My major goals-principles to professional succeeding are possibility (opportunities that push my career boundaries), presence (personal brand and professional image), people (professional network), perspective (about long-term career development), and perseverance (determined to overcome difficulties).<br>My main qaulities are responsibility, confidence, creative minding, accuracy, decency  and high learnability.<br>I can normally work under work pressure, like high speed, short deadlines, extra time, new technologies.<br>Let's cooperate together!",
       education: [
         {
           name: 'National Railway University',
@@ -2104,64 +2177,24 @@ const db = {
           logo: goit,
         },
       ],
+      certificates: [
+        {
+          name: 'EF SET English',
+          preview: englishCertificate,
+          link: 'https://www.efset.org/cert/6TpVdk',
+        },
+        {
+          name: 'ZenBit FullStack Internship',
+          preview: zenbitCertificate,
+          link: 'https://drive.google.com/file/d/1yM8uqw-VdU1lVebs0fQsjK5NUDw4T-tY/view?usp=sharing',
+        },
+        {
+          name: 'GoIT FullStack Course',
+          preview: goitCertificate,
+          link: 'https://drive.google.com/file/d/19QUbALg8VER5ZbpF_pwblIn1xDqOdcXr/view?usp=sharing',
+        },
+      ],
       jobs: [
-        {
-          companyName: 'kominmet',
-          dateStart: 'May 2003',
-          dateEnd: 'December 2003',
-          position: 'Dispatcher',
-          responsibilities: [
-            'Ensure compliance with all railroad rules, procedures, and regulations for safety and operations.',
-            'Direct and coordinate railroad traffic, issue permits and authorities, monitor all rail movements and maintain computerized records of all activities.',
-            'Know assigned territory and keep informed of changes in the physical characteristics.',
-            'Maintain familiarity with scheduled trains, destinations, times of arrivals and departures.',
-            'Communicate with personnel on weather or any environmental conditions affecting train movement.',
-            'Coordinate movement of trains according to operating plan and customer needs.',
-            'Monitor train and track movements.',
-            'Remotely control track switches and traffic signals and apply and remove blocking devices.',
-            'Report alleged violations of operating rules and any irregularity relating to the movement of trains.',
-            'Plan in advance for smooth and effective movement of priority trains, trains containing hazardous material or restricted shipments, and meets/passes to avoid unnecessary delays.',
-            'Coordinate track usage with Engineering Department personnel.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: kominmet,
-        },
-        {
-          companyName: 'ukrAuto',
-          dateStart: 'January 2004',
-          dateEnd: 'September 2004',
-          position: 'Ingeneer',
-          responsibilities: [
-            'Making plans using detailed drawings.',
-            'Preparing estimates and budgets.',
-            'Creating accurate project specifications.',
-            'Designing engineering experiments.',
-            'Creating technical reports for customers.',
-            'Completing regulatory documents concerning safety issues.',
-            'Finishing projects on time and within budget. Communicating with clients and coworkers about analysis results.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: ukrauto,
-        },
-        {
-          companyName: 'karcher',
-          dateStart: 'Oktober 2004',
-          dateEnd: 'November 2006',
-          position: 'Sales Manager',
-          responsibilities: [
-            'Achieve growth and hit sales targets by successfully managing the sales team.',
-            'Design and implement a strategic business plan that expands company’s customer base and ensure it’s strong presence.',
-            'Own recruiting, objectives setting, coaching and performance monitoring of sales representatives.',
-            'Build and promote strong, long-lasting customer relationships by partnering with them and understanding their needs.',
-            'Present sales, revenue and expenses reports and realistic forecasts to the management team.',
-            'Identify emerging markets and market shifts while being fully aware of new products and competition status.',
-          ],
-          country: 'Ukraine',
-          city: 'Dnipro',
-          logo: karcher,
-        },
         {
           companyName: 'pegas',
           dateStart: 'December 2006',
@@ -2179,6 +2212,42 @@ const db = {
           country: 'Ukraine',
           city: 'Dnipro',
           logo: pegas,
+        },
+        {
+          companyName: 'BetrBeta',
+          dateStart: 'September 2023',
+          dateEnd: 'November 2023',
+          position: 'Software Engineer Intern',
+          responsibilities: [
+            'Develop in Typescript and Javascript (Nodejs)',
+            'Build nodejs APIs',
+            'Front end development with React (Nextjs)',
+            'Create integrations with Frontend and Databases',
+            'Is reliable and committed to delivering functionality that others can experience',
+            'Work cross-functionally to define and write code for new features',
+            'Implement Integrations with GCP',
+          ],
+          country: 'Singapore',
+          city: 'remote',
+          logo: betrbeta,
+        },
+        {
+          companyName: 'ZenBit',
+          dateStart: 'December 2023',
+          dateEnd: 'February 2024',
+          position: 'FullStack Developer Intern',
+          responsibilities: [
+            'Established process - Experience of daily work on Scrum methodology – daily calls, weekly work planning',
+            'Simulation of a real project - Independently develop applications in an agile team',
+            'In-demand technologies - React-redux, Nest.js, TypeScript, Mysql',
+            'Mentor - Teamlead who supervises the work, gives feedback and clarification of difficult things',
+            'Teamwork - Writing a project as a team',
+            'Online - Communication will be online',
+            'Structured and understandable code - Daily code review',
+          ],
+          country: 'Poland',
+          city: 'remote',
+          logo: zenbit,
         },
         {
           companyName: 'freelance',
@@ -2470,14 +2539,6 @@ const db = {
               icon: bootstrap,
             },
             {
-              name: 'WebPack',
-              icon: webpack,
-            },
-            {
-              name: 'Parcel',
-              icon: parcel,
-            },
-            {
               name: 'FireBase',
               icon: firebase,
             },
@@ -2498,10 +2559,6 @@ const db = {
               icon: jira,
             },
             {
-              name: 'Slack',
-              icon: slack,
-            },
-            {
               name: 'Gimp',
               icon: gimp,
             },
@@ -2512,10 +2569,6 @@ const db = {
             {
               name: 'Redux',
               icon: redux,
-            },
-            {
-              name: 'Render',
-              icon: render,
             },
             {
               name: 'Swagger',
@@ -2529,10 +2582,23 @@ const db = {
               name: 'NestJS',
               icon: nestjs,
             },
-            {
-              name: 'Netlify',
-              icon: netlify,
-            },
+            { name: 'NextJS', icon: nextjs },
+            { name: 'MySQL', icon: mysql },
+            { name: 'SocketIO', icon: socket },
+            { name: 'ReactPDF', icon: reactpdf },
+            { name: 'Quill', icon: quill },
+            { name: 'MUI', icon: mui },
+            { name: 'TailWind', icon: tailwind },
+            { name: 'Chakra', icon: chakra },
+            { name: 'i18n', icon: i18n },
+            { name: 'PWA', icon: pwa },
+            { name: 'Formik', icon: formik },
+            { name: 'Pino', icon: pino },
+            { name: 'MixPanel', icon: mixpanel },
+            { name: 'OpenAI', icon: openai },
+            { name: 'Cypress', icon: cypress },
+            { name: 'K6', icon: k6 },
+            { name: 'Puppeteer', icon: puppeteer },
           ],
         },
       ],

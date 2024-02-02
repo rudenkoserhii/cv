@@ -37,15 +37,37 @@ export const Paragraph = styled.span`
 
 export const ListStyled = styled.ul`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   align-items: center;
+  justify-content: center;
+  height: fit-content;
 
   gap: ${p => p.theme.space[4]}px;
 
   @media screen and (min-width: 768px) {
-    justify-content: center;
     gap: ${p => p.theme.space[4]}px;
     flex-direction: row;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: ${p => p.theme.space[3]}px;
+  }
+`;
+
+export const ListCertificateStyled = styled.ul`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  /* flex: 1; */
+  /* overflow-y: scroll; */
+
+  gap: ${p => p.theme.space[4]}px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: ${p => p.theme.space[4]}px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -73,5 +95,49 @@ export const ListItem = styled.li`
     width: calc(
       (100% - ${p => p.theme.space[6]}px * 2 - ${p => p.theme.space[3]}px) / 2
     );
+  }
+`;
+
+export const Img = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-height: calc(100vh - 620px);
+  width: auto;
+
+  @media screen and (min-width: 768px) {
+    max-height: calc(100vh - 600px);
+  }
+  @media screen and (min-width: 1280px) {
+    max-height: calc(100vh - 420px);
+  }
+`;
+
+export const ListItemCertificate = styled.li`
+  display: block;
+  height: 100%;
+  width: fit-content;
+`;
+
+export const LinkStyled = styled.a`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+  & .certName,
+  & .certImg {
+    transition: all 200ms ease;
+  }
+
+  &:hover .certName {
+    color: ${p => p.theme.colors.seablue};
+    text-shadow: ${p => p.theme.shadows.text};
+
+    transition: all 200ms ease;
+  }
+  &:hover .certImg {
+    transform: scale(1.05);
+
+    transition: all 200ms ease;
   }
 `;

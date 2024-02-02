@@ -10,10 +10,10 @@ export const ListStyled = styled.ul`
   position: relative;
   overflow-y: scroll;
 
-  height: 352px;
+  height: calc(100vh - 450px);
 
   @media screen and (min-width: 768px) {
-    height: 444px;
+    height: calc(100vh - 440px);
   }
 
   @media screen and (min-width: 1280px) {

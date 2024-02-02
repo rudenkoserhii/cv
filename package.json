@@ -24,6 +24,7 @@
     "react-scripts": "^5.0.1",
     "styled-components": "^5.3.6",
     "styled-system": "^5.1.5",
+    "swiper": "^11.0.5",
     "webpack": "^5.82.1"
   },
   "scripts": {

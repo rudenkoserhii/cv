@@ -13,7 +13,7 @@ html {
 body {
   margin: 0;
   font-family: 'Maven Pro', sans-serif;
-  color: #3B9C9C;
+  color: #3b9c9c;
   background-color: #123456;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -217,4 +217,13 @@ a {
     transform-origin: 50% 0%;
     opacity: 1;
   }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: #3b9c9c !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #3b9c9c !important;
 }

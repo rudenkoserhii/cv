@@ -23,7 +23,7 @@ const HomePage = () => {
   return (
     selected && (
       <>
-        <Cards>
+        {/* <Cards>
           {cards.map((card, index) => (
             <Card
               key={index}
@@ -32,8 +32,17 @@ const HomePage = () => {
               style={{ opacity: card }}
             ></Card>
           ))}
-        </Cards>
-        <picture key={selected.name} style={{ display: 'block' }}>
+        </Cards> */}
+        <picture
+          key={selected.name}
+          style={{
+            display: 'block',
+            height: 'fit-content',
+            width: 'fit-content',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+        >
           <source srcSet={selected.urlWebp} type="image/webp" />
           <source srcSet={selected.urlPng} type="image/png" />
           <Img src={selected.urlPng} alt="Man" className="first" />

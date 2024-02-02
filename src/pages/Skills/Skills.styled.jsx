@@ -15,10 +15,10 @@ export const ListStyled = styled.ul`
     position: relative;
     overflow-y: scroll;
 
-    height: 150px;
+    height: calc(100vh - 650px);
 
     @media screen and (min-width: 768px) {
-      height: calc(550px - 36px - 209px - 48px);
+      height: calc(100vh - 650px);
     }
 
     @media screen and (min-width: 1280px) {
@@ -91,16 +91,18 @@ export const Text = styled.p`
   }
 `;
 export const Img = styled.img`
-  width: 100px;
-  padding: 10px;
+  height: 50px;
+  width: auto;
+  padding-left: 25px;
+  padding-right: 25px;
 
   @media screen and (min-width: 768px) {
-    width: 120px;
+    height: 60px;
     padding: 15px;
   }
 
   @media screen and (min-width: 1280px) {
-    width: 152px;
+    height: 150px;
     padding: 20px;
   }
 `;

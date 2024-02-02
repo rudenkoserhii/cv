@@ -36,7 +36,7 @@ const Skill = () => {
         <Arrow />
         {shuffle(array).map(({ name, icon }) => (
           <ListItem key={nanoid()}>
-            <Img src={icon} alt={`Icon ${name}`} />
+            <Img src={icon} alt={`Icon ${name}`} width={100} />
             <Text>{t(name)}</Text>
           </ListItem>
         ))}
