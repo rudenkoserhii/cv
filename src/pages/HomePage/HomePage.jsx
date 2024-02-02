@@ -1,24 +1,24 @@
-import { Img, Cards, Card } from './HomePage.styled';
+import { Img } from './HomePage.styled'; // , Cards, Card
 import { useContext } from 'react';
 import { ThrowContext } from '../../components/Context/Context';
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 
 const HomePage = () => {
   const { selected } = useContext(ThrowContext);
 
-  const [cards, setCards] = useState(
-    JSON.parse(localStorage.getItem('cards')) || Array(12).fill(0.8)
-  );
+  // const [cards, setCards] = useState(
+  //   JSON.parse(localStorage.getItem('cards')) || Array(12).fill(0.8)
+  // );
 
-  useEffect(() => {
-    localStorage.setItem('cards', JSON.stringify(cards));
-  }, [cards]);
+  // useEffect(() => {
+  //   localStorage.setItem('cards', JSON.stringify(cards));
+  // }, [cards]);
 
-  function onCardClick(e) {
-    const newArray = cards.toSpliced(e.currentTarget.id, 1, 0);
-    setCards(newArray);
-    e.currentTarget.classList.add('swirl-out-bck');
-  }
+  // function onCardClick(e) {
+  //   const newArray = cards.toSpliced(e.currentTarget.id, 1, 0);
+  //   setCards(newArray);
+  //   e.currentTarget.classList.add('swirl-out-bck');
+  // }
 
   return (
     selected && (
