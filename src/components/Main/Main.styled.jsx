@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import flag from '../../img/about/flag.png';
+// import flag from '../../img/about/flag.png';
 
 export const SectionStyled = styled.section`
   position: relative;
@@ -16,8 +16,8 @@ export const SectionStyled = styled.section`
     max-width: 800px;
     max-height: calc(100dvh - 200px);
   }
-
-  &.flag {
+`;
+/* &.flag {
     background-image: url(${flag});
     background-repeat: no-repeat;
     background-position: top;
@@ -31,8 +31,7 @@ export const SectionStyled = styled.section`
     @media screen and (min-width: 1280px) {
       background-size: cover;
     }
-  }
-`;
+  } */
 
 export const MainStyled = styled.main`
   width: calc(100vw - 64px);
