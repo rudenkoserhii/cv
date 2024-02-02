@@ -12,9 +12,9 @@ import photo_03_webp from './img/hero/photo_03.webp';
 import photo_04_webp from './img/hero/photo_04.webp';
 import photo_05_webp from './img/hero/photo_05.webp';
 
-import kominmet from './img/company_logos/kominmet.png';
-import ukrauto from './img/company_logos/ukrauto.png';
-import karcher from './img/company_logos/karcher.png';
+// import kominmet from './img/company_logos/kominmet.png';
+// import ukrauto from './img/company_logos/ukrauto.png';
+// import karcher from './img/company_logos/karcher.png';
 import pegas from './img/company_logos/pegas.png';
 import freelance from './img/company_logos/freelance.png';
 import betrbeta from './img/company_logos/betrbeta.png';
@@ -42,8 +42,8 @@ import node from './img/skills/tech/node.png';
 import github from './img/skills/tech/github.png';
 
 import bootstrap from './img/skills/tech/bootstrap.png';
-import webpack from './img/skills/tech/webpack.png';
-import parcel from './img/skills/tech/parcel.png';
+// import webpack from './img/skills/tech/webpack.png';
+// import parcel from './img/skills/tech/parcel.png';
 import mongoose from './img/skills/tech/mongoose.png';
 import mongodb from './img/skills/tech/mongodb.png';
 import firebase from './img/skills/tech/firebase.png';
@@ -51,7 +51,7 @@ import gimp from './img/skills/tech/gimp.png';
 import inkscape from './img/skills/tech/inkscape.png';
 import jira from './img/skills/tech/jira.png';
 import trello from './img/skills/tech/trello.png';
-import slack from './img/skills/tech/slack.png';
+// import slack from './img/skills/tech/slack.png';
 import redux from './img/skills/tech/redux.png';
 import googleappsscript from './img/skills/tech/googleappsscript.png';
 import typescript from './img/skills/tech/typescript.png';
@@ -73,11 +73,11 @@ import cypress from './img/skills/tech/cypress.png';
 import k6 from './img/skills/tech/k6.png';
 import puppeteer from './img/skills/tech/puppeteer.png';
 
-import render from './img/skills/tech/render.png';
+// import render from './img/skills/tech/render.png';
 import nestjs from './img/skills/tech/nestjs.png';
 import postgres from './img/skills/tech/postgres.png';
 import swagger from './img/skills/tech/swagger.png';
-import netlify from './img/skills/tech/netlify.png';
+// import netlify from './img/skills/tech/netlify.png';
 
 import preview_icecream from './img/portfolios/preview_icecream.jpg';
 import preview_filmoteka from './img/portfolios/preview_filmoteka.jpg';
