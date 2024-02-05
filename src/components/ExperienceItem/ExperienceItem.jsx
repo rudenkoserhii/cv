@@ -37,7 +37,7 @@ const ExperienceItem = () => {
   } = selectedCompany;
 
   return (
-    <div className="first" key={companyName} style={{ pointerEvents: 'none' }}>
+    <div className="second" key={companyName} style={{ pointerEvents: 'none' }}>
       <LinkBack to={backLinkHref}>
         <SpanBack>{t('Back')}</SpanBack>
       </LinkBack>

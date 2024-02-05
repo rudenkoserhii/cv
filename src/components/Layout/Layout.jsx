@@ -27,9 +27,9 @@ export const Layout = () => {
   const stars = [...Array(quantity).keys()].map(el => (el += 1));
 
   function handleClick(e) {
-if(e.target.nodeName !== 'INPUT' && window.innerWidth < 1280) {
+    if (e.target.nodeName !== 'INPUT' && window.screen.width < 1280) {
       setIsExpanded(!isExpanded);
-  }
+    }
   }
 
   return (
