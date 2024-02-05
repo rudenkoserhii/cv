@@ -8,7 +8,7 @@ export const WrapWhole = styled.div`
   justify-content: center;
   align-items: center;
   max-width: 360px;
-  max-height: 100vh;
+  max-height: 100dvh;
   margin-left: auto;
   margin-right: auto;
   padding-top: ${p => p.theme.space[4]}px;
@@ -102,7 +102,7 @@ export const Header = styled.header`
 
     width: ${p => p.theme.space[7]}px;
 
-    max-height: calc(100vh - 18px - 64px * 2);
+    max-height: calc(100dvh - 18px - 64px * 2);
     margin-right: ${p => p.theme.space[6]}px;
   }
 

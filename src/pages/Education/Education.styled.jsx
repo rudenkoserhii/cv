@@ -102,14 +102,14 @@ export const Img = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-height: calc(100vh - 620px);
+  max-height: calc(100dvh - 620px);
   width: auto;
 
   @media screen and (min-width: 768px) {
-    max-height: calc(100vh - 600px);
+    max-height: calc(100dvh - 600px);
   }
   @media screen and (min-width: 1280px) {
-    max-height: calc(100vh - 420px);
+    max-height: calc(100dvh - 420px);
   }
 `;
 

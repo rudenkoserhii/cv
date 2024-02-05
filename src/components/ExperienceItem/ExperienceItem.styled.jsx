@@ -88,14 +88,14 @@ export const Div = styled.div`
   pointer-events: auto;
   overflow-y: scroll;
 
-  height: calc(100vh - 560px);
+  height: calc(100dvh - 560px);
 
   @media screen and (min-width: 768px) {
-    height: calc(100vh - 580px);
+    height: calc(100dvh - 580px);
   }
 
   @media screen and (min-width: 1280px) {
-    height: calc(100vh - 400px);
+    height: calc(100dvh - 400px);
   }
 
   &::-webkit-scrollbar {

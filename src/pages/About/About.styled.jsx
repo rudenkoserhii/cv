@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Text = styled.p`
-  font-size: ${p => p.theme.fontSizes.xxs};
+  font-size: ${p => p.theme.fontSizes.xshalf};
   text-align: center;
 
   color: ${p => p.theme.colors.deepsea};

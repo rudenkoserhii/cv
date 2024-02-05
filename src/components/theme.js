@@ -22,6 +22,7 @@ export const theme = {
   fontSizes: {
     xxxs: '6px',
     xxs: '8px',
+    xshalf: '10px',
     xs: '12px',
     s: '14px',
     m: '16px',

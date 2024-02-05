@@ -4,7 +4,7 @@ export const Img = styled.img`
   display: block;
   margin-left: auto;
   margin-right: auto;
-  max-height: calc(100vh - 400px);
+  max-height: calc(100dvh - 400px);
   min-width: 300px;
 
   object-fit: contain;
