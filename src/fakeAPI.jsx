@@ -92,8 +92,8 @@ import preview_webstudio from './img/portfolios/preview_webstudio.jpg';
 import preview_abyss from './img/portfolios/preview_abyss.jpg';
 // import preview_dashboard from './img/portfolios/preview_dashboard.jpg';
 import preview_zenbit from './img/portfolios/preview_zenbit.jpg';
-import preview_valueswap from './img/portfolios/preview_valueswap.jpg';
-import preview_calendate from './img/portfolios/preview_calendate.jpg';
+import preview_valueswap from './img/portfolios/preview_valueswap.png';
+import preview_calendate from './img/portfolios/preview_calendate.png';
 
 import instagram from './img/socials_icons/instagram.svg';
 import twitter from './img/socials_icons/twitter.svg';
