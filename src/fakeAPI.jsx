@@ -90,8 +90,10 @@ import preview_tweets from './img/portfolios/preview_tweets.jpg';
 import preview_real_estate from './img/portfolios/preview_real_estate.jpg';
 import preview_webstudio from './img/portfolios/preview_webstudio.jpg';
 import preview_abyss from './img/portfolios/preview_abyss.jpg';
-import preview_dashboard from './img/portfolios/preview_dashboard.jpg';
+// import preview_dashboard from './img/portfolios/preview_dashboard.jpg';
 import preview_zenbit from './img/portfolios/preview_zenbit.jpg';
+import preview_valueswap from './img/portfolios/preview_valueswap.jpg';
+import preview_calendate from './img/portfolios/preview_calendate.jpg';
 
 import instagram from './img/socials_icons/instagram.svg';
 import twitter from './img/socials_icons/twitter.svg';
@@ -308,13 +310,13 @@ const db = {
         },
       ],
       portfolios: [
-        {
-          name: 'Dashboard',
-          url: 'https://docs.google.com/spreadsheets/d/1Nycj4i7IgzLa0D11LEoamW1RX8_ZUxlxPixewc0343I/edit?usp=sharing',
-          preview: preview_dashboard,
-          tech: ['GoogleSheets', 'Google Apps Script'],
-          production: 'Individual Project',
-        },
+        // {
+        //   name: 'Dashboard',
+        //   url: 'https://docs.google.com/spreadsheets/d/1Nycj4i7IgzLa0D11LEoamW1RX8_ZUxlxPixewc0343I/edit?usp=sharing',
+        //   preview: preview_dashboard,
+        //   tech: ['GoogleSheets', 'Google Apps Script'],
+        //   production: 'Individual Project',
+        // },
         {
           name: 'Ice-Cream',
           url: 'https://hresko.github.io/Ice-Cream/',
@@ -494,6 +496,48 @@ const db = {
             'PostgreSQL',
             'Render',
             'Netlify',
+            'Rest API',
+          ],
+          production: 'Individual Project',
+        },
+        {
+          name: 'Value Swap',
+          url: 'https://test-valueswap.vercel.app/',
+          preview: preview_valueswap,
+          tech: [
+            'HTML',
+            'SASS',
+            'ReactJS',
+            'NextJS',
+            'WebPack',
+            'Axios',
+            'TailWindCSS',
+            'Zustand',
+            'RainbowKit',
+            'Wagmi',
+            'Vercel',
+            'Rest API',
+          ],
+          production: 'Individual Project',
+        },
+        {
+          name: 'CalenDate',
+          url: 'https://calendate-three.vercel.app',
+          preview: preview_calendate,
+          tech: [
+            'TypeScript',
+            'HTML',
+            'ReactJS',
+            'Redux',
+            'RTKQuery',
+            'Redux-Persist',
+            'StyledComponents',
+            'Swagger',
+            'NodeJS',
+            'NestJS',
+            'MySQL',
+            'Render',
+            'Vercel',
             'Rest API',
           ],
           production: 'Individual Project',
